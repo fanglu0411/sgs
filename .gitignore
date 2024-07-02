@@ -1,0 +1,16 @@
+**/node_modules/
+**/.vscode/
+**/coverage/
+yarn-error.log
+.DS_Store
+lint.log
+.eslintcache
+.idea
+yalc.lock
+.yalc
+**/package-lock.json
+**/dist/
+**/build/
+**/esm/
+.yarn
+.yarnrc
