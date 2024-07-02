@@ -38,14 +38,14 @@ SGS supports various data formats including Anndata, Mudata, and genome-mapped f
 
 ```sh
 # Download shell script
-wget https://gitee.com/Orth/sgs-site/raw/master/deploy.sh deploy-sgs.sh
+wget https://raw.githubusercontent.com/fanglu0411/sgs/main/script/deploy.sh deploy-sgs.sh
 # or use curl
-curl -fsSL https://gitee.com/Orth/sgs-site/raw/master/deploy.sh -o deploy-sgs.sh
+curl -fsSL https://raw.githubusercontent.com/fanglu0411/sgs/main/script/deploy.sh -o deploy-sgs.sh
 
 # Change permission
 chmod 777 deploy-sgs.sh
 # Run install command
-./deploy-sgs.sh
+./deploy-sgs.sh DB_PORT=33061 API_PORT=6102 WEB_PORT=1080
 ```
 
 ## Manual Install
@@ -99,7 +99,7 @@ docker run --privileged -d \
     --name sgs-mysql \
     -p ${DB_PORT}:3306 \
     -e  MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD} \
-    registry.bioinfotoolkits.net/lufang0411/sgs-mysql:latest
+    lufang0411/sgs-mysql:latest
 ```
 
 #### 3. Start sgs-api
@@ -112,7 +112,7 @@ docker run -dit \
     -p ${API_PORT}:6102 \
     -p 6122:22 \
     --link sgs-mysql \
-    registry.bioinfotoolkits.net/lufang0411/sgs-api:latest
+    lufang0411/sgs-api:latest
 ```
 
 #### 4. Start sgs-web (option al if you use `SGS` client).
@@ -124,7 +124,7 @@ docker run -d \
     -p ${WEB_PORT}:80 \
     --link sgs-api \
     -e API_URL=sgs-api:${API_PORT} \
-    registry.bioinfotoolkits.net/leeoluo/sgs-web:latest
+    leeoluo/sgs-web:latest
 ```
 
 More information please view Document
