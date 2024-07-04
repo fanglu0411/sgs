@@ -111,8 +111,6 @@ docker run -d \
     leeoluo/sgs-web:latest
 ```
 
-More information please view Document
-
 #  Contact
 + LuFang (xxxx@163.com)
 + LuoYongJiang (xxxx@163.com)
