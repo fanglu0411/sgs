@@ -21,12 +21,12 @@ SGS primarily utilizes Docker and Flutter technologies to achieve graphical one-
 > **Make Sure Docker is installed on your server**
 
 ## SGS Deployment
-SGS supports the following three deployment modes: 
-### (1) Client Deployment (**suggest**)
+SGS supports the following three deployment methods: 
+### (1) Method 1: Client Deployment (**suggest**)
 Client deployment requirements users  to download and install the SGS client first. Once the client installation is complete, users can perform SGS deployment on macOS or Linux systems.
 Client deployment tutorial: https://sgs.bioinfotoolkits.net/document/installation.html#deploy-a-new-sgs-server
 
-### (2) Install by One-Key Script
+### (2) Method 2: Install by One-Key Script
 
 ```sh
 # Download shell script
@@ -40,7 +40,7 @@ chmod 777 deploy-sgs.sh
 ./deploy-sgs.sh DB_PORT=33061 API_PORT=6102 WEB_PORT=1080
 ```
 
-### (3) Manual Installation
+### (3) Method 3: Manual Installation
 
 #### Pull images
 
