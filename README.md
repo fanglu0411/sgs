@@ -1,6 +1,7 @@
 # Introduction
 
 SGS, a user-friendly, collaborative and versatile browser for visualizing single-cell and spatial multiomics data. With advanced features for comparative visualization, multi-panel coordiniate view, abundant visualization functions and collaborative exploration, SGS empowers researchers to empowers researchers to unlocking the novel insights from scMulti-omics data.
+![](https://sgs.bioinfotoolkits.net/document/assets/home-D-OuhsfI.png)
 
 [Website](https://sgs.bioinfotoolkits.net)
 
