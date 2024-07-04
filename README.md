@@ -3,8 +3,11 @@
 SGS, a user-friendly, collaborative and versatile browser for visualizing single-cell and spatial multiomics data. With advanced features for comparative visualization, multi-panel coordiniate view, abundant visualization functions and collaborative exploration, SGS empowers researchers to unlocking the novel insights from scMulti-omics data.
 ![](https://sgs.bioinfotoolkits.net/document/assets/home-D-OuhsfI.png)
 
+# Document
+Instructions, documentation, and tutorials can be found at:
+[SGS Website](https://sgs.bioinfotoolkits.net)
 
-# File format and Conversion
+# File Format and Conversion
 ![](https://211.bioinfotoolkits.net:10290/sgs/website/feature_4.png)
 
 SGS supports various data formats including Anndata, Mudata, and genome-mapped files (GFF, VCF, BED, Bigwig, HiC, Biginteract, Longrange, methylC, Gwas,). The SgsAnnData R package enables seamless data format conversion with analysis tools like Seurat, ArchR, Signac, and Giotto.
@@ -13,9 +16,6 @@ SGS supports various data formats including Anndata, Mudata, and genome-mapped f
 The github of SgsAnnData can be access by the following links:
 [SgsAnnData gtihub](https://github.com/bio-xtt/SgsAnnDataV2)     
 
-## Document
-Instructions, documentation, and tutorials can be found at:
-[SGS Website](https://sgs.bioinfotoolkits.net)
 
 # Installation
 SGS primarily utilizes Docker and Flutter technologies to achieve graphical one-click installation. Users are required to download and install the SGS client first. Once the client installation is complete, users can perform SGS deployment on macOS or Linux systems.
@@ -31,7 +31,11 @@ At present, SGS client is mainly compatible with the following platforms: **Linu
 [Android](https://xxxx/xxx/)
 
 ## SGS Deployment
-### Install by one-key script
+SGS supports the following three deployment modes: 
+### (1) Client Deployment
+Client deployment tutorial: https://sgs.bioinfotoolkits.net/document/installation.html#deploy-a-new-sgs-server
+
+### (2) Install by One-Key Script
 
 ```sh
 # Download shell script
@@ -45,7 +49,7 @@ chmod 777 deploy-sgs.sh
 ./deploy-sgs.sh DB_PORT=33061 API_PORT=6102 WEB_PORT=1080
 ```
 
-### Manual Install
+### (3) Manual Installation
 
 #### Pull images
 
