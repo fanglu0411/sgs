@@ -39,7 +39,7 @@ chmod 777 deploy-sgs.sh
 
 ## (3) Method 3: Manual Installation
 
-### Pull images
+### step1: Pull images
 
 - `sgs-mysql` sgs database image
 - `sgs-api` sgs api image
@@ -59,7 +59,7 @@ sudo docker pull registry.bioinfotoolkits.net/lufang0411/sgs-api:latest &&
 sudo docker pull registry.bioinfotoolkits.net/leeoluo/sgs-web:latest
 ```
 
-### Prepare working directory
+### step2: Prepare working directory
 
 ```sh
 sgs_path=/data/docker/vol/sgs
@@ -69,9 +69,9 @@ mkdir sgs && mkdir api
 sudo chmod 777 sgs && sudo chmod 777 api
 ```
 
-### Run docker container
+### step3: Run docker container
 
-#### 1. Setup port params
+#### 3.1 Setup port params
 
 ```sh
 DB_PORT=33061
@@ -79,7 +79,7 @@ API_PORT=6102
 WEB_PORT=1080
 ```
 
-#### 2. Start sgs-mysql
+#### 3.2 Start sgs-mysql
 
 ```sh
 docker run --privileged -d \
@@ -91,7 +91,7 @@ docker run --privileged -d \
     lufang0411/sgs-mysql:latest
 ```
 
-#### 3. Start sgs-api
+#### 3.3 Start sgs-api
 
 ```sh
 docker run -dit \
@@ -104,7 +104,7 @@ docker run -dit \
     lufang0411/sgs-api:latest
 ```
 
-#### 4. Start sgs-web (option al if you use `SGS` client).
+#### 3.4 Start sgs-web (option al if you use `SGS` client).
 
 ```sh
 docker run -d \
