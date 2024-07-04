@@ -16,17 +16,14 @@ The github of SgsAnnData can be access by the following links:
 
 
 # Installation
-SGS primarily utilizes Docker and Flutter technologies to achieve graphical one-click installation. 
-
 > **Make Sure Docker is installed on your server**
+SGS primarily utilizes Docker and Flutter technologies to achieve graphical one-click installation. SGS supports the following three deployment methods:  
 
-## SGS Deployment
-SGS supports the following three deployment methods: 
-### (1) Method 1: Client Deployment (**suggest**)
+## (1) Method 1: Client Deployment (**suggest**)
 Client deployment requirements users  to download and install the SGS client first. Once the client installation is complete, users can perform SGS deployment on macOS or Linux systems.
 Client deployment tutorial: https://sgs.bioinfotoolkits.net/document/installation.html#deploy-a-new-sgs-server
 
-### (2) Method 2: Install by One-Key Script
+## (2) Method 2: Install by One-Key Script
 
 ```sh
 # Download shell script
@@ -40,9 +37,9 @@ chmod 777 deploy-sgs.sh
 ./deploy-sgs.sh DB_PORT=33061 API_PORT=6102 WEB_PORT=1080
 ```
 
-### (3) Method 3: Manual Installation
+## (3) Method 3: Manual Installation
 
-#### Pull images
+### Pull images
 
 - `sgs-mysql` sgs database image
 - `sgs-api` sgs api image
@@ -62,7 +59,7 @@ sudo docker pull registry.bioinfotoolkits.net/lufang0411/sgs-api:latest &&
 sudo docker pull registry.bioinfotoolkits.net/leeoluo/sgs-web:latest
 ```
 
-#### Prepare working directory
+### Prepare working directory
 
 ```sh
 sgs_path=/data/docker/vol/sgs
@@ -72,9 +69,9 @@ mkdir sgs && mkdir api
 sudo chmod 777 sgs && sudo chmod 777 api
 ```
 
-#### Run docker container
+### Run docker container
 
-##### 1. Setup port params
+#### 1. Setup port params
 
 ```sh
 DB_PORT=33061
@@ -82,7 +79,7 @@ API_PORT=6102
 WEB_PORT=1080
 ```
 
-##### 2. Start sgs-mysql
+#### 2. Start sgs-mysql
 
 ```sh
 docker run --privileged -d \
@@ -94,7 +91,7 @@ docker run --privileged -d \
     lufang0411/sgs-mysql:latest
 ```
 
-##### 3. Start sgs-api
+#### 3. Start sgs-api
 
 ```sh
 docker run -dit \
@@ -107,7 +104,7 @@ docker run -dit \
     lufang0411/sgs-api:latest
 ```
 
-##### 4. Start sgs-web (option al if you use `SGS` client).
+#### 4. Start sgs-web (option al if you use `SGS` client).
 
 ```sh
 docker run -d \
