@@ -8,8 +8,6 @@ Instructions, documentation, and tutorials can be found at:
 [SGS Website](https://sgs.bioinfotoolkits.net)
 
 # File Format and Conversion
-![](https://211.bioinfotoolkits.net:10290/sgs/website/feature_4.png)
-
 SGS supports various data formats including Anndata, Mudata, and genome-mapped files (GFF, VCF, BED, Bigwig, HiC, Biginteract, Longrange, methylC, Gwas,). The SgsAnnData R package enables seamless data format conversion with analysis tools like Seurat, ArchR, Signac, and Giotto.
 
 ## SgsAnnData
