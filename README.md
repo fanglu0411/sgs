@@ -16,20 +16,14 @@ The github of SgsAnnData can be access by the following links:
 
 
 # Installation
-SGS primarily utilizes Docker and Flutter technologies to achieve graphical one-click installation. Users are required to download and install the SGS client first. Once the client installation is complete, users can perform SGS deployment on macOS or Linux systems.
+SGS primarily utilizes Docker and Flutter technologies to achieve graphical one-click installation. 
 
 > **Make Sure Docker is installed on your server**
 
-## SGS Client Download and installation
-At present, SGS client is mainly compatible with the following platforms: **Linux**, **Windows**, **MacOS**, and **Android**.
-[Linux](https://xxxx/xxx/)
-[Windows](https://xxxx/xxx/)
-[MacOS](https://xxxx/xxx/)
-[Android](https://xxxx/xxx/)
-
 ## SGS Deployment
 SGS supports the following three deployment modes: 
-### (1) Client Deployment
+### (1) Client Deployment (**suggest**)
+Client deployment requirements users  to download and install the SGS client first. Once the client installation is complete, users can perform SGS deployment on macOS or Linux systems.
 Client deployment tutorial: https://sgs.bioinfotoolkits.net/document/installation.html#deploy-a-new-sgs-server
 
 ### (2) Install by One-Key Script
