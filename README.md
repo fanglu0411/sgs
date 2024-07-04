@@ -8,12 +8,7 @@ Instructions, documentation, and tutorials can be found at:
 [SGS Website](https://sgs.bioinfotoolkits.net)
 
 # File Format and Conversion
-SGS supports various data formats including Anndata, Mudata, and genome-mapped files (GFF, VCF, BED, Bigwig, HiC, Biginteract, Longrange, methylC, Gwas,). The SgsAnnData R package enables seamless data format conversion with analysis tools like Seurat, ArchR, Signac, and Giotto.
-
-## SgsAnnData
-The github of SgsAnnData can be access by the following links:
-[SgsAnnData gtihub](https://github.com/bio-xtt/SgsAnnDataV2)     
-
+SGS supports various data formats including Anndata, Mudata, and genome-mapped files (GFF, VCF, BED, Bigwig, HiC, Biginteract, Longrange, methylC, Gwas,). The SgsAnnData R package enables seamless data format conversion with analysis tools like Seurat, ArchR, Signac, and Giotto. SgsAnnData can be access by the following links: [SgsAnnData gtihub](https://github.com/bio-xtt/SgsAnnDataV2)     
 
 # Installation
 > **Make Sure Docker is installed on your server**
