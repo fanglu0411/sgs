@@ -18,8 +18,7 @@ The github of SgsAnnData can be access by the following links:
 # Installation
 SGS primarily utilizes Docker and Flutter technologies to achieve graphical one-click installation. Users are required to download and install the SGS client first. Once the client installation is complete, users can perform SGS deployment on macOS or Linux systems.
 
-## Docker Prerequisites
-> Make Sure Docker is installed on your server
+> **Make Sure Docker is installed on your server**
 
 ## SGS Client Download and installation
 At present, SGS client is mainly compatible with the following platforms: **Linux**, **Windows**, **MacOS**, and **Android**.
@@ -127,6 +126,15 @@ docker run -d \
 ```
 
 More information please view Document
+
+#  Contact
++ xiatingting (xtt199239@163.com)
++ sunjahe (xxxx@163.com)
+
+# Citiation
+
+
+
 
 
 
