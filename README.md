@@ -113,13 +113,14 @@ docker run -d \
 ```
 
 # Reporting Issues
-If you found an issue, please report it along with any relevant details to reproduce it. Thanks.
+If you found an issue, please [report it](https://github.com/fanglu0411/sgs/issues) along with any relevant details to reproduce it. Thanks.
 
 #  Contact
-+ LuFang (xxxx@163.com)
-+ LuoYongJiang (xxxx@163.com)
++ YiWang (yiwang28@swu.edu.cn)    
++ LuFang (lufang0411@sina.com)
++ LuoYongJiang (lyjiang126@yeah.net)
 + xiatingting (xtt199239@163.com)
-+ sunjahe (xxxx@163.com)
++ sunjahe (sunjiahe0502@email.swu.edu.cn)
 
 # Citiation
 
