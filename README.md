@@ -1,3 +1,4 @@
+
 # SGS: An Integrative Browser for Collaborative Visualization of Single-cell and Spatial Multimodal Data
 SGS, a user-friendly, collaborative and versatile browser for visualizing single-cell and spatial multiomics data, including scRNA, spatial transcriptomics, scATAC, scMethylC, sc-eQTL etc. 
 With advanced features for comparative visualization, multi-panel coordiniate view, abundant visualization functions and collaborative exploration, SGS empowers researchers to unlocking the novel insights from scMulti-omics data.
@@ -14,12 +15,12 @@ SGS supports various data formats including Anndata, Mudata, and genome-mapped f
 > **Make Sure Docker is installed on your server**
 SGS primarily utilizes Docker and Flutter technologies to achieve graphical one-click installation. SGS supports the following three deployment methods:  
 
-## (1) Method 1: Client Deployment (**suggest**)
+## Quick Start (recommended）
 Client deployment requirements users  to download and install the SGS client first. Once the client installation is complete, users can perform SGS deployment on macOS or Linux systems.
 Client deployment tutorial: https://sgs.bioinfotoolkits.net/document/installation.html#deploy-a-new-sgs-server
 
-## (2) Method 2: Install by One-Key Script
-
+## Custom manual installation (optional)
+### Method1: Script Installation
 ```sh
 # Download shell script
 wget https://raw.githubusercontent.com/fanglu0411/sgs/main/script/deploy.sh deploy-sgs.sh
@@ -32,7 +33,7 @@ chmod 777 deploy-sgs.sh
 ./deploy-sgs.sh DB_PORT=33061 API_PORT=6102 WEB_PORT=1080
 ```
 
-## (3) Method 3: Manual Installation
+## Method 2: Manual Installation
 
 ### step1: Pull images
 
@@ -110,6 +111,9 @@ docker run -d \
     -e API_URL=sgs-api:${API_PORT} \
     leeoluo/sgs-web:latest
 ```
+
+# Reporting Issues
+If you found an issue, please report it along with any relevant details to reproduce it. Thanks.
 
 #  Contact
 + LuFang (xxxx@163.com)
