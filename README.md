@@ -13,7 +13,6 @@ With advanced features for comparative visualization, multi-panel coordiniate vi
 
 <img src="https://sgs.bioinfotoolkits.net/document/assets/home-D-OuhsfI.png" width="500px" >
 
-
 # 🚀 Document
 Instructions, documentation, and tutorials can be found at:
 [SGS Website](https://sgs.bioinfotoolkits.net)
@@ -27,7 +26,9 @@ The SGS browser consists of two main components: the **SGS server** and **SGS cl
 > Please note that **SGS server** deployment relies on Docker, so make sure Docker is configured!
 
 👋 **Graphical installation tutorial (Recommended）** : https://sgs.bioinfotoolkits.net/document/installation.html#deploy-a-new-sgs-server
+
 <img src="https://sgs.bioinfotoolkits.net/document/assets/3_1-BCYWuabz.png" width="500px" >
+
  (Optional）if you want to customize the container configuration items, please refer to the manual installation tutorial in the documentation.
 
 # 💻 File Format and Conversion
