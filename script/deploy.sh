@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
-SERVER_HOST='127.0.0.1'
+SERVER_HOST='0.0.0.0'
 DB_PORT=33061
 API_PORT=6102
 WEB_PORT=1080
+DATA_PATH='/data/docker/vol/sgs'
 
 MYSQL_PASSWORD=123456Aa
 
@@ -11,11 +12,13 @@ eval $1
 eval $2
 eval $3
 eval $4
+eval $5
 
 echo "SERVER_HOST=${SERVER_HOST}"
 echo "DB_PORT=${DB_PORT}"
 echo "API_PORT=${API_PORT}"
 echo "WEB_PORT=${WEB_PORT}"
+echo "DATA_PATH=${DATA_PATH}"
 
 unameOut="$(uname -s)"
 case "${unameOut}" in
@@ -98,10 +101,11 @@ fi
 
 echo "install = $_install"
 
-sgs_path="/data/docker/vol/sgs"
-if [[ "${machine}" == "Mac" ]]; then
-    sgs_path="${HOME}/docker/vol/sgs"
-fi
+$sgs_path=${DATA_PATH}
+#sgs_path="/data/docker/vol/sgs"
+#if [[ "${machine}" == "Mac" ]]; then
+#    sgs_path="${HOME}/docker/vol/sgs"
+#fi
 echo "SGS_PATH=$sgs_path"
 
 if [[ $_install == 1 || $_install == 2 ]]; then # 2:update, 1:re-install , 3:restart
@@ -150,7 +154,7 @@ if [[ $_install == 1 || $_install == 2 ]]; then # 2:update, 1:re-install , 3:res
       -p ${API_PORT}:6102 \
       -p 6122:22 \
       --link sgs-mysql \
-      registry.bioinfotoolkits.net/lufang0411/sgs-api:latest
+      registry.bioinfotoolkits.net/lufang0411/sgs-api:latest /docker-entrypoint.sh
 
     docker run -d \
       --restart=always \
@@ -177,4 +181,13 @@ sleep 3
 container_check sgs-api "http://${SERVER_HOST}:${API_PORT}"
 container_check sgs-web "http://${SERVER_HOST}:${WEB_PORT}"
 
-curl "http://localhost:${API_PORT}/api/token/admin"
+api_check_times=0
+token_url="http://localhost:${API_PORT}/api/token/admin"
+while [ $api_check_times -le 5 ]; do
+  api_check_times=$(( api_check_times++ ))
+  if ( curl $token_url );then
+    break;
+  fi
+  echo 'check token fail! try later by: curl' $token_url
+  sleep 5
+done
