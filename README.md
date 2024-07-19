@@ -29,7 +29,7 @@ SGS primarily utilizes Docker and Flutter technologies to achieve graphical one-
 
 ## 🎈🎈🎈 Quick Start (recommended）
 The SGS browser consists of two main components: the **SGS server** and **SGS client**. Once you have downloaded and installed the SGS client, you need to deploy the SGS server for data visualization. 
-> Please note that SGS server deployment currently only supports Linux and MacOS systems!
+> Please note that SGS server deployment relies on Docker, so make sure Docker is configured!
 
 Client deployment tutorial: https://sgs.bioinfotoolkits.net/document/installation.html#deploy-a-new-sgs-server
 
