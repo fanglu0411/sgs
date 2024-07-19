@@ -18,11 +18,6 @@ With advanced features for comparative visualization, multi-panel coordiniate vi
 Instructions, documentation, and tutorials can be found at:
 [SGS Website](https://sgs.bioinfotoolkits.net)
 
-# 💻 File Format and Conversion
-+ SGS supports various data formats including Anndata, Mudata, and genome-mapped files (GFF, VCF, BED, Bigwig, HiC, Biginteract, Longrange, methylC, Gwas,). 
-+ The SgsAnnData R package enables seamless data format conversion with analysis tools like Seurat, ArchR, Signac, and Giotto. 
-+ SgsAnnData can be access by the following links: [SgsAnnData gtihub](https://github.com/bio-xtt/SgsAnnDataV2)     
-
 # ⚙️ Installation
 > **Make Sure Docker is installed on your server**
 SGS primarily utilizes Docker and Flutter technologies to achieve graphical one-click installation. SGS supports the following three deployment methods:  
@@ -34,6 +29,11 @@ The SGS browser consists of two main components: the **SGS server** and **SGS cl
 👋 **Graphical installation tutorial (Recommended）** : https://sgs.bioinfotoolkits.net/document/installation.html#deploy-a-new-sgs-server
 
  (Optional）if you want to customize the container configuration items, please refer to the manual installation tutorial in the documentation.
+
+# 💻 File Format and Conversion
++ SGS supports various data formats including Anndata, Mudata, and genome-mapped files (GFF, VCF, BED, Bigwig, HiC, Biginteract, Longrange, methylC, Gwas,). 
++ The SgsAnnData R package enables seamless data format conversion with analysis tools like Seurat, ArchR, Signac, and Giotto. 
++ SgsAnnData can be access by the following links: [SgsAnnData gtihub](https://github.com/bio-xtt/SgsAnnDataV2)     
 
 # 🌱 Reporting Issues
 If you found an issue, please [report it](https://github.com/fanglu0411/sgs/issues) along with any relevant details to reproduce it. Thanks.
