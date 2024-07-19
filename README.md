@@ -25,11 +25,11 @@ SGS primarily utilizes Docker and Flutter technologies to achieve graphical one-
 The SGS browser consists of two main components: the **SGS server** and **SGS client**. Once you have downloaded and installed the SGS client, you need to deploy the SGS server for data visualization. 
 > Please note that **SGS server** deployment relies on Docker, so make sure Docker is configured!
 
-👋 **Graphical installation tutorial (Recommended）** : https://sgs.bioinfotoolkits.net/document/installation.html#deploy-a-new-sgs-server
+👋 (Recommended）**Graphical installation tutorial** : https://sgs.bioinfotoolkits.net/document/installation.html#deploy-a-new-sgs-server
 
 <img src="https://sgs.bioinfotoolkits.net/document/assets/3_1-BCYWuabz.png" width="700px" >
 
- (Optional）if you want to customize the container configuration items, please refer to the manual installation tutorial in the documentation.
+ (Optional）if you want to customize the container configuration items, please refer to the manual installation tutorial in the documentation : https://github.com/fanglu0411/sgs/blob/main/manual_install.md
 
 # 💻 File Format and Conversion
 + SGS supports various data formats including Anndata, Mudata, and genome-mapped files (GFF, VCF, BED, Bigwig, HiC, Biginteract, Longrange, methylC, Gwas,). 
