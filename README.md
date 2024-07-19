@@ -27,13 +27,13 @@ Instructions, documentation, and tutorials can be found at:
 > **Make Sure Docker is installed on your server**
 SGS primarily utilizes Docker and Flutter technologies to achieve graphical one-click installation. SGS supports the following three deployment methods:  
 
-## 🎈🎈🎈 Quick Start (recommended）
+## 🎈🎈🎈 Quick Start
 The SGS browser consists of two main components: the **SGS server** and **SGS client**. Once you have downloaded and installed the SGS client, you need to deploy the SGS server for data visualization. 
 > Please note that **SGS server** deployment relies on Docker, so make sure Docker is configured!
 
-**Graphical installation tutorial** : https://sgs.bioinfotoolkits.net/document/installation.html#deploy-a-new-sgs-server
+**Graphical installation tutorial (Recommended）** : https://sgs.bioinfotoolkits.net/document/installation.html#deploy-a-new-sgs-server
 
-In addition, if you want to customize the container configuration items, please refer to the manual installation tutorial in the documentation.
+ (Optional）if you want to customize the container configuration items, please refer to the manual installation tutorial in the documentation.
 
 # 🌱 Reporting Issues
 If you found an issue, please [report it](https://github.com/fanglu0411/sgs/issues) along with any relevant details to reproduce it. Thanks.
