@@ -27,8 +27,7 @@ The SGS browser consists of two main components: the **SGS server** and **SGS cl
 
 👋 **Graphical installation tutorial (Recommended）** : https://sgs.bioinfotoolkits.net/document/installation.html#deploy-a-new-sgs-server
 
-<img src="https://sgs.bioinfotoolkits.net/document/assets/3_1-BCYWuabz.png" width="500px" >
-![image](https://github.com/user-attachments/assets/4cafb87c-8e69-409b-bea6-2cf6bb382fdc)
+<img src="https://sgs.bioinfotoolkits.net/document/assets/3_1-BCYWuabz.png" width="700px" >
 
  (Optional）if you want to customize the container configuration items, please refer to the manual installation tutorial in the documentation.
 
