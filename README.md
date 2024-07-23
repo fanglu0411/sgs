@@ -29,7 +29,9 @@ The SGS browser consists of two main components: the **SGS server** and **SGS cl
 
 <img src="https://sgs.bioinfotoolkits.net/document/assets/3_1-BCYWuabz.png" width="700px" >
 
- (Optional）if you want to customize the container configuration items, please refer to the manual installation tutorial in the documentation : https://github.com/fanglu0411/sgs/blob/main/manual_install.md
+ ## Manual installation (Optional）
+ 
+If you want to customize the container configuration items, please refer to the manual installation tutorial: [Manual installation](./manual_install.md)
 
 # 💻 File Format and Conversion
 + SGS supports various data formats including Anndata, Mudata, and genome-mapped files (GFF, VCF, BED, Bigwig, HiC, Biginteract, Longrange, methylC, Gwas,). 
