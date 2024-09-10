@@ -1,0 +1,4 @@
+enum BackgroundMode {
+  classic,
+  auto,
+}

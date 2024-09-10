@@ -1,0 +1,4 @@
+enum RelationViewType {
+  line,
+  arc,
+}
