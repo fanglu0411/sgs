@@ -1,0 +1,122 @@
+PODS:
+  - DKImagePickerController/Core (4.2.2):
+    - DKImagePickerController/ImageDataManager
+    - DKImagePickerController/Resource
+  - DKImagePickerController/ImageDataManager (4.2.2)
+  - DKImagePickerController/PhotoGallery (4.2.2):
+    - DKImagePickerController/Core
+    - DKPhotoGallery
+  - DKImagePickerController/Resource (4.2.2)
+  - DKPhotoGallery (0.0.14):
+    - DKPhotoGallery/Core (= 0.0.14)
+    - DKPhotoGallery/Model (= 0.0.14)
+    - DKPhotoGallery/Preview (= 0.0.14)
+    - DKPhotoGallery/Resource (= 0.0.14)
+    - SDWebImage
+    - SDWebImageFLPlugin
+  - DKPhotoGallery/Core (0.0.14):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Preview
+    - SDWebImage
+    - SDWebImageFLPlugin
+  - DKPhotoGallery/Model (0.0.14):
+    - SDWebImage
+    - SDWebImageFLPlugin
+  - DKPhotoGallery/Preview (0.0.14):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Resource
+    - SDWebImage
+    - SDWebImageFLPlugin
+  - DKPhotoGallery/Resource (0.0.14):
+    - SDWebImage
+    - SDWebImageFLPlugin
+  - file_picker (0.0.1):
+    - DKImagePickerController/PhotoGallery
+    - Flutter
+  - FLAnimatedImage (1.0.12)
+  - Flutter (1.0.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - majascan (0.0.5):
+    - Flutter
+  - open_file (0.0.1):
+    - Flutter
+  - path_provider (0.0.1):
+    - Flutter
+  - SDWebImage (5.9.5):
+    - SDWebImage/Core (= 5.9.5)
+  - SDWebImage/Core (5.9.5)
+  - SDWebImageFLPlugin (0.4.0):
+    - FLAnimatedImage (>= 1.0.11)
+    - SDWebImage/Core (~> 5.6)
+  - share (0.0.1):
+    - Flutter
+  - shared_preferences (0.0.1):
+    - Flutter
+  - sqflite (0.0.2):
+    - Flutter
+    - FMDB (>= 2.7.5)
+  - url_launcher (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - file_picker (from `.symlinks/plugins/file_picker/ios`)
+  - Flutter (from `Flutter`)
+  - majascan (from `.symlinks/plugins/majascan/ios`)
+  - open_file (from `.symlinks/plugins/open_file/ios`)
+  - path_provider (from `.symlinks/plugins/path_provider/ios`)
+  - share (from `.symlinks/plugins/share/ios`)
+  - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
+  - sqflite (from `.symlinks/plugins/sqflite/ios`)
+  - url_launcher (from `.symlinks/plugins/url_launcher/ios`)
+
+SPEC REPOS:
+  trunk:
+    - DKImagePickerController
+    - DKPhotoGallery
+    - FLAnimatedImage
+    - FMDB
+    - SDWebImage
+    - SDWebImageFLPlugin
+
+EXTERNAL SOURCES:
+  file_picker:
+    :path: ".symlinks/plugins/file_picker/ios"
+  Flutter:
+    :path: Flutter
+  majascan:
+    :path: ".symlinks/plugins/majascan/ios"
+  open_file:
+    :path: ".symlinks/plugins/open_file/ios"
+  path_provider:
+    :path: ".symlinks/plugins/path_provider/ios"
+  share:
+    :path: ".symlinks/plugins/share/ios"
+  shared_preferences:
+    :path: ".symlinks/plugins/shared_preferences/ios"
+  sqflite:
+    :path: ".symlinks/plugins/sqflite/ios"
+  url_launcher:
+    :path: ".symlinks/plugins/url_launcher/ios"
+
+SPEC CHECKSUMS:
+  DKImagePickerController: 4a3e7948a848c4348e600b3fe5ce41478835fa10
+  DKPhotoGallery: 0290d32343574f06eaa4c26f8f2f8a1035e916be
+  file_picker: 3e6c3790de664ccf9b882732d9db5eaf6b8d4eb1
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  majascan: 473bd426fa19600b6ca287bc948d40b2194d5c0b
+  open_file: 02eb5cb6b21264bd3a696876f5afbfb7ca4f4b7d
+  path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
+  SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
+  SDWebImageFLPlugin: 6c2295fb1242d44467c6c87dc5db6b0a13228fd8
+  share: 0b2c3e82132f5888bccca3351c504d0003b3b410
+  shared_preferences: af6bfa751691cdc24be3045c43ec037377ada40d
+  sqflite: 6d358c025f5b867b29ed92fc697fd34924e11904
+  url_launcher: 6fef411d543ceb26efce54b05a0a40bfd74cbbef
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.10.1
