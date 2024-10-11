@@ -101,7 +101,7 @@ fi
 
 echo "install = $_install"
 
-$sgs_path=${DATA_PATH}
+sgs_path=${DATA_PATH}
 #sgs_path="/data/docker/vol/sgs"
 #if [[ "${machine}" == "Mac" ]]; then
 #    sgs_path="${HOME}/docker/vol/sgs"
