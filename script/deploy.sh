@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
+# usage:
+# sudo bash deploy-sgs.sh DATA_PATH="$HOME/docker/vol/sgs" SERVER_HOST=0.0.0.0 DB_PORT=33061 API_PORT=6102 WEB_PORT=5080
+
 SERVER_HOST='0.0.0.0'
 DB_PORT=33061
 API_PORT=6102
-WEB_PORT=1080
+WEB_PORT=5080
 DATA_PATH='/data/docker/vol/sgs'
 
 MYSQL_PASSWORD=123456Aa
@@ -85,13 +88,14 @@ if (docker ps | grep -q "sgs-api");then
         echo "  1) Re-Install"
         echo "  2) Update"
         echo "  3) Re-Start"
+        echo "  4) Do Nothing"
 
-        read -r -p "Do you want to reinstall SGS? Choose your option [ 1 2 3 ]:" input
+        read -r -p "Do you want to reinstall SGS? Choose your option [ 1 2 3 4 ]:" input
         case $input in
           1|I|Y|Yes) _install=1; break;;
           2|U) _install=2; break;;
           3|S) _install=3; break;;
-          N|n|No) _install=0; break;;
+          4|N|n|No|0|no) _install=0; break;;
           *) echo "Invalid option";;
         esac
     done
@@ -101,12 +105,29 @@ fi
 
 echo "install = $_install"
 
-$sgs_path=${DATA_PATH}
+sgs_path=$DATA_PATH
 #sgs_path="/data/docker/vol/sgs"
 #if [[ "${machine}" == "Mac" ]]; then
 #    sgs_path="${HOME}/docker/vol/sgs"
 #fi
 echo "SGS_PATH=$sgs_path"
+
+PRIMARY_REGISTRY="docker.io"  # 主仓库
+BACKUP_REGISTRY="crpi-d7tubu0e345ls62u.cn-chengdu.personal.cr.aliyuncs.com"  # 备用仓库
+
+using_docker_repo=$PRIMARY_REGISTRY
+
+custom_pull(){
+  # 从主仓库拉取
+  echo "pull：${PRIMARY_REGISTRY}/$1"
+  using_docker_repo=$PRIMARY_REGISTRY
+  docker pull "${PRIMARY_REGISTRY}/$1"
+  if [ $? -ne 0 ]; then
+    echo "fallback pull：${BACKUP_REGISTRY}/$1"
+    using_docker_repo=$BACKUP_REGISTRY
+    docker pull "${BACKUP_REGISTRY}/$1"
+  fi
+}
 
 if [[ $_install == 1 || $_install == 2 ]]; then # 2:update, 1:re-install , 3:restart
     echo 'Install SGS now!'
@@ -118,23 +139,23 @@ if [[ $_install == 1 || $_install == 2 ]]; then # 2:update, 1:re-install , 3:res
     docker container stop sgs-web && docker container rm -v sgs-web
 
     echo "I: Pulling image sgs-web"
-    docker pull registry.bioinfotoolkits.net/leeoluo/sgs-web:latest
+    custom_pull leeoluo/sgs-web:latest
 
     echo "I: Pulling image sgs-mysql"
-    docker pull registry.bioinfotoolkits.net/lufang0411/sgs-mysql:latest
+    custom_pull lufang0411/sgs-mysql:latest
 
     echo "I: Pulling image sgs-api"
-    docker pull registry.bioinfotoolkits.net/lufang0411/sgs-api:latest
+    custom_pull lufang0411/sgs-api:latest
 
     mysqlPath="${sgs_path}/mysql"
     apiPath="${sgs_path}/api"
 
     [ ! -d "${apiPath}" ] && mkdir -p "${apiPath}/"
-    chmod 777 "${apiPath}"
+#    chmod 777 "${apiPath}"
 
-    [ $_install == 1 ] && rm -rf "${mysqlPath}/"
-    [ ! -d "${mysqlPath}" ] && mkdir -p "${mysqlPath}/"
-    chmod 777 "${mysqlPath}/"
+    [ $_install -eq 1 ] && rm -rf "${mysqlPath}/"
+#    [ ! -d "${mysqlPath}" ] && mkdir -p "${mysqlPath}/"
+#    chmod 777 "${mysqlPath}/"
 
     echo "I: Starting SGS!"
     # docker network create -d bridge sgs-network
@@ -144,9 +165,12 @@ if [[ $_install == 1 || $_install == 2 ]]; then # 2:update, 1:re-install , 3:res
        -v "${sgs_path}/mysql:/var/lib/mysql" \
        --name sgs-mysql \
        -p ${DB_PORT}:3306 \
-       -e  MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD} \
-       registry.bioinfotoolkits.net/lufang0411/sgs-mysql:latest
+       -e MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD} \
+       -e MYSQL_ROOT_HOST=% \
+       ${using_docker_repo}/lufang0411/sgs-mysql:latest
 
+    sleep 2
+    
     docker run -dit \
       --restart=always \
       --name sgs-api \
@@ -154,7 +178,9 @@ if [[ $_install == 1 || $_install == 2 ]]; then # 2:update, 1:re-install , 3:res
       -p ${API_PORT}:6102 \
       -p 6122:22 \
       --link sgs-mysql \
-      registry.bioinfotoolkits.net/lufang0411/sgs-api:latest /docker-entrypoint.sh
+      ${using_docker_repo}/lufang0411/sgs-api:latest /docker-entrypoint.sh
+  
+    sleep 2
 
     docker run -d \
       --restart=always \
@@ -162,7 +188,7 @@ if [[ $_install == 1 || $_install == 2 ]]; then # 2:update, 1:re-install , 3:res
       -p ${WEB_PORT}:80 \
       --link sgs-api \
       -e API_URL=sgs-api:${API_PORT} \
-      registry.bioinfotoolkits.net/leeoluo/sgs-web:latest
+      ${using_docker_repo}/leeoluo/sgs-web:latest
 
     echo "I: SGS started!"
 elif [[ $_install == 3 ]]; then
@@ -181,13 +207,23 @@ sleep 3
 container_check sgs-api "http://${SERVER_HOST}:${API_PORT}"
 container_check sgs-web "http://${SERVER_HOST}:${WEB_PORT}"
 
-api_check_times=0
+api_check_times=1
 token_url="http://localhost:${API_PORT}/api/token/admin"
-while [ $api_check_times -le 5 ]; do
-  api_check_times=$(( api_check_times++ ))
-  if ( curl $token_url );then
+while [ $api_check_times -le 10 ]; do
+  echo "try get auth in $api_check_times times: ${token_url}"
+  RESPONSE=$(curl --write-out "%{http_code}" --silent --output /dev/null "$token_url")
+  if [ "$RESPONSE" -eq 200 ]; then
+    curl $token_url
     break;
+  else
+    if [ $api_check_times -eq 5 ]; then
+      echo try restart sgs-mysql and sgs-api
+      docker container restart sgs-mysql
+      sleep 2
+      docker container restart sgs-api
+    fi
+    api_check_times=$(( api_check_times + 1 ))
+    echo 'check token fail! will try in 5 seconds'
+    sleep 5
   fi
-  echo 'check token fail! try later by: curl' $token_url
-  sleep 5
 done
