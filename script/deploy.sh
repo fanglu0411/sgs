@@ -150,12 +150,18 @@ if [[ $_install == 1 || $_install == 2 ]]; then # 2:update, 1:re-install , 3:res
     mysqlPath="${sgs_path}/mysql"
     apiPath="${sgs_path}/api"
 
-    [ ! -d "${apiPath}" ] && mkdir -p "${apiPath}/"
-#    chmod 777 "${apiPath}"
+    if [[ ! -d "${apiPath}" ]]; then
+        mkdir -p "${apiPath}/"
+        chmod 777 "${apiPath}"
+    fi
 
-    [ $_install -eq 1 ] && rm -rf "${mysqlPath}/"
-#    [ ! -d "${mysqlPath}" ] && mkdir -p "${mysqlPath}/"
-#    chmod 777 "${mysqlPath}/"
+    if [[ $_install -eq 1 ]]; then
+        rm -rf "${mysqlPath}/"
+    
+    if [[ ! -d "${mysqlPath}" ]]; then
+        mkdir -p "${mysqlPath}/"
+        chmod 777 "${mysqlPath}/"
+    fi
 
     echo "I: Starting SGS!"
     # docker network create -d bridge sgs-network
