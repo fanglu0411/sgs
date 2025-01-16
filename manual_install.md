@@ -10,7 +10,7 @@ curl -fsSL https://raw.githubusercontent.com/fanglu0411/sgs/main/script/deploy.s
 # Change permission
 chmod 777 deploy-sgs.sh
 # Run install command
-./deploy-sgs.sh DB_PORT=33061 API_PORT=6102 WEB_PORT=1080
+./deploy-sgs.sh DB_PORT=33061 API_PORT=6102 WEB_PORT=5080
 ```
 
 ## Method 2: Manual Installation
@@ -30,9 +30,9 @@ sudo docker pull leeoluo/sgs-web:latest
 > If the official docker hub is not available for you, pleas run command below.
 
 ```sh
-sudo docker pull registry.bioinfotoolkits.net/lufang0411/sgs-mysql:latest &&
-sudo docker pull registry.bioinfotoolkits.net/lufang0411/sgs-api:latest &&
-sudo docker pull registry.bioinfotoolkits.net/leeoluo/sgs-web:latest
+sudo docker pull crpi-d7tubu0e345ls62u.cn-chengdu.personal.cr.aliyuncs.com/lufang0411/sgs-mysql:latest &&
+sudo docker pull crpi-d7tubu0e345ls62u.cn-chengdu.personal.cr.aliyuncs.com/lufang0411/sgs-api:latest &&
+sudo docker pull crpi-d7tubu0e345ls62u.cn-chengdu.personal.cr.aliyuncs.com/leeoluo/sgs-web:latest
 ```
 
 ### Step2: Prepare working directory
@@ -52,7 +52,7 @@ sudo chmod 777 sgs && sudo chmod 777 api
 ```sh
 DB_PORT=33061
 API_PORT=6102
-WEB_PORT=1080
+WEB_PORT=5080
 ```
 
 #### 3.2 Start sgs-mysql
