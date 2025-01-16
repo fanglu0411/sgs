@@ -113,6 +113,7 @@ sgs_path=$DATA_PATH
 echo "SGS_PATH=$sgs_path"
 
 PRIMARY_REGISTRY="docker.io"  # 主仓库
+# BACKUP_REGISTRY="registry.bioinfotoolkits.net:6443"  # 备用仓库
 BACKUP_REGISTRY="crpi-d7tubu0e345ls62u.cn-chengdu.personal.cr.aliyuncs.com"  # 备用仓库
 
 using_docker_repo=$PRIMARY_REGISTRY
@@ -131,12 +132,15 @@ custom_pull(){
 
 if [[ $_install == 1 || $_install == 2 ]]; then # 2:update, 1:re-install , 3:restart
     echo 'Install SGS now!'
-    echo "I: Stopping container sgs-mysql"
-    docker container stop sgs-mysql && docker container rm -v sgs-mysql
-    echo "I: Stopping container sgs-api"
-    docker container stop sgs-api && docker container rm -v sgs-api
     echo "I: Stopping container sgs-web"
     docker container stop sgs-web && docker container rm -v sgs-web
+    echo "I: Stopping container sgs-api"
+    docker container stop sgs-api && docker container rm -v sgs-api
+    echo "I: Stopping container sgs-mysql"
+    docker container stop sgs-mysql && docker container rm -v sgs-mysql
+
+    docker image rm lufang0411/sgs-mysql:latest
+    docker image rm "${BACKUP_REGISTRY}/lufang0411/sgs-mysql:latest"
 
     echo "I: Pulling image sgs-web"
     custom_pull leeoluo/sgs-web:latest
@@ -151,48 +155,51 @@ if [[ $_install == 1 || $_install == 2 ]]; then # 2:update, 1:re-install , 3:res
     apiPath="${sgs_path}/api"
 
     if [[ ! -d "${apiPath}" ]]; then
-        mkdir -p "${apiPath}/"
-        chmod 777 "${apiPath}"
+      mkdir -p "${apiPath}/"
+      chmod 777 "${apiPath}"
     fi
 
     if [[ $_install -eq 1 ]]; then
-        rm -rf "${mysqlPath}/"
-    
+      rm -rf "${mysqlPath}/"
+    fi
+
     if [[ ! -d "${mysqlPath}" ]]; then
-        mkdir -p "${mysqlPath}/"
-        chmod 777 "${mysqlPath}/"
+      mkdir -p "${mysqlPath}/"
+      chmod 777 "${mysqlPath}/"
     fi
 
     echo "I: Starting SGS!"
-    # docker network create -d bridge sgs-network
+    docker network create sgs-network
 
+    echo docker run --privileged -d --restart=always -v "${sgs_path}/mysql:/var/lib/mysql" --name sgs-mysql --network=sgs-network -p ${DB_PORT}:3306 -e MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD} ${using_docker_repo}/lufang0411/sgs-mysql:latest
     docker run --privileged -d \
        --restart=always \
-       -v "${sgs_path}/mysql:/var/lib/mysql" \
        --name sgs-mysql \
+       --network=sgs-network \
+       -v "${sgs_path}/mysql:/var/lib/mysql" \
        -p ${DB_PORT}:3306 \
-       -e MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD} \
        -e MYSQL_ROOT_HOST=% \
+       -e MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD} \
        ${using_docker_repo}/lufang0411/sgs-mysql:latest
 
-    sleep 2
-    
+    sleep 120
+
     docker run -dit \
       --restart=always \
       --name sgs-api \
+      --network=sgs-network \
       -v "${sgs_path}/api:/home/sgs/data" \
       -p ${API_PORT}:6102 \
       -p 6122:22 \
-      --link sgs-mysql \
       ${using_docker_repo}/lufang0411/sgs-api:latest /docker-entrypoint.sh
-  
-    sleep 2
+
+    sleep 10
 
     docker run -d \
       --restart=always \
       --name sgs-web \
+      --network=sgs-network \
       -p ${WEB_PORT}:80 \
-      --link sgs-api \
       -e API_URL=sgs-api:${API_PORT} \
       ${using_docker_repo}/leeoluo/sgs-web:latest
 
