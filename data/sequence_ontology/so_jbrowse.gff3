@@ -1,0 +1,1111 @@
+##gff-version 3
+1	Gramene	chromosome	1	52000	.	.	.	ID=chromosome:1;Alias=chr1,CM007647.1,NC_024459.2
+
+#
+1	BestRefSeq	gene	10266	10385	.	-	.	ID=gene-RNA5S1;Dbxref=GeneID:100169751,HGNC:HGNC:34362;Name=RNA5S1;description=RNA%2C 5S ribosomal 1;gbkey=Gene;gene=RNA5S1;gene_biotype=rRNA;gene_synonym=RN5S1
+1	BestRefSeq	rRNA	10266	10385	.	-	.	ID=rna-NR_023363.1;Parent=gene-RNA5S1;Dbxref=GeneID:100169751,Genbank:NR_023363.1,HGNC:HGNC:34362;Name=NR_023363.1;gbkey=rRNA;gene=RNA5S1;product=RNA%2C 5S ribosomal 1;transcript_id=NR_023363.1
+1	BestRefSeq	exon	10266	10385	.	-	.	ID=exon-NR_023363.1-1;Parent=rna-NR_023363.1;Dbxref=GeneID:100169751,Genbank:NR_023363.1,HGNC:HGNC:34362;gbkey=rRNA;gene=RNA5S1;product=RNA%2C 5S ribosomal 1;transcript_id=NR_023363.1
+1	RefSeq	pseudogene	802	1056	.	+	.	ID=gene-Dmel_CR45853;Dbxref=FLYBASE:FBgn0267513,GeneID:26067181;Name=28SrRNA-Psi:CR45853;description=28S ribosomal RNA pseudogene:CR45853;end_range=23201056,.;gbkey=Gene;gen_map=1-66 cM;gene=28SrRNA-Psi:CR45853;gene_biotype=rRNA_pseudogene;gene_synonym=CR45853,Dmel\CR45853;locus_tag=Dmel_CR45853;partial=true;pseudo=true;start_range=.,23200802
+1	RefSeq	rRNA	802	1056	.	+	.	ID=rna-gnl|FlyBase|CR45853-RA;Parent=gene-Dmel_CR45853;Dbxref=FLYBASE:FBtr0346888,GeneID:26067181,FLYBASE:FBgn0267513;Note=28SrRNA-Psi:CR45853-RA%3B Dmel\28SrRNA-Psi:CR45853-RA%3B CR45853-RA%3B Dmel\CR45853-RA;end_range=23201056,.;exception=transcribed pseudogene;gbkey=rRNA;gene=28SrRNA-Psi:CR45853;locus_tag=Dmel_CR45853;orig_transcript_id=gnl|FlyBase|CR45853-RA;partial=true;product=28S ribosomal RNA pseudogene;start_range=.,23200802
+1	RefSeq	exon	802	1056	.	+	.	ID=exon-gnl|FlyBase|CR45853-RA-1;Parent=rna-gnl|FlyBase|CR45853-RA;Dbxref=FLYBASE:FBtr0346888,GeneID:26067181,FLYBASE:FBgn0267513;Note=28SrRNA-Psi:CR45853-RA%3B Dmel\28SrRNA-Psi:CR45853-RA%3B CR45853-RA%3B Dmel\CR45853-RA;end_range=23201056,.;exception=transcribed pseudogene;gbkey=rRNA;gene=28SrRNA-Psi:CR45853;locus_tag=Dmel_CR45853;orig_transcript_id=gnl|FlyBase|CR45853-RA;partial=true;product=28S ribosomal RNA pseudogene;start_range=.,23200802
+
+#
+1	tRNAscan-SE	gene	585	659	.	-	.	ID=gene-TRNAN-GUU;Dbxref=GeneID:107985757;Name=TRNAN-GUU;gbkey=Gene;gene=TRNAN-GUU;gene_biotype=tRNA
+1	tRNAscan-SE	tRNA	585	659	.	-	.	ID=rna-TRNAN-GUU;Parent=gene-TRNAN-GUU;Dbxref=GeneID:107985757;Note=transfer RNA asparagine (anticodon GUU);anticodon=(pos:complement(16520622..16520624));gbkey=tRNA;gene=TRNAN-GUU;inference=COORDINATES: profile:tRNAscan-SE:1.23;product=tRNA-Asn
+1	tRNAscan-SE	exon	585	659	.	-	.	ID=exon-TRNAN-GUU-1;Parent=rna-TRNAN-GUU;Dbxref=GeneID:107985757;Note=transfer RNA asparagine (anticodon GUU);anticodon=(pos:complement(16520622..16520624));gbkey=tRNA;gene=TRNAN-GUU;inference=COORDINATES: profile:tRNAscan-SE:1.23;product=tRNA-Asn
+1	insdc	ncRNA_gene	1	68	.	+	.	ID=gene:ENSMUSG00000064336;Name=mt-Tf;biotype=Mt_tRNA;description=mitochondrially encoded tRNA phenylalanine [Source:MGI Symbol%3BAcc:MGI:102487];gene_id=ENSMUSG00000064336;logic_name=mt_genbank_import_mus_musculus;version=1
+1	insdc	tRNA	1	68	.	+	.	ID=transcript:ENSMUST00000082387;Parent=gene:ENSMUSG00000064336;Name=mt-Tf-201;biotype=Mt_tRNA;tag=basic;transcript_id=ENSMUST00000082387;transcript_support_level=NA;version=1
+1	insdc	exon	1	68	.	+	.	Parent=transcript:ENSMUST00000082387;Name=ENSMUSE00000521514;constitutive=1;ensembl_end_phase=2;ensembl_phase=0;exon_id=ENSMUSE00000521514;rank=1;version=1
+
+#
+1	BestRefSeq	gene	9091	10008	.	+	.	ID=gene-OR4F5;Dbxref=GeneID:79501,HGNC:HGNC:14825;Name=OR4F5;description=olfactory receptor family 4 subfamily F member 5;gbkey=Gene;gene=OR4F5;gene_biotype=protein_coding
+1	BestRefSeq	mRNA	9091	10008	.	+	.	ID=rna-NM_001005484.1;Parent=gene-OR4F5;Dbxref=GeneID:79501,Genbank:NM_001005484.1,HGNC:HGNC:14825;Name=NM_001005484.1;gbkey=mRNA;gene=OR4F5;product=olfactory receptor family 4 subfamily F member 5;tag=RefSeq Select;transcript_id=NM_001005484.1
+1	BestRefSeq	exon	9091	10008	.	+	.	ID=exon-NM_001005484.1-1;Parent=rna-NM_001005484.1;Dbxref=GeneID:79501,Genbank:NM_001005484.1,HGNC:HGNC:14825;gbkey=mRNA;gene=OR4F5;product=olfactory receptor family 4 subfamily F member 5;tag=RefSeq Select;transcript_id=NM_001005484.1
+1	BestRefSeq	CDS	9091	10008	.	+	0	ID=cds-NP_001005484.1;Parent=rna-NM_001005484.1;Dbxref=CCDS:CCDS30547.1,GeneID:79501,Genbank:NP_001005484.1,HGNC:HGNC:14825;Name=NP_001005484.1;gbkey=CDS;gene=OR4F5;product=olfactory receptor 4F5;protein_id=NP_001005484.1;tag=RefSeq Select
+1	BestRefSeq%2CGnomon	gene	13910	50115	.	-	.	ID=gene-OR4F16;Dbxref=GeneID:81399,HGNC:HGNC:15079;Name=OR4F16;description=olfactory receptor family 4 subfamily F member 16;gbkey=Gene;gene=OR4F16;gene_biotype=protein_coding;gene_synonym=OR1-1,OR7-21
+1	Gnomon	mRNA	13910	50115	.	-	.	ID=rna-XM_017002409.2;Parent=gene-OR4F16;Dbxref=GeneID:81399,Genbank:XM_017002409.2,HGNC:HGNC:15079;Name=XM_017002409.2;gbkey=mRNA;gene=OR4F16;model_evidence=Supporting evidence includes similarity to: 1 mRNA%2C 1 EST%2C 7 Proteins%2C and 100%25 coverage of the annotated genomic feature by RNAseq alignments%2C including 1 sample with support for all annotated introns;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X3;transcript_id=XM_017002409.2
+1	Gnomon	exon	50032	50115	.	-	.	ID=exon-XM_017002409.2-1;Parent=rna-XM_017002409.2;Dbxref=GeneID:81399,Genbank:XM_017002409.2,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X3;transcript_id=XM_017002409.2
+1	Gnomon	exon	33685	33789	.	-	.	ID=exon-XM_017002409.2-2;Parent=rna-XM_017002409.2;Dbxref=GeneID:81399,Genbank:XM_017002409.2,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X3;transcript_id=XM_017002409.2
+1	Gnomon	exon	28927	28959	.	-	.	ID=exon-XM_017002409.2-3;Parent=rna-XM_017002409.2;Dbxref=GeneID:81399,Genbank:XM_017002409.2,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X3;transcript_id=XM_017002409.2
+1	Gnomon	exon	13910	19079	.	-	.	ID=exon-XM_017002409.2-4;Parent=rna-XM_017002409.2;Dbxref=GeneID:81399,Genbank:XM_017002409.2,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X3;transcript_id=XM_017002409.2
+1	Gnomon	CDS	15716	16654	.	-	0	ID=cds-XP_016857898.1;Parent=rna-XM_017002409.2;Dbxref=GeneID:81399,Genbank:XP_016857898.1,HGNC:HGNC:15079;Name=XP_016857898.1;gbkey=CDS;gene=OR4F16;product=olfactory receptor 4F3/4F16/4F29 isoform X1;protein_id=XP_016857898.1
+1	Gnomon	mRNA	13910	50101	.	-	.	ID=rna-XM_024449992.1;Parent=gene-OR4F16;Dbxref=GeneID:81399,Genbank:XM_024449992.1,HGNC:HGNC:15079;Name=XM_024449992.1;gbkey=mRNA;gene=OR4F16;model_evidence=Supporting evidence includes similarity to: 1 mRNA%2C 1 EST%2C 7 Proteins%2C and 100%25 coverage of the annotated genomic feature by RNAseq alignments%2C including 4 samples with support for all annotated introns;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X6;transcript_id=XM_024449992.1
+1	Gnomon	exon	50032	50101	.	-	.	ID=exon-XM_024449992.1-1;Parent=rna-XM_024449992.1;Dbxref=GeneID:81399,Genbank:XM_024449992.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X6;transcript_id=XM_024449992.1
+1	Gnomon	exon	13910	19079	.	-	.	ID=exon-XM_024449992.1-2;Parent=rna-XM_024449992.1;Dbxref=GeneID:81399,Genbank:XM_024449992.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X6;transcript_id=XM_024449992.1
+1	Gnomon	CDS	15716	16654	.	-	0	ID=cds-XP_024305760.1;Parent=rna-XM_024449992.1;Dbxref=GeneID:81399,Genbank:XP_024305760.1,HGNC:HGNC:15079;Name=XP_024305760.1;gbkey=CDS;gene=OR4F16;product=olfactory receptor 4F3/4F16/4F29 isoform X1;protein_id=XP_024305760.1
+1	Gnomon	mRNA	13910	41842	.	-	.	ID=rna-XM_017002411.1;Parent=gene-OR4F16;Dbxref=GeneID:81399,Genbank:XM_017002411.1,HGNC:HGNC:15079;Name=XM_017002411.1;gbkey=mRNA;gene=OR4F16;model_evidence=Supporting evidence includes similarity to: 1 mRNA%2C 1 EST%2C 7 Proteins%2C and 100%25 coverage of the annotated genomic feature by RNAseq alignments%2C including 7 samples with support for all annotated introns;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X5;transcript_id=XM_017002411.1
+1	Gnomon	exon	41765	41842	.	-	.	ID=exon-XM_017002411.1-1;Parent=rna-XM_017002411.1;Dbxref=GeneID:81399,Genbank:XM_017002411.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X5;transcript_id=XM_017002411.1
+1	Gnomon	exon	13910	19079	.	-	.	ID=exon-XM_017002411.1-2;Parent=rna-XM_017002411.1;Dbxref=GeneID:81399,Genbank:XM_017002411.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X5;transcript_id=XM_017002411.1
+1	Gnomon	CDS	15716	16654	.	-	0	ID=cds-XP_016857900.1;Parent=rna-XM_017002411.1;Dbxref=GeneID:81399,Genbank:XP_016857900.1,HGNC:HGNC:15079;Name=XP_016857900.1;gbkey=CDS;gene=OR4F16;product=olfactory receptor 4F3/4F16/4F29 isoform X1;protein_id=XP_016857900.1
+1	Gnomon	mRNA	13910	41799	.	-	.	ID=rna-XM_017002410.1;Parent=gene-OR4F16;Dbxref=GeneID:81399,Genbank:XM_017002410.1,HGNC:HGNC:15079;Name=XM_017002410.1;gbkey=mRNA;gene=OR4F16;model_evidence=Supporting evidence includes similarity to: 1 mRNA%2C 1 EST%2C 7 Proteins%2C and 100%25 coverage of the annotated genomic feature by RNAseq alignments%2C including 5 samples with support for all annotated introns;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X4;transcript_id=XM_017002410.1
+1	Gnomon	exon	41711	41799	.	-	.	ID=exon-XM_017002410.1-1;Parent=rna-XM_017002410.1;Dbxref=GeneID:81399,Genbank:XM_017002410.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X4;transcript_id=XM_017002410.1
+1	Gnomon	exon	13910	19079	.	-	.	ID=exon-XM_017002410.1-2;Parent=rna-XM_017002410.1;Dbxref=GeneID:81399,Genbank:XM_017002410.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X4;transcript_id=XM_017002410.1
+1	Gnomon	CDS	15716	16654	.	-	0	ID=cds-XP_016857899.1;Parent=rna-XM_017002410.1;Dbxref=GeneID:81399,Genbank:XP_016857899.1,HGNC:HGNC:15079;Name=XP_016857899.1;gbkey=CDS;gene=OR4F16;product=olfactory receptor 4F3/4F16/4F29 isoform X1;protein_id=XP_016857899.1
+1	Gnomon	mRNA	13910	41799	.	-	.	ID=rna-XM_017002408.1;Parent=gene-OR4F16;Dbxref=GeneID:81399,Genbank:XM_017002408.1,HGNC:HGNC:15079;Name=XM_017002408.1;gbkey=mRNA;gene=OR4F16;model_evidence=Supporting evidence includes similarity to: 1 mRNA%2C 1 EST%2C 7 Proteins%2C and 100%25 coverage of the annotated genomic feature by RNAseq alignments%2C including 1 sample with support for all annotated introns;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X2;transcript_id=XM_017002408.1
+1	Gnomon	exon	41711	41799	.	-	.	ID=exon-XM_017002408.1-1;Parent=rna-XM_017002408.1;Dbxref=GeneID:81399,Genbank:XM_017002408.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X2;transcript_id=XM_017002408.1
+1	Gnomon	exon	20577	20794	.	-	.	ID=exon-XM_017002408.1-2;Parent=rna-XM_017002408.1;Dbxref=GeneID:81399,Genbank:XM_017002408.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X2;transcript_id=XM_017002408.1
+1	Gnomon	exon	13910	19079	.	-	.	ID=exon-XM_017002408.1-3;Parent=rna-XM_017002408.1;Dbxref=GeneID:81399,Genbank:XM_017002408.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X2;transcript_id=XM_017002408.1
+1	Gnomon	CDS	15716	16654	.	-	0	ID=cds-XP_016857897.1;Parent=rna-XM_017002408.1;Dbxref=GeneID:81399,Genbank:XP_016857897.1,HGNC:HGNC:15079;Name=XP_016857897.1;gbkey=CDS;gene=OR4F16;product=olfactory receptor 4F3/4F16/4F29 isoform X1;protein_id=XP_016857897.1
+1	Gnomon	mRNA	13910	41799	.	-	.	ID=rna-XM_024449987.1;Parent=gene-OR4F16;Dbxref=GeneID:81399,Genbank:XM_024449987.1,HGNC:HGNC:15079;Name=XM_024449987.1;gbkey=mRNA;gene=OR4F16;model_evidence=Supporting evidence includes similarity to: 1 mRNA%2C 1 EST%2C 7 Proteins%2C and 100%25 coverage of the annotated genomic feature by RNAseq alignments%2C including 1 sample with support for all annotated introns;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X1;transcript_id=XM_024449987.1
+1	Gnomon	exon	41711	41799	.	-	.	ID=exon-XM_024449987.1-1;Parent=rna-XM_024449987.1;Dbxref=GeneID:81399,Genbank:XM_024449987.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X1;transcript_id=XM_024449987.1
+1	Gnomon	exon	33685	33789	.	-	.	ID=exon-XM_024449987.1-2;Parent=rna-XM_024449987.1;Dbxref=GeneID:81399,Genbank:XM_024449987.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X1;transcript_id=XM_024449987.1
+1	Gnomon	exon	28927	28959	.	-	.	ID=exon-XM_024449987.1-3;Parent=rna-XM_024449987.1;Dbxref=GeneID:81399,Genbank:XM_024449987.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X1;transcript_id=XM_024449987.1
+1	Gnomon	exon	13910	19079	.	-	.	ID=exon-XM_024449987.1-4;Parent=rna-XM_024449987.1;Dbxref=GeneID:81399,Genbank:XM_024449987.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X1;transcript_id=XM_024449987.1
+1	Gnomon	CDS	15716	16654	.	-	0	ID=cds-XP_024305755.1;Parent=rna-XM_024449987.1;Dbxref=GeneID:81399,Genbank:XP_024305755.1,HGNC:HGNC:15079;Name=XP_024305755.1;gbkey=CDS;gene=OR4F16;product=olfactory receptor 4F3/4F16/4F29 isoform X1;protein_id=XP_024305755.1
+1	Gnomon	mRNA	13910	28925	.	-	.	ID=rna-XM_024449993.1;Parent=gene-OR4F16;Dbxref=GeneID:81399,Genbank:XM_024449993.1,HGNC:HGNC:15079;Name=XM_024449993.1;gbkey=mRNA;gene=OR4F16;model_evidence=Supporting evidence includes similarity to: 1 mRNA%2C 1 EST%2C 7 Proteins%2C and 100%25 coverage of the annotated genomic feature by RNAseq alignments%2C including 4 samples with support for all annotated introns;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X7;transcript_id=XM_024449993.1
+1	Gnomon	exon	28888	28925	.	-	.	ID=exon-XM_024449993.1-1;Parent=rna-XM_024449993.1;Dbxref=GeneID:81399,Genbank:XM_024449993.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X7;transcript_id=XM_024449993.1
+1	Gnomon	exon	13910	19079	.	-	.	ID=exon-XM_024449993.1-2;Parent=rna-XM_024449993.1;Dbxref=GeneID:81399,Genbank:XM_024449993.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16%2C transcript variant X7;transcript_id=XM_024449993.1
+1	Gnomon	CDS	15716	16654	.	-	0	ID=cds-XP_024305761.1;Parent=rna-XM_024449993.1;Dbxref=GeneID:81399,Genbank:XP_024305761.1,HGNC:HGNC:15079;Name=XP_024305761.1;gbkey=CDS;gene=OR4F16;product=olfactory receptor 4F3/4F16/4F29 isoform X1;protein_id=XP_024305761.1
+1	BestRefSeq	mRNA	15716	16654	.	-	.	ID=rna-NM_001005277.1;Parent=gene-OR4F16;Dbxref=GeneID:81399,Genbank:NM_001005277.1,HGNC:HGNC:15079;Name=NM_001005277.1;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16;tag=RefSeq Select;transcript_id=NM_001005277.1
+1	BestRefSeq	exon	15716	16654	.	-	.	ID=exon-NM_001005277.1-1;Parent=rna-NM_001005277.1;Dbxref=GeneID:81399,Genbank:NM_001005277.1,HGNC:HGNC:15079;gbkey=mRNA;gene=OR4F16;product=olfactory receptor family 4 subfamily F member 16;tag=RefSeq Select;transcript_id=NM_001005277.1
+1	BestRefSeq	CDS	15716	16654	.	-	0	ID=cds-NP_001005277.1;Parent=rna-NM_001005277.1;Dbxref=CCDS:CCDS41221.1,GeneID:81399,Genbank:NP_001005277.1,HGNC:HGNC:15079;Name=NP_001005277.1;gbkey=CDS;gene=OR4F16;product=olfactory receptor 4F3/4F16/4F29;protein_id=NP_001005277.1;tag=RefSeq Select
+1	araport11	gene	3631	5899	.	+	.	ID=gene:AT1G01010;Name=NAC001;biotype=protein_coding;description=NAC domain-containing protein 1 [Source:UniProtKB/Swiss-Prot%3BAcc:Q0WV96];gene_id=AT1G01010;logic_name=araport11
+1	araport11	mRNA	3631	5899	.	+	.	ID=transcript:AT1G01010.1;Parent=gene:AT1G01010;biotype=protein_coding;transcript_id=AT1G01010.1
+1	araport11	five_prime_UTR	3631	3759	.	+	.	Parent=transcript:AT1G01010.1
+1	araport11	exon	3631	3913	.	+	.	Parent=transcript:AT1G01010.1;Name=AT1G01010.1.exon1;constitutive=1;ensembl_end_phase=1;ensembl_phase=-1;exon_id=AT1G01010.1.exon1;rank=1
+1	araport11	CDS	3760	3913	.	+	0	ID=CDS:AT1G01010.1;Parent=transcript:AT1G01010.1;protein_id=AT1G01010.1
+1	araport11	exon	3996	4276	.	+	.	Parent=transcript:AT1G01010.1;Name=AT1G01010.1.exon2;constitutive=1;ensembl_end_phase=0;ensembl_phase=1;exon_id=AT1G01010.1.exon2;rank=2
+1	araport11	CDS	3996	4276	.	+	2	ID=CDS:AT1G01010.1;Parent=transcript:AT1G01010.1;protein_id=AT1G01010.1
+1	araport11	exon	4486	4605	.	+	.	Parent=transcript:AT1G01010.1;Name=AT1G01010.1.exon3;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=AT1G01010.1.exon3;rank=3
+1	araport11	CDS	4486	4605	.	+	0	ID=CDS:AT1G01010.1;Parent=transcript:AT1G01010.1;protein_id=AT1G01010.1
+1	araport11	exon	4706	5095	.	+	.	Parent=transcript:AT1G01010.1;Name=AT1G01010.1.exon4;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=AT1G01010.1.exon4;rank=4
+1	araport11	CDS	4706	5095	.	+	0	ID=CDS:AT1G01010.1;Parent=transcript:AT1G01010.1;protein_id=AT1G01010.1
+1	araport11	exon	5174	5326	.	+	.	Parent=transcript:AT1G01010.1;Name=AT1G01010.1.exon5;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=AT1G01010.1.exon5;rank=5
+1	araport11	CDS	5174	5326	.	+	0	ID=CDS:AT1G01010.1;Parent=transcript:AT1G01010.1;protein_id=AT1G01010.1
+1	araport11	CDS	5439	5630	.	+	0	ID=CDS:AT1G01010.1;Parent=transcript:AT1G01010.1;protein_id=AT1G01010.1
+1	araport11	exon	5439	5899	.	+	.	Parent=transcript:AT1G01010.1;Name=AT1G01010.1.exon6;constitutive=1;ensembl_end_phase=-1;ensembl_phase=0;exon_id=AT1G01010.1.exon6;rank=6
+1	araport11	three_prime_UTR	5631	5899	.	+	.	Parent=transcript:AT1G01010.1
+1	araport11	gene	49909	51210	.	-	.	ID=gene:AT1G01100;Name=RPP1A;biotype=protein_coding;description=60S acidic ribosomal protein P1-1 [Source:UniProtKB/Swiss-Prot%3BAcc:Q8LCW9];gene_id=AT1G01100;logic_name=araport11
+1	araport11	mRNA	49909	51210	.	-	.	ID=transcript:AT1G01100.2;Parent=gene:AT1G01100;biotype=protein_coding;transcript_id=AT1G01100.2
+1	araport11	three_prime_UTR	49909	50283	.	-	.	Parent=transcript:AT1G01100.2
+1	araport11	exon	49909	50337	.	-	.	Parent=transcript:AT1G01100.2;Name=AT1G01100.2.exon4;constitutive=0;ensembl_end_phase=-1;ensembl_phase=0;exon_id=AT1G01100.2.exon4;rank=4
+1	araport11	CDS	50284	50337	.	-	0	ID=CDS:AT1G01100.2;Parent=transcript:AT1G01100.2;protein_id=AT1G01100.2
+1	araport11	exon	50419	50631	.	-	.	Parent=transcript:AT1G01100.2;Name=AT1G01100.2.exon3;constitutive=0;ensembl_end_phase=0;ensembl_phase=0;exon_id=AT1G01100.2.exon3;rank=3
+1	araport11	CDS	50419	50631	.	-	0	ID=CDS:AT1G01100.2;Parent=transcript:AT1G01100.2;protein_id=AT1G01100.2
+1	araport11	CDS	50883	50954	.	-	0	ID=CDS:AT1G01100.2;Parent=transcript:AT1G01100.2;protein_id=AT1G01100.2
+1	araport11	exon	50883	50963	.	-	.	Parent=transcript:AT1G01100.2;Name=AT1G01100.2.exon2;constitutive=1;ensembl_end_phase=0;ensembl_phase=-1;exon_id=AT1G01100.2.exon2;rank=2
+1	araport11	five_prime_UTR	50955	50963	.	-	.	Parent=transcript:AT1G01100.2
+1	araport11	exon	51126	51210	.	-	.	Parent=transcript:AT1G01100.2;Name=AT1G01100.2.exon1;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=AT1G01100.2.exon1;rank=1
+1	araport11	five_prime_UTR	51126	51210	.	-	.	Parent=transcript:AT1G01100.2
+1	araport11	mRNA	50090	51108	.	-	.	ID=transcript:AT1G01100.1;Parent=gene:AT1G01100;biotype=protein_coding;transcript_id=AT1G01100.1
+1	araport11	three_prime_UTR	50090	50283	.	-	.	Parent=transcript:AT1G01100.1
+1	araport11	exon	50090	50337	.	-	.	Parent=transcript:AT1G01100.1;Name=AT1G01100.1.exon4;constitutive=0;ensembl_end_phase=-1;ensembl_phase=0;exon_id=AT1G01100.1.exon4;rank=4
+1	araport11	CDS	50284	50337	.	-	0	ID=CDS:AT1G01100.1;Parent=transcript:AT1G01100.1;protein_id=AT1G01100.1
+1	araport11	exon	50419	50631	.	-	.	Parent=transcript:AT1G01100.1;Name=AT1G01100.2.exon3;constitutive=0;ensembl_end_phase=0;ensembl_phase=0;exon_id=AT1G01100.2.exon3;rank=3
+1	araport11	CDS	50419	50631	.	-	0	ID=CDS:AT1G01100.1;Parent=transcript:AT1G01100.1;protein_id=AT1G01100.1
+1	araport11	CDS	50883	50954	.	-	0	ID=CDS:AT1G01100.1;Parent=transcript:AT1G01100.1;protein_id=AT1G01100.1
+1	araport11	exon	50883	50963	.	-	.	Parent=transcript:AT1G01100.1;Name=AT1G01100.2.exon2;constitutive=1;ensembl_end_phase=0;ensembl_phase=-1;exon_id=AT1G01100.2.exon2;rank=2
+1	araport11	five_prime_UTR	50955	50963	.	-	.	Parent=transcript:AT1G01100.1
+1	araport11	exon	51064	51108	.	-	.	Parent=transcript:AT1G01100.1;Name=AT1G01100.1.exon1;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=AT1G01100.1.exon1;rank=1
+1	araport11	five_prime_UTR	51064	51108	.	-	.	Parent=transcript:AT1G01100.1
+1	araport11	mRNA	50090	51187	.	-	.	ID=transcript:AT1G01100.4;Parent=gene:AT1G01100;biotype=protein_coding;transcript_id=AT1G01100.4
+1	araport11	three_prime_UTR	50090	50283	.	-	.	Parent=transcript:AT1G01100.4
+1	araport11	exon	50090	50337	.	-	.	Parent=transcript:AT1G01100.4;Name=AT1G01100.1.exon4;constitutive=0;ensembl_end_phase=-1;ensembl_phase=0;exon_id=AT1G01100.1.exon4;rank=4
+1	araport11	CDS	50284	50337	.	-	0	ID=CDS:AT1G01100.4;Parent=transcript:AT1G01100.4;protein_id=AT1G01100.4
+1	araport11	exon	50419	50631	.	-	.	Parent=transcript:AT1G01100.4;Name=AT1G01100.2.exon3;constitutive=0;ensembl_end_phase=0;ensembl_phase=0;exon_id=AT1G01100.2.exon3;rank=3
+1	araport11	CDS	50419	50631	.	-	0	ID=CDS:AT1G01100.4;Parent=transcript:AT1G01100.4;protein_id=AT1G01100.4
+1	araport11	CDS	50883	50954	.	-	0	ID=CDS:AT1G01100.4;Parent=transcript:AT1G01100.4;protein_id=AT1G01100.4
+1	araport11	exon	50883	50963	.	-	.	Parent=transcript:AT1G01100.4;Name=AT1G01100.2.exon2;constitutive=1;ensembl_end_phase=0;ensembl_phase=-1;exon_id=AT1G01100.2.exon2;rank=2
+1	araport11	five_prime_UTR	50955	50963	.	-	.	Parent=transcript:AT1G01100.4
+1	araport11	exon	51123	51187	.	-	.	Parent=transcript:AT1G01100.4;Name=AT1G01100.4.exon1;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=AT1G01100.4.exon1;rank=1
+1	araport11	five_prime_UTR	51123	51187	.	-	.	Parent=transcript:AT1G01100.4
+1	araport11	mRNA	50090	51197	.	-	.	ID=transcript:AT1G01100.3;Parent=gene:AT1G01100;biotype=protein_coding;transcript_id=AT1G01100.3
+1	araport11	three_prime_UTR	50090	50283	.	-	.	Parent=transcript:AT1G01100.3
+1	araport11	exon	50090	50337	.	-	.	Parent=transcript:AT1G01100.3;Name=AT1G01100.1.exon4;constitutive=0;ensembl_end_phase=-1;ensembl_phase=0;exon_id=AT1G01100.1.exon4;rank=5
+1	araport11	CDS	50284	50337	.	-	0	ID=CDS:AT1G01100.3;Parent=transcript:AT1G01100.3;protein_id=AT1G01100.3
+1	araport11	exon	50419	50447	.	-	.	Parent=transcript:AT1G01100.3;Name=AT1G01100.3.exon4;constitutive=0;ensembl_end_phase=0;ensembl_phase=1;exon_id=AT1G01100.3.exon4;rank=4
+1	araport11	CDS	50419	50447	.	-	2	ID=CDS:AT1G01100.3;Parent=transcript:AT1G01100.3;protein_id=AT1G01100.3
+1	araport11	exon	50496	50631	.	-	.	Parent=transcript:AT1G01100.3;Name=AT1G01100.3.exon3;constitutive=0;ensembl_end_phase=1;ensembl_phase=0;exon_id=AT1G01100.3.exon3;rank=3
+1	araport11	CDS	50496	50631	.	-	0	ID=CDS:AT1G01100.3;Parent=transcript:AT1G01100.3;protein_id=AT1G01100.3
+1	araport11	CDS	50883	50954	.	-	0	ID=CDS:AT1G01100.3;Parent=transcript:AT1G01100.3;protein_id=AT1G01100.3
+1	araport11	exon	50883	50963	.	-	.	Parent=transcript:AT1G01100.3;Name=AT1G01100.2.exon2;constitutive=1;ensembl_end_phase=0;ensembl_phase=-1;exon_id=AT1G01100.2.exon2;rank=2
+1	araport11	five_prime_UTR	50955	50963	.	-	.	Parent=transcript:AT1G01100.3
+1	araport11	exon	51126	51197	.	-	.	Parent=transcript:AT1G01100.3;Name=AT1G01100.3.exon1;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=AT1G01100.3.exon1;rank=1
+1	araport11	five_prime_UTR	51126	51197	.	-	.	Parent=transcript:AT1G01100.3
+
+#
+1	BestRefSeq	gene	25154	25272	.	+	.	ID=gene-RNU5E-1;Dbxref=GeneID:26829,HGNC:HGNC:10215;Name=RNU5E-1;description=RNA%2C U5E small nuclear 1;gbkey=Gene;gene=RNU5E-1;gene_biotype=snRNA;gene_synonym=RNU5E,U5E
+1	BestRefSeq	snRNA	25154	25272	.	+	.	ID=rna-NR_002754.2;Parent=gene-RNU5E-1;Dbxref=GeneID:26829,Genbank:NR_002754.2,HGNC:HGNC:10215;Name=NR_002754.2;Note=The RefSeq transcript has 1 substitution compared to this genomic sequence;exception=annotated by transcript or proteomic data;gbkey=ncRNA;gene=RNU5E-1;inference=similar to RNA sequence (same species):RefSeq:NR_002754.2;product=RNA%2C U5E small nuclear 1;transcript_id=NR_002754.2
+1	BestRefSeq	exon	25154	25272	.	+	.	ID=exon-NR_002754.2-1;Parent=rna-NR_002754.2;Dbxref=GeneID:26829,Genbank:NR_002754.2,HGNC:HGNC:10215;Note=The RefSeq transcript has 1 substitution compared to this genomic sequence;exception=annotated by transcript or proteomic data;gbkey=ncRNA;gene=RNU5E-1;inference=similar to RNA sequence (same species):RefSeq:NR_002754.2;product=RNA%2C U5E small nuclear 1;transcript_id=NR_002754.2
+
+#
+1	BestRefSeq	pseudogene	31874	34409	.	+	.	ID=gene-DDX11L1;Dbxref=GeneID:100287102,HGNC:HGNC:37102;Name=DDX11L1;description=DEAD/H-box helicase 11 like 1;gbkey=Gene;gene=DDX11L1;gene_biotype=transcribed_pseudogene;pseudo=true
+1	BestRefSeq	transcript	31874	34409	.	+	.	ID=rna-NR_046018.2;Parent=gene-DDX11L1;Dbxref=GeneID:100287102,Genbank:NR_046018.2,HGNC:HGNC:37102;Name=NR_046018.2;gbkey=misc_RNA;gene=DDX11L1;product=DEAD/H-box helicase 11 like 1;transcript_id=NR_046018.2
+1	BestRefSeq	exon	31874	32227	.	+	.	ID=exon-NR_046018.2-1;Parent=rna-NR_046018.2;Dbxref=GeneID:100287102,Genbank:NR_046018.2,HGNC:HGNC:37102;gbkey=misc_RNA;gene=DDX11L1;product=DEAD/H-box helicase 11 like 1;transcript_id=NR_046018.2
+1	BestRefSeq	exon	32613	32721	.	+	.	ID=exon-NR_046018.2-2;Parent=rna-NR_046018.2;Dbxref=GeneID:100287102,Genbank:NR_046018.2,HGNC:HGNC:37102;gbkey=misc_RNA;gene=DDX11L1;product=DEAD/H-box helicase 11 like 1;transcript_id=NR_046018.2
+1	BestRefSeq	exon	33221	34409	.	+	.	ID=exon-NR_046018.2-3;Parent=rna-NR_046018.2;Dbxref=GeneID:100287102,Genbank:NR_046018.2,HGNC:HGNC:37102;gbkey=misc_RNA;gene=DDX11L1;product=DEAD/H-box helicase 11 like 1;transcript_id=NR_046018.2
+1	Curated Genomic	pseudogene	42453	43396	.	+	.	ID=gene-OR4G4P;Dbxref=GeneID:79504,HGNC:HGNC:14822;Name=OR4G4P;description=olfactory receptor family 4 subfamily G member 4 pseudogene;gbkey=Gene;gene=OR4G4P;gene_biotype=pseudogene;pseudo=true
+1	Curated Genomic	pseudogene	28511	29036	.	-	.	ID=gene-RPL23AP21;Dbxref=GeneID:728481,HGNC:HGNC:35827;Name=RPL23AP21;description=ribosomal protein L23a pseudogene 21;gbkey=Gene;gene=RPL23AP21;gene_biotype=pseudogene;gene_synonym=RPL23A_1_1;pseudo=true
+1	Curated Genomic	exon	28511	29036	.	-	.	ID=id-RPL23AP21;Parent=gene-RPL23AP21;Dbxref=GeneID:728481,HGNC:HGNC:35827;gbkey=exon;gene=RPL23AP21
+1	Curated Genomic	pseudogene	27055	30819	.	+	.	ID=gene-CICP7;Dbxref=GeneID:100288667,HGNC:HGNC:37756;Name=CICP7;description=capicua transcriptional repressor pseudogene 7;gbkey=Gene;gene=CICP7;gene_biotype=pseudogene;pseudo=true
+1	Curated Genomic	exon	27055	28914	.	+	.	ID=id-CICP7;Parent=gene-CICP7;Dbxref=GeneID:100288667,HGNC:HGNC:37756;gbkey=exon;gene=CICP7
+1	Curated Genomic	exon	28974	29309	.	+	.	ID=id-CICP7-2;Parent=gene-CICP7;Dbxref=GeneID:100288667,HGNC:HGNC:37756;gbkey=exon;gene=CICP7
+1	Curated Genomic	exon	29720	30045	.	+	.	ID=id-CICP7-3;Parent=gene-CICP7;Dbxref=GeneID:100288667,HGNC:HGNC:37756;gbkey=exon;gene=CICP7
+1	Curated Genomic	exon	30361	30819	.	+	.	ID=id-CICP7-4;Parent=gene-CICP7;Dbxref=GeneID:100288667,HGNC:HGNC:37756;gbkey=exon;gene=CICP7
+1	RefSeq	pseudogene	38746	39084	.	-	.	ID=gene-b0218;Dbxref=ASAP:ABE-0000729,ECOCYC:G6102,EcoGene:EG13333,GeneID:946644;Name=yafU;gbkey=Gene;gene=yafU;gene_biotype=pseudogene;gene_synonym=ECK0218;locus_tag=b0218;pseudo=true
+1	RefSeq	CDS	38746	39084	.	-	0	ID=cds-gnl|b0218|CDS255;Parent=gene-b0218;Dbxref=UniProtKB/Swiss-Prot:P77354,ASAP:ABE-0000729,ECOCYC:G6102,EcoGene:EG13333,GeneID:946644;gbkey=CDS;gene=yafU;locus_tag=b0218;orig_protein_id=gnl|b0218|CDS255;orig_transcript_id=gnl|b0218|mrna.CDS255;product=putative inner membrane protein;transl_table=11
+1	RefSeq	pseudogene	18140	19145	.	+	.	ID=gene-YAR061W;Dbxref=SGD:S000000087,GeneID:851292;Name=YAR061W;Note=Pseudogenic fragment with similarity to flocculins%3B YAR061W has a paralog%2C YHR212W-A%2C that arose from a segmental duplication;gbkey=Gene;gene_biotype=pseudogene;gene_synonym=YAR062W;locus_tag=YAR061W;pseudo=true
+1	RefSeq	mRNA	18140	19145	.	+	.	ID=rna-YAR061W;Parent=gene-YAR061W;Dbxref=GeneID:851292,SGD:S000000087;gbkey=mRNA;locus_tag=YAR061W;pseudo=true
+1	RefSeq	exon	18140	19145	.	+	.	ID=exon-YAR061W-1;Parent=rna-YAR061W;Dbxref=GeneID:851292,SGD:S000000087;gbkey=mRNA;locus_tag=YAR061W;pseudo=true
+1	RefSeq	pseudogene	22126	22566	.	+	.	ID=gene-YCL075W;Dbxref=SGD:S000000580,GeneID:850287;Name=YCL075W;Note=Pseudogene: encodes fragment of Ty Pol protein;gbkey=Gene;gene_biotype=pseudogene;locus_tag=YCL075W;pseudo=true
+1	RefSeq	mRNA	22126	22566	.	+	.	ID=rna-YCL075W;Parent=gene-YCL075W;Dbxref=GeneID:850287,SGD:S000000580;gbkey=mRNA;locus_tag=YCL075W;pseudo=true
+1	RefSeq	exon	22126	22566	.	+	.	ID=exon-YCL075W-1;Parent=rna-YCL075W;Dbxref=GeneID:850287,SGD:S000000580;gbkey=mRNA;locus_tag=YCL075W;pseudo=true
+1	RefSeq	pseudogene	32824	33750	.	+	.	ID=gene-YCL074W;Dbxref=SGD:S000000579,GeneID:850288;Name=YCL074W;Note=Pseudogene: encodes fragment of Ty Pol protein;gbkey=Gene;gene_biotype=pseudogene;locus_tag=YCL074W;pseudo=true
+1	RefSeq	mRNA	32824	33750	.	+	.	ID=rna-YCL074W;Parent=gene-YCL074W;Dbxref=GeneID:850288,SGD:S000000579;gbkey=mRNA;locus_tag=YCL074W;pseudo=true
+1	RefSeq	exon	32824	33750	.	+	.	ID=exon-YCL074W-1;Parent=rna-YCL074W;Dbxref=GeneID:850288,SGD:S000000579;gbkey=mRNA;locus_tag=YCL074W;pseudo=true
+1	RefSeq	pseudogene	41071	41481	.	-	.	ID=gene-YDR134C;Dbxref=GeneID:851712;Name=CCW22;gbkey=Gene;gene=CCW22;gene_biotype=pseudogene;locus_tag=YDR134C;pseudo=true
+1	RefSeq	CDS	41071	41481	.	-	0	ID=cds-YDR134C;Parent=gene-YDR134C;Dbxref=SGD:S000002541,GeneID:851712;Note=Cell wall protein%3B YDR134C has a paralog%2C CCW12%2C that arose from the whole genome duplication%3B S. cerevisiae genome reference strain S288C contains an internal in-frame stop at codon 67%2C which in other strains encodes glutamine;experiment=EXISTENCE:direct assay:GO:0009277 fungal-type cell wall [PMID:10383953];gbkey=CDS;gene=CCW22;locus_tag=YDR134C
+
+#
+1	BestRefSeq	gene	14729	14812	.	-	.	ID=gene-SNORD167;Dbxref=GeneID:109623456,HGNC:HGNC:51881;Name=SNORD167;description=small nucleolar RNA%2C C/D box 167;gbkey=Gene;gene=SNORD167;gene_biotype=snoRNA
+1	BestRefSeq	snoRNA	14729	14812	.	-	.	ID=rna-NR_145806.1;Parent=gene-SNORD167;Dbxref=GeneID:109623456,Genbank:NR_145806.1,HGNC:HGNC:51881;Name=NR_145806.1;gbkey=ncRNA;gene=SNORD167;product=small nucleolar RNA%2C C/D box 167;transcript_id=NR_145806.1
+1	BestRefSeq	exon	14729	14812	.	-	.	ID=exon-NR_145806.1-1;Parent=rna-NR_145806.1;Dbxref=GeneID:109623456,Genbank:NR_145806.1,HGNC:HGNC:51881;gbkey=ncRNA;gene=SNORD167;product=small nucleolar RNA%2C C/D box 167;transcript_id=NR_145806.1
+
+#
+1	Gnomon	gene	29611	35413	.	+	.	ID=gene-MIR1302-2HG;Dbxref=GeneID:107985730,HGNC:HGNC:52482;Name=MIR1302-2HG;gbkey=Gene;gene=MIR1302-2HG;gene_biotype=lncRNA
+1	Gnomon	lnc_RNA	29926	31295	.	+	.	ID=rna-XR_001737835.1;Parent=gene-MIR1302-2HG;Dbxref=GeneID:107985730,Genbank:XR_001737835.1,HGNC:HGNC:52482;Name=XR_001737835.1;gbkey=ncRNA;gene=MIR1302-2HG;model_evidence=Supporting evidence includes similarity to: 100%25 coverage of the annotated genomic feature by RNAseq alignments%2C including 8 samples with support for all annotated introns;product=MIR1302-2 host gene;transcript_id=XR_001737835.1
+1	Gnomon	exon	29926	30039	.	+	.	ID=exon-XR_001737835.1-1;Parent=rna-XR_001737835.1;Dbxref=GeneID:107985730,Genbank:XR_001737835.1,HGNC:HGNC:52482;gbkey=ncRNA;gene=MIR1302-2HG;product=MIR1302-2 host gene;transcript_id=XR_001737835.1
+1	Gnomon	exon	30564	30667	.	+	.	ID=exon-XR_001737835.1-2;Parent=rna-XR_001737835.1;Dbxref=GeneID:107985730,Genbank:XR_001737835.1,HGNC:HGNC:52482;gbkey=ncRNA;gene=MIR1302-2HG;product=MIR1302-2 host gene;transcript_id=XR_001737835.1
+1	Gnomon	exon	30976	31295	.	+	.	ID=exon-XR_001737835.1-3;Parent=rna-XR_001737835.1;Dbxref=GeneID:107985730,Genbank:XR_001737835.1,HGNC:HGNC:52482;gbkey=ncRNA;gene=MIR1302-2HG;product=MIR1302-2 host gene;transcript_id=XR_001737835.1
+
+#
+#	
+1	BestRefSeq	gene	17369	17436	.	-	.	ID=gene-MIR6859-1;Dbxref=GeneID:102466751,HGNC:HGNC:50039,miRBase:MI0022705;Name=MIR6859-1;description=microRNA 6859-1;gbkey=Gene;gene=MIR6859-1;gene_biotype=miRNA;gene_synonym=hsa-mir-6859-1
+1	BestRefSeq	primary_transcript	17369	17436	.	-	.	ID=rna-NR_106918.1;Parent=gene-MIR6859-1;Dbxref=GeneID:102466751,Genbank:NR_106918.1,HGNC:HGNC:50039,miRBase:MI0022705;Name=NR_106918.1;gbkey=precursor_RNA;gene=MIR6859-1;product=microRNA 6859-1;transcript_id=NR_106918.1
+1	BestRefSeq	exon	17369	17436	.	-	.	ID=exon-NR_106918.1-1;Parent=rna-NR_106918.1;Dbxref=GeneID:102466751,Genbank:NR_106918.1,HGNC:HGNC:50039,miRBase:MI0022705;gbkey=precursor_RNA;gene=MIR6859-1;product=microRNA 6859-1;transcript_id=NR_106918.1
+1	BestRefSeq	miRNA	17369	17391	.	-	.	ID=rna-MIR6859-1;Parent=rna-NR_106918.1;Dbxref=GeneID:102466751,miRBase:MIMAT0027619,HGNC:HGNC:50039,miRBase:MI0022705;gbkey=ncRNA;gene=MIR6859-1;product=hsa-miR-6859-3p
+1	BestRefSeq	exon	17369	17391	.	-	.	ID=exon-MIR6859-1-1;Parent=rna-MIR6859-1;Dbxref=GeneID:102466751,miRBase:MIMAT0027619,HGNC:HGNC:50039,miRBase:MI0022705;gbkey=ncRNA;gene=MIR6859-1;product=hsa-miR-6859-3p
+1	BestRefSeq	miRNA	17409	17431	.	-	.	ID=rna-MIR6859-1-2;Parent=rna-NR_106918.1;Dbxref=GeneID:102466751,miRBase:MIMAT0027618,HGNC:HGNC:50039,miRBase:MI0022705;gbkey=ncRNA;gene=MIR6859-1;product=hsa-miR-6859-5p
+1	BestRefSeq	exon	17409	17431	.	-	.	ID=exon-MIR6859-1-2-1;Parent=rna-MIR6859-1-2;Dbxref=GeneID:102466751,miRBase:MIMAT0027618,HGNC:HGNC:50039,miRBase:MI0022705;gbkey=ncRNA;gene=MIR6859-1;product=hsa-miR-6859-5p
+
+#
+1	RefSeq	gene	16952	17006	.	+	.	ID=gene-b4413;Dbxref=ASAP:ABE-0047238,ECOCYC:G0-9581,EcoGene:EG31128,GeneID:2847745;Name=sokC;gbkey=Gene;gene=sokC;gene_biotype=ncRNA;gene_synonym=ECK0019,sof;locus_tag=b4413
+1	RefSeq	ncRNA	16952	17006	.	+	.	ID=rna-b4413;Parent=gene-b4413;Dbxref=ASAP:ABE-0047238,ECOCYC:G0-9581,EcoGene:EG31128,GeneID:2847745;gbkey=ncRNA;gene=sokC;locus_tag=b4413;product=antisense RNA blocking mokC and hokC translation
+1	RefSeq	exon	16952	17006	.	+	.	ID=exon-b4413-1;Parent=rna-b4413;Dbxref=ASAP:ABE-0047238,ECOCYC:G0-9581,EcoGene:EG31128,GeneID:2847745;gbkey=ncRNA;gene=sokC;locus_tag=b4413;product=antisense RNA blocking mokC and hokC translation
+
+#
+1	araport11	ncRNA_gene	4666	5164	.	+	.	ID=gene:AT1G04093;biotype=lncRNA;gene_id=AT1G04093;logic_name=araport11
+1	araport11	lnc_RNA	4666	5164	.	+	.	ID=transcript:AT1G04093.1;Parent=gene:AT1G04093;biotype=lncRNA;transcript_id=AT1G04093.1
+1	araport11	exon	4666	5164	.	+	.	Parent=transcript:AT1G04093.1;Name=AT1G04093.1.exon1;constitutive=1;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=AT1G04093.1.exon1;rank=1
+
+#
+#
+1	Curated Genomic	sequence_feature	29611	29611	.	.	.	ID=id-GeneID:107546746-5;Dbxref=GeneID:107546746;Note=sequence feature%3B approximate center of NID2a meiotic recombination hotspot;experiment=EXISTENCE:DNA detection assay evidence [ECO:0005519][PMID:16543360];feat_class=sequence_feature;gbkey=misc_feature
+
+#
+1	havana	pseudogene	16559	23588	.	+	.	ID=gene:ENSMUSG00000102135;Name=Gm37108;biotype=processed_pseudogene;description=predicted gene%2C 37108 [Source:MGI Symbol%3BAcc:MGI:5610336];gene_id=ENSMUSG00000102135;logic_name=havana_mus_musculus;version=1
+1	havana	pseudogenic_transcript	16559	23588	.	+	.	ID=transcript:ENSMUST00000194605;Parent=gene:ENSMUSG00000102135;Name=Gm37108-201;biotype=processed_pseudogene;tag=basic;transcript_id=ENSMUST00000194605;transcript_support_level=NA;version=1
+1	havana	exon	16559	16995	.	+	.	Parent=transcript:ENSMUST00000194605;Name=ENSMUSE00001339810;constitutive=1;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSMUSE00001339810;rank=1;version=1
+1	havana	exon	23400	23588	.	+	.	Parent=transcript:ENSMUST00000194605;Name=ENSMUSE00001343179;constitutive=1;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSMUSE00001343179;rank=2;version=1
+
+#
+1	BestRefSeq	gene	20436	32029	.	+	.	ID=gene-SCNN1D;Dbxref=GeneID:6339,HGNC:HGNC:10601,MIM:601328;Name=SCNN1D;description=sodium channel epithelial 1 subunit delta;gbkey=Gene;gene=SCNN1D;gene_biotype=protein_coding;gene_synonym=dNaCh,ENaCd,ENaCdelta,SCNED
+1	BestRefSeq	transcript	20436	32029	.	+	.	ID=rna-NR_037668.2;Parent=gene-SCNN1D;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;Name=NR_037668.2;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	20436	20666	.	+	.	ID=exon-NR_037668.2-1;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	21226	21297	.	+	.	ID=exon-NR_037668.2-2;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	21411	21610	.	+	.	ID=exon-NR_037668.2-3;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	22242	22315	.	+	.	ID=exon-NR_037668.2-4;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	23978	24090	.	+	.	ID=exon-NR_037668.2-5;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	25926	26278	.	+	.	ID=exon-NR_037668.2-6;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	26768	26975	.	+	.	ID=exon-NR_037668.2-7;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	27109	27299	.	+	.	ID=exon-NR_037668.2-8;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	27508	27596	.	+	.	ID=exon-NR_037668.2-9;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	27673	27836	.	+	.	ID=exon-NR_037668.2-10;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	27939	28037	.	+	.	ID=exon-NR_037668.2-11;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	30271	30388	.	+	.	ID=exon-NR_037668.2-12;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	30477	30555	.	+	.	ID=exon-NR_037668.2-13;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	30637	30694	.	+	.	ID=exon-NR_037668.2-14;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	30895	30953	.	+	.	ID=exon-NR_037668.2-15;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	31065	31140	.	+	.	ID=exon-NR_037668.2-16;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	exon	31254	32029	.	+	.	ID=exon-NR_037668.2-17;Parent=rna-NR_037668.2;Dbxref=GeneID:6339,Genbank:NR_037668.2,HGNC:HGNC:10601,MIM:601328;gbkey=misc_RNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 2;transcript_id=NR_037668.2
+1	BestRefSeq	mRNA	20436	32025	.	+	.	ID=rna-NM_001130413.4;Parent=gene-SCNN1D;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;Name=NM_001130413.4;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	20436	20666	.	+	.	ID=exon-NM_001130413.4-1;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	21226	21297	.	+	.	ID=exon-NM_001130413.4-2;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	21411	21610	.	+	.	ID=exon-NM_001130413.4-3;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	22242	22315	.	+	.	ID=exon-NM_001130413.4-4;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	23978	24090	.	+	.	ID=exon-NM_001130413.4-5;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	25571	25664	.	+	.	ID=exon-NM_001130413.4-6;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	25926	26278	.	+	.	ID=exon-NM_001130413.4-7;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	26768	26975	.	+	.	ID=exon-NM_001130413.4-8;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	27109	27299	.	+	.	ID=exon-NM_001130413.4-9;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	27508	27596	.	+	.	ID=exon-NM_001130413.4-10;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	27673	27836	.	+	.	ID=exon-NM_001130413.4-11;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	27939	28037	.	+	.	ID=exon-NM_001130413.4-12;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	30271	30388	.	+	.	ID=exon-NM_001130413.4-13;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	30477	30555	.	+	.	ID=exon-NM_001130413.4-14;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	30637	30694	.	+	.	ID=exon-NM_001130413.4-15;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	30895	30953	.	+	.	ID=exon-NM_001130413.4-16;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	31065	31140	.	+	.	ID=exon-NM_001130413.4-17;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	exon	31254	32025	.	+	.	ID=exon-NM_001130413.4-18;Parent=rna-NM_001130413.4;Dbxref=Ensembl:ENST00000379116.10,GeneID:6339,Genbank:NM_001130413.4,HGNC:HGNC:10601,MIM:601328;gbkey=mRNA;gene=SCNN1D;product=sodium channel epithelial 1 subunit delta%2C transcript variant 1;tag=MANE Select;transcript_id=NM_001130413.4
+1	BestRefSeq	CDS	20662	20666	.	+	0	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	21226	21297	.	+	1	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	21411	21610	.	+	1	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	22242	22315	.	+	2	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	23978	24090	.	+	0	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	25571	25664	.	+	1	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	25926	26278	.	+	0	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	26768	26975	.	+	1	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	27109	27299	.	+	0	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	27508	27596	.	+	1	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	27673	27836	.	+	2	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	27939	28037	.	+	0	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	30271	30388	.	+	0	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	30477	30555	.	+	2	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	30637	30694	.	+	1	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	30895	30953	.	+	0	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	31065	31140	.	+	1	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+1	BestRefSeq	CDS	31254	31610	.	+	0	ID=cds-NP_001123885.2;Parent=rna-NM_001130413.4;Dbxref=CCDS:CCDS44037.2,Ensembl:ENSP00000368411.5,GeneID:6339,Genbank:NP_001123885.2,HGNC:HGNC:10601,MIM:601328;Name=NP_001123885.2;gbkey=CDS;gene=SCNN1D;product=amiloride-sensitive sodium channel subunit delta;protein_id=NP_001123885.2;tag=MANE Select
+
+#
+1	BestRefSeq	gene	8957	9023	.	-	.	ID=gene-MIR6730;Dbxref=GeneID:102466722,HGNC:HGNC:50222,miRBase:MI0022575;Name=MIR6730;description=microRNA 6730;gbkey=Gene;gene=MIR6730;gene_biotype=miRNA;gene_synonym=hsa-mir-6730
+1	BestRefSeq	primary_transcript	8957	9023	.	-	.	ID=rna-NR_106788.2;Parent=gene-MIR6730;Dbxref=GeneID:102466722,Genbank:NR_106788.2,HGNC:HGNC:50222,miRBase:MI0022575;Name=NR_106788.2;gbkey=precursor_RNA;gene=MIR6730;product=microRNA 6730;transcript_id=NR_106788.2
+1	BestRefSeq	exon	8957	9023	.	-	.	ID=exon-NR_106788.2-1;Parent=rna-NR_106788.2;Dbxref=GeneID:102466722,Genbank:NR_106788.2,HGNC:HGNC:50222,miRBase:MI0022575;gbkey=precursor_RNA;gene=MIR6730;product=microRNA 6730;transcript_id=NR_106788.2
+1	BestRefSeq	miRNA	8958	8979	.	-	.	ID=rna-MIR6730;Parent=rna-NR_106788.2;Dbxref=GeneID:102466722,miRBase:MIMAT0027362,HGNC:HGNC:50222,miRBase:MI0022575;gbkey=ncRNA;gene=MIR6730;product=hsa-miR-6730-3p
+1	BestRefSeq	exon	8958	8979	.	-	.	ID=exon-MIR6730-1;Parent=rna-MIR6730;Dbxref=GeneID:102466722,miRBase:MIMAT0027362,HGNC:HGNC:50222,miRBase:MI0022575;gbkey=ncRNA;gene=MIR6730;product=hsa-miR-6730-3p
+1	BestRefSeq	miRNA	8996	9018	.	-	.	ID=rna-MIR6730-2;Parent=rna-NR_106788.2;Dbxref=GeneID:102466722,miRBase:MIMAT0027361,HGNC:HGNC:50222,miRBase:MI0022575;gbkey=ncRNA;gene=MIR6730;product=hsa-miR-6730-5p
+1	BestRefSeq	exon	8996	9018	.	-	.	ID=exon-MIR6730-2-1;Parent=rna-MIR6730-2;Dbxref=GeneID:102466722,miRBase:MIMAT0027361,HGNC:HGNC:50222,miRBase:MI0022575;gbkey=ncRNA;gene=MIR6730;product=hsa-miR-6730-5p
+
+#
+1	Curated Genomic	biological_region	31212	31326	.	+	.	ID=id-GeneID:106783496-2;Dbxref=GeneID:106783496;gbkey=Region;standard_name=conserved acetylation island sequence 30 enhancer
+
+#
+1	BestRefSeq	gene	40319	47616	.	+	.	ID=gene-NPPA-AS1;Dbxref=GeneID:100379251,HGNC:HGNC:37635;Name=NPPA-AS1;description=NPPA antisense RNA 1;gbkey=Gene;gene=NPPA-AS1;gene_biotype=antisense_RNA;gene_synonym=NPPA-AS,NPPAAS
+1	BestRefSeq	antisense_RNA	40319	47616	.	+	.	ID=rna-NR_037806.1;Parent=gene-NPPA-AS1;Dbxref=GeneID:100379251,Genbank:NR_037806.1,HGNC:HGNC:37635;Name=NR_037806.1;gbkey=ncRNA;gene=NPPA-AS1;product=NPPA antisense RNA 1;transcript_id=NR_037806.1
+1	BestRefSeq	exon	40319	41207	.	+	.	ID=exon-NR_037806.1-1;Parent=rna-NR_037806.1;Dbxref=GeneID:100379251,Genbank:NR_037806.1,HGNC:HGNC:37635;gbkey=ncRNA;gene=NPPA-AS1;product=NPPA antisense RNA 1;transcript_id=NR_037806.1
+1	BestRefSeq	exon	43704	44073	.	+	.	ID=exon-NR_037806.1-2;Parent=rna-NR_037806.1;Dbxref=GeneID:100379251,Genbank:NR_037806.1,HGNC:HGNC:37635;gbkey=ncRNA;gene=NPPA-AS1;product=NPPA antisense RNA 1;transcript_id=NR_037806.1
+1	BestRefSeq	exon	45547	45766	.	+	.	ID=exon-NR_037806.1-3;Parent=rna-NR_037806.1;Dbxref=GeneID:100379251,Genbank:NR_037806.1,HGNC:HGNC:37635;gbkey=ncRNA;gene=NPPA-AS1;product=NPPA antisense RNA 1;transcript_id=NR_037806.1
+1	BestRefSeq	exon	47434	47616	.	+	.	ID=exon-NR_037806.1-4;Parent=rna-NR_037806.1;Dbxref=GeneID:100379251,Genbank:NR_037806.1,HGNC:HGNC:37635;gbkey=ncRNA;gene=NPPA-AS1;product=NPPA antisense RNA 1;transcript_id=NR_037806.1
+
+#
+1	BestRefSeq	gene	7751	8018	.	-	.	ID=gene-RMRP;Dbxref=GeneID:6023,HGNC:HGNC:10031,MIM:157660;Name=RMRP;description=RNA component of mitochondrial RNA processing endoribonuclease;gbkey=Gene;gene=RMRP;gene_biotype=RNase_MRP_RNA;gene_synonym=CHH,NME1,RMRPR,RRP2
+1	BestRefSeq	RNase_MRP_RNA	7751	8018	.	-	.	ID=rna-NR_003051.3;Parent=gene-RMRP;Dbxref=GeneID:6023,Genbank:NR_003051.3,HGNC:HGNC:10031,MIM:157660;Name=NR_003051.3;gbkey=ncRNA;gene=RMRP;product=RNA component of mitochondrial RNA processing endoribonuclease;transcript_id=NR_003051.3
+1	BestRefSeq	exon	7751	8018	.	-	.	ID=exon-NR_003051.3-1;Parent=rna-NR_003051.3;Dbxref=GeneID:6023,Genbank:NR_003051.3,HGNC:HGNC:10031,MIM:157660;gbkey=ncRNA;gene=RMRP;product=RNA component of mitochondrial RNA processing endoribonuclease;transcript_id=NR_003051.3
+
+#
+1	Gnomon	gene	14355	15095	.	-	.	ID=gene-LOC107985528;Dbxref=GeneID:107985528;Name=LOC107985528;gbkey=Gene;gene=LOC107985528;gene_biotype=V_segment
+1	Gnomon	V_gene_segment	14355	15095	.	-	.	ID=id-LOC107985528;Parent=gene-LOC107985528;Dbxref=GeneID:107985528;gbkey=V_segment;gene=LOC107985528;model_evidence=Supporting evidence includes similarity to: 2 ESTs%2C 10 Proteins%2C 1 long SRA read%2C and 100%25 coverage of the annotated genomic feature by RNAseq alignments%2C including 27 samples with support for all annotated introns;standard_name=immunoglobulin kappa variable 1-39-like
+1	Gnomon	exon	15032	15095	.	-	.	ID=exon-id-LOC107985528-1;Parent=id-LOC107985528;Dbxref=GeneID:107985528;gbkey=V_segment;gene=LOC107985528;model_evidence=Supporting evidence includes similarity to: 2 ESTs%2C 10 Proteins%2C 1 long SRA read%2C and 100%25 coverage of the annotated genomic feature by RNAseq alignments%2C including 27 samples with support for all annotated introns;standard_name=immunoglobulin kappa variable 1-39-like
+1	Gnomon	exon	14355	14907	.	-	.	ID=exon-id-LOC107985528-2;Parent=id-LOC107985528;Dbxref=GeneID:107985528;gbkey=V_segment;gene=LOC107985528;model_evidence=Supporting evidence includes similarity to: 2 ESTs%2C 10 Proteins%2C 1 long SRA read%2C and 100%25 coverage of the annotated genomic feature by RNAseq alignments%2C including 27 samples with support for all annotated introns;standard_name=immunoglobulin kappa variable 1-39-like
+1	Gnomon	CDS	15032	15080	.	-	0	ID=cds-LOC107985528;Parent=id-LOC107985528;Dbxref=GeneID:107985528;exception=rearrangement required for product;gbkey=CDS;gene=LOC107985528;product=immunoglobulin kappa variable 1-39-like
+1	Gnomon	CDS	14585	14907	.	-	2	ID=cds-LOC107985528;Parent=id-LOC107985528;Dbxref=GeneID:107985528;exception=rearrangement required for product;gbkey=CDS;gene=LOC107985528;product=immunoglobulin kappa variable 1-39-like
+1	Curated Genomic	pseudogene	6871	7154	.	+	.	ID=gene-Trbv6;Dbxref=GeneID:100124662,IMGT/GENE-DB:TRBV6,MGI:MGI:5009962;Name=Trbv6;description=T cell receptor beta variable 6;gbkey=Gene;gene=Trbv6;gene_biotype=V_segment_pseudogene;pseudo=true
+1	Curated Genomic	V_gene_segment	6871	7154	.	+	.	ID=id-Trbv6;Parent=gene-Trbv6;Dbxref=GeneID:100124662,IMGT/GENE-DB:TRBV6,MGI:MGI:5009962;gbkey=V_segment;gene=Trbv6;standard_name=TRBV6
+1	Curated Genomic	exon	6871	7154	.	+	.	ID=exon-id-Trbv6-1;Parent=id-Trbv6;Dbxref=GeneID:100124662,IMGT/GENE-DB:TRBV6,MGI:MGI:5009962;gbkey=V_segment;gene=Trbv6;standard_name=TRBV6
+1	Curated Genomic	CDS	6871	7154	.	+	0	ID=cds-Trbv6;Parent=id-Trbv6;Dbxref=GeneID:100124662,IMGT/GENE-DB:TRBV6,MGI:MGI:5009962;exception=rearrangement required for product;gbkey=CDS;gene=Trbv6
+
+#
+1	Curated Genomic	gene	27361	27683	.	-	.	ID=gene-IGKC;Dbxref=GeneID:3514,HGNC:HGNC:5716,IMGT/GENE-DB:IGKC,MIM:147200;Name=IGKC;description=immunoglobulin kappa constant;end_range=88857683,.;gbkey=Gene;gene=IGKC;gene_biotype=C_region;gene_synonym=HCAK1,IGKCD,Km;partial=true
+1	Curated Genomic	C_gene_segment	27361	27683	.	-	.	ID=id-IGKC;Parent=gene-IGKC;Dbxref=GeneID:3514,HGNC:HGNC:5716,IMGT/GENE-DB:IGKC,MIM:147200;gbkey=C_region;gene=IGKC;standard_name=IGKC
+1	Curated Genomic	exon	27361	27683	.	-	.	ID=exon-id-IGKC-1;Parent=id-IGKC;Dbxref=GeneID:3514,HGNC:HGNC:5716,IMGT/GENE-DB:IGKC,MIM:147200;gbkey=C_region;gene=IGKC;standard_name=IGKC
+1	Curated Genomic	CDS	27361	27683	.	-	2	ID=cds-IGKC;Parent=id-IGKC;Dbxref=GeneID:3514,HGNC:HGNC:5716,IMGT/GENE-DB:IGKC,MIM:147200;end_range=88857683,.;exception=rearrangement required for product;gbkey=CDS;gene=IGKC;partial=true
+1	Curated Genomic	gene	24	9572	.	-	.	ID=gene-TRGC2;Dbxref=GeneID:6967,HGNC:HGNC:12276,IMGT/GENE-DB:TRGC2,MIM:615450;Name=TRGC2;description=T cell receptor gamma constant 2;end_range=38249572,.;gbkey=Gene;gene=TRGC2;gene_biotype=C_region;gene_synonym=TCRGC2,TRGC2(2X),TRGC2(3X);partial=true
+1	Curated Genomic	C_gene_segment	24	9572	.	-	.	ID=id-TRGC2;Parent=gene-TRGC2;Dbxref=GeneID:6967,HGNC:HGNC:12276,IMGT/GENE-DB:TRGC2,MIM:615450;gbkey=C_region;gene=TRGC2;standard_name=TRGC2
+1	Curated Genomic	exon	9243	9572	.	-	.	ID=exon-id-TRGC2-1;Parent=id-TRGC2;Dbxref=GeneID:6967,HGNC:HGNC:12276,IMGT/GENE-DB:TRGC2,MIM:615450;gbkey=C_region;gene=TRGC2;standard_name=TRGC2
+1	Curated Genomic	exon	5183	5230	.	-	.	ID=exon-id-TRGC2-2;Parent=id-TRGC2;Dbxref=GeneID:6967,HGNC:HGNC:12276,IMGT/GENE-DB:TRGC2,MIM:615450;gbkey=C_region;gene=TRGC2;standard_name=TRGC2
+1	Curated Genomic	exon	2428	2475	.	-	.	ID=exon-id-TRGC2-3;Parent=id-TRGC2;Dbxref=GeneID:6967,HGNC:HGNC:12276,IMGT/GENE-DB:TRGC2,MIM:615450;gbkey=C_region;gene=TRGC2;standard_name=TRGC2
+1	Curated Genomic	exon	24	166	.	-	.	ID=exon-id-TRGC2-4;Parent=id-TRGC2;Dbxref=GeneID:6967,HGNC:HGNC:12276,IMGT/GENE-DB:TRGC2,MIM:615450;gbkey=C_region;gene=TRGC2;standard_name=TRGC2
+1	Curated Genomic	CDS	9243	9572	.	-	2	ID=cds-TRGC2;Parent=id-TRGC2;Dbxref=GeneID:6967,HGNC:HGNC:12276,IMGT/GENE-DB:TRGC2,MIM:615450;end_range=38249572,.;exception=rearrangement required for product;gbkey=CDS;gene=TRGC2;partial=true
+1	Curated Genomic	CDS	5183	5230	.	-	2	ID=cds-TRGC2;Parent=id-TRGC2;Dbxref=GeneID:6967,HGNC:HGNC:12276,IMGT/GENE-DB:TRGC2,MIM:615450;exception=rearrangement required for product;gbkey=CDS;gene=TRGC2;partial=true
+1	Curated Genomic	CDS	2428	2475	.	-	2	ID=cds-TRGC2;Parent=id-TRGC2;Dbxref=GeneID:6967,HGNC:HGNC:12276,IMGT/GENE-DB:TRGC2,MIM:615450;exception=rearrangement required for product;gbkey=CDS;gene=TRGC2;partial=true
+1	Curated Genomic	CDS	24	166	.	-	2	ID=cds-TRGC2;Parent=id-TRGC2;Dbxref=GeneID:6967,HGNC:HGNC:12276,IMGT/GENE-DB:TRGC2,MIM:615450;exception=rearrangement required for product;gbkey=CDS;gene=TRGC2;partial=true
+
+#
+1	BestRefSeq	gene	35117	35174	.	+	.	ID=gene-MASCRNA;Dbxref=GeneID:109136578;Name=MASCRNA;description=MALAT1-associated small cytoplasmic RNA;gbkey=Gene;gene=MASCRNA;gene_biotype=scRNA
+1	BestRefSeq	scRNA	35117	35174	.	+	.	ID=rna-NR_144569.1;Parent=gene-MASCRNA;Dbxref=GeneID:109136578,Genbank:NR_144569.1;Name=NR_144569.1;gbkey=ncRNA;gene=MASCRNA;product=MALAT1-associated small cytoplasmic RNA;transcript_id=NR_144569.1
+1	BestRefSeq	exon	35117	35174	.	+	.	ID=exon-NR_144569.1-1;Parent=rna-NR_144569.1;Dbxref=GeneID:109136578,Genbank:NR_144569.1;gbkey=ncRNA;gene=MASCRNA;product=MALAT1-associated small cytoplasmic RNA;transcript_id=NR_144569.1
+
+#
+1	Curated Genomic	gene	46213	46224	.	+	.	ID=gene-TRBD1;Dbxref=GeneID:28637,HGNC:HGNC:12158,IMGT/GENE-DB:TRBD1,MIM:615447;Name=TRBD1;description=T cell receptor beta diversity 1;end_range=142786224,.;gbkey=Gene;gene=TRBD1;gene_biotype=D_segment;gene_synonym=TCRBD1;partial=true;start_range=.,142786213
+1	Curated Genomic	D_gene_segment	46213	46224	.	+	.	ID=id-TRBD1;Parent=gene-TRBD1;Dbxref=GeneID:28637,HGNC:HGNC:12158,IMGT/GENE-DB:TRBD1,MIM:615447;gbkey=D_segment;gene=TRBD1;standard_name=TRBD1
+1	Curated Genomic	exon	46213	46224	.	+	.	ID=exon-id-TRBD1-1;Parent=id-TRBD1;Dbxref=GeneID:28637,HGNC:HGNC:12158,IMGT/GENE-DB:TRBD1,MIM:615447;gbkey=D_segment;gene=TRBD1;standard_name=TRBD1
+1	Curated Genomic	CDS	46213	46224	.	+	0	ID=cds-TRBD1;Parent=id-TRBD1;Dbxref=GeneID:28637,HGNC:HGNC:12158,IMGT/GENE-DB:TRBD1,MIM:615447;end_range=142786224,.;exception=rearrangement required for product;gbkey=CDS;gene=TRBD1;partial=true;start_range=.,142786213
+
+#
+1	RefSeq	match	2353	3496	1144	+	.	ID=888a5d95-d391-4b9b-8aed-3787a7b51988;Target=NG_004148.3 1 1144 +;assembly_bases_aln=1144;assembly_bases_seq=1144;bit_score=2130.1;blast_aligner=1;blast_score=1144;common_component=0;e_value=0;filter_score=0;for_remapping=2;gap_count=0;hsp_percent_coverage=100;matchable_bases=1144;matched_bases=1144;num_ident=1144;num_mismatch=0;pct_coverage=100;pct_coverage_hiqual=100;pct_identity_gap=100;pct_identity_gapopen_only=100;pct_identity_ungap=100;rank=1;weighted_identity=1
+
+#
+1	RefSeq	gene	364	662	.	-	.	ID=gene-Dmel_CR32868;Dbxref=FLYBASE:FBgn0046696,GeneID:3772418;Name=RNaseP:RNA;Note=alternate names: RNase P RNA;cyt_map=100B7-100B7;description=Ribonuclease P RNA;gbkey=Gene;gen_map=3-102 cM;gene=RNaseP:RNA;gene_biotype=RNase_P_RNA;gene_synonym=chr3R:27043287..27043402,CR32868,Dmel\CR32868,P RNA,RNase P RNA,RNAseP,RPR RNA;locus_tag=Dmel_CR32868
+1	RefSeq	RNase_P_RNA	364	662	.	-	.	ID=rna-NR_002092.1;Parent=gene-Dmel_CR32868;Dbxref=FLYBASE:FBtr0085775,GeneID:3772418,Genbank:NR_002092.1,FLYBASE:FBgn0046696;Name=NR_002092.1;Note=RNaseP:RNA-RA%3B Dmel\RNaseP:RNA-RA%3B CR32868-RA%3B Dmel\CR32868-RA;gbkey=ncRNA;gene=RNaseP:RNA;locus_tag=Dmel_CR32868;orig_transcript_id=gnl|FlyBase|CR32868-RA;product=ribonuclease P RNA;transcript_id=NR_002092.1
+1	RefSeq	exon	364	662	.	-	.	ID=exon-NR_002092.1-1;Parent=rna-NR_002092.1;Dbxref=FLYBASE:FBtr0085775,GeneID:3772418,Genbank:NR_002092.1,FLYBASE:FBgn0046696;Note=RNaseP:RNA-RA%3B Dmel\RNaseP:RNA-RA%3B CR32868-RA%3B Dmel\CR32868-RA;gbkey=ncRNA;gene=RNaseP:RNA;locus_tag=Dmel_CR32868;orig_transcript_id=gnl|FlyBase|CR32868-RA;product=ribonuclease P RNA;transcript_id=NR_002092.1
+1	RefSeq	RNase_P_RNA	364	658	.	-	.	ID=rna-NR_133496.1;Parent=gene-Dmel_CR32868;Dbxref=FLYBASE:FBtr0433532,GeneID:3772418,Genbank:NR_133496.1,FLYBASE:FBgn0046696;Name=NR_133496.1;Note=RNaseP:RNA-RB%3B Dmel\RNaseP:RNA-RB%3B CR32868-RB%3B Dmel\CR32868-RB;gbkey=ncRNA;gene=RNaseP:RNA;locus_tag=Dmel_CR32868;orig_transcript_id=gnl|FlyBase|CR32868-RB;product=ribonuclease P RNA;transcript_id=NR_133496.1
+1	RefSeq	exon	364	658	.	-	.	ID=exon-NR_133496.1-1;Parent=rna-NR_133496.1;Dbxref=FLYBASE:FBtr0433532,GeneID:3772418,Genbank:NR_133496.1,FLYBASE:FBgn0046696;Note=RNaseP:RNA-RB%3B Dmel\RNaseP:RNA-RB%3B CR32868-RB%3B Dmel\CR32868-RB;gbkey=ncRNA;gene=RNaseP:RNA;locus_tag=Dmel_CR32868;orig_transcript_id=gnl|FlyBase|CR32868-RB;product=ribonuclease P RNA;transcript_id=NR_133496.1
+
+#
+1	RefSeq	gene	18133	18431	.	-	.	ID=gene-Dmel_CR42652;Dbxref=FLYBASE:FBgn0261504,GeneID:10178925;Name=7SLRNA:CR42652;cyt_map=84A5-84A5;description=Signal recognition particle 7SL RNA CR42652;gbkey=Gene;gen_map=3-48 cM;gene=7SLRNA:CR42652;gene_biotype=SRP_RNA;gene_synonym=7SL RNA,7SLRNA,chr3R_2645852_2646154,CR42652,Dmel\CR42652;locus_tag=Dmel_CR42652
+1	RefSeq	SRP_RNA	18133	18431	.	-	.	ID=rna-NR_037753.1;Parent=gene-Dmel_CR42652;Dbxref=FLYBASE:FBtr0302398,GeneID:10178925,Genbank:NR_037753.1,FLYBASE:FBgn0261504;Name=NR_037753.1;Note=7SLRNA:CR42652-RA%3B Dmel\7SLRNA:CR42652-RA%3B CR42652-RA%3B Dmel\CR42652-RA;gbkey=ncRNA;gene=7SLRNA:CR42652;locus_tag=Dmel_CR42652;orig_transcript_id=gnl|FlyBase|CR42652-RA;product=signal recognition particle 7SL RNA CR42652;transcript_id=NR_037753.1
+1	RefSeq	exon	18133	18431	.	-	.	ID=exon-NR_037753.1-1;Parent=rna-NR_037753.1;Dbxref=FLYBASE:FBtr0302398,GeneID:10178925,Genbank:NR_037753.1,FLYBASE:FBgn0261504;Note=7SLRNA:CR42652-RA%3B Dmel\7SLRNA:CR42652-RA%3B CR42652-RA%3B Dmel\CR42652-RA;gbkey=ncRNA;gene=7SLRNA:CR42652;locus_tag=Dmel_CR42652;orig_transcript_id=gnl|FlyBase|CR42652-RA;product=signal recognition particle 7SL RNA CR42652;transcript_id=NR_037753.1
+
+#
+1	Curated Genomic	mobile_genetic_element	26834	26967	.	.	.	ID=id-GeneID:111721714-3;Dbxref=GeneID:111721714;gbkey=mobile_element;mobile_element_type=SINE:MIR;rpt_family=MIR;rpt_type=dispersed
+
+#
+1	Curated Genomic	origin_of_replication	32132	33242	.	.	.	ID=id-GeneID:107228318;Dbxref=GeneID:107228318;Note=1.1 kb EcoRI fragment%3B promotes replication of a plasmid;experiment=EXISTENCE:genetic transformation evidence [ECO:0005027][PMID:8107675%2C PMID:10653986];gbkey=rep_origin
+
+#
+1	Curated Genomic	gene	568	605	.	-	.	ID=gene-IGKJ5;Dbxref=GeneID:28946,HGNC:HGNC:5723,IMGT/GENE-DB:IGKJ5;Name=IGKJ5;description=immunoglobulin kappa joining 5;end_range=88860605,.;gbkey=Gene;gene=IGKJ5;gene_biotype=J_segment;gene_synonym=J5;partial=true;start_range=.,88860568
+1	Curated Genomic	J_gene_segment	568	605	.	-	.	ID=id-IGKJ5;Parent=gene-IGKJ5;Dbxref=GeneID:28946,HGNC:HGNC:5723,IMGT/GENE-DB:IGKJ5;gbkey=J_segment;gene=IGKJ5;standard_name=IGKJ5
+1	Curated Genomic	exon	568	605	.	-	.	ID=exon-id-IGKJ5-1;Parent=id-IGKJ5;Dbxref=GeneID:28946,HGNC:HGNC:5723,IMGT/GENE-DB:IGKJ5;gbkey=J_segment;gene=IGKJ5;standard_name=IGKJ5
+1	Curated Genomic	CDS	568	605	.	-	1	ID=cds-IGKJ5;Parent=id-IGKJ5;Dbxref=GeneID:28946,HGNC:HGNC:5723,IMGT/GENE-DB:IGKJ5;end_range=88860605,.;exception=rearrangement required for product;gbkey=CDS;gene=IGKJ5;partial=true;start_range=.,88860568
+
+#
+1	Ensembl_Plants	ncRNA_gene	41362	41485	.	+	.	ID=gene:ENSRNA049468744;Name=MIR1428;biotype=pre_miRNA;description=microRNA MIR1428;gene_id=ENSRNA049468744;logic_name=gramene_rfam
+1	Ensembl_Plants	pre_miRNA	41362	41485	.	+	.	ID=transcript:ENSRNA049468744-T1;Parent=gene:ENSRNA049468744;biotype=pre_miRNA;transcript_id=ENSRNA049468744-T1
+1	Ensembl_Plants	exon	41362	41485	.	+	.	Parent=transcript:ENSRNA049468744-T1;Name=ENSRNA049468744-E1;constitutive=1;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSRNA049468744-E1;rank=1
+
+#
+1	BestRefSeq	gene	4551	9738	.	-	.	ID=gene-MCL1;Dbxref=GeneID:4170,HGNC:HGNC:6943,MIM:159552;Name=MCL1;description=MCL1 apoptosis regulator%2C BCL2 family member;gbkey=Gene;gene=MCL1;gene_biotype=protein_coding;gene_synonym=bcl2-L-3,BCL2L3,EAT,Mcl-1,MCL1-ES,mcl1/EAT,MCL1L,MCL1S,TM
+1	BestRefSeq	mRNA	4551	9738	.	-	.	ID=rna-NM_001197320.1;Parent=gene-MCL1;Dbxref=GeneID:4170,Genbank:NM_001197320.1,HGNC:HGNC:6943,MIM:159552;Name=NM_001197320.1;Note=The RefSeq transcript has 1 non-frameshifting indel compared to this genomic sequence;exception=annotated by transcript or proteomic data;gbkey=mRNA;gene=MCL1;inference=similar to RNA sequence%2C mRNA (same species):RefSeq:NM_001197320.1;product=MCL1 apoptosis regulator%2C BCL2 family member%2C transcript variant 3;transcript_id=NM_001197320.1
+1	BestRefSeq	exon	9423	9738	.	-	.	ID=exon-NM_001197320.1-1;Parent=rna-NM_001197320.1;Dbxref=GeneID:4170,Genbank:NM_001197320.1,HGNC:HGNC:6943,MIM:159552;Note=The RefSeq transcript has 1 non-frameshifting indel compared to this genomic sequence;exception=annotated by transcript or proteomic data;gbkey=mRNA;gene=MCL1;inference=similar to RNA sequence%2C mRNA (same species):RefSeq:NM_001197320.1;product=MCL1 apoptosis regulator%2C BCL2 family member%2C transcript variant 3;transcript_id=NM_001197320.1
+1	BestRefSeq	exon	8843	8963	.	-	.	ID=exon-NM_001197320.1-2;Parent=rna-NM_001197320.1;Dbxref=GeneID:4170,Genbank:NM_001197320.1,HGNC:HGNC:6943,MIM:159552;Note=The RefSeq transcript has 1 non-frameshifting indel compared to this genomic sequence;exception=annotated by transcript or proteomic data;gbkey=mRNA;gene=MCL1;inference=similar to RNA sequence%2C mRNA (same species):RefSeq:NM_001197320.1;product=MCL1 apoptosis regulator%2C BCL2 family member%2C transcript variant 3;transcript_id=NM_001197320.1
+1	BestRefSeq	exon	8244	8491	.	-	.	ID=exon-NM_001197320.1-3;Parent=rna-NM_001197320.1;Dbxref=GeneID:4170,Genbank:NM_001197320.1,HGNC:HGNC:6943,MIM:159552;Note=The RefSeq transcript has 1 non-frameshifting indel compared to this genomic sequence;exception=annotated by transcript or proteomic data;gbkey=mRNA;gene=MCL1;inference=similar to RNA sequence%2C mRNA (same species):RefSeq:NM_001197320.1;product=MCL1 apoptosis regulator%2C BCL2 family member%2C transcript variant 3;transcript_id=NM_001197320.1
+1	BestRefSeq	exon	4551	7491	.	-	.	ID=exon-NM_001197320.1-4;Parent=rna-NM_001197320.1;Dbxref=GeneID:4170,Genbank:NM_001197320.1,HGNC:HGNC:6943,MIM:159552;Note=The RefSeq transcript has 1 non-frameshifting indel compared to this genomic sequence;exception=annotated by transcript or proteomic data;gbkey=mRNA;gene=MCL1;inference=similar to RNA sequence%2C mRNA (same species):RefSeq:NM_001197320.1;product=MCL1 apoptosis regulator%2C BCL2 family member%2C transcript variant 3;transcript_id=NM_001197320.1
+1	BestRefSeq	CDS	9423	9530	.	-	0	ID=cds-NP_001184249.1;Parent=rna-NM_001197320.1;Dbxref=CCDS:CCDS72909.1,GeneID:4170,Genbank:NP_001184249.1,HGNC:HGNC:6943,MIM:159552;Name=NP_001184249.1;Note=isoform 3 is encoded by transcript variant 3;gbkey=CDS;gene=MCL1;product=induced myeloid leukemia cell differentiation protein Mcl-1 isoform 3;protein_id=NP_001184249.1
+1	BestRefSeq	CDS	8843	8963	.	-	0	ID=cds-NP_001184249.1;Parent=rna-NM_001197320.1;Dbxref=CCDS:CCDS72909.1,GeneID:4170,Genbank:NP_001184249.1,HGNC:HGNC:6943,MIM:159552;Name=NP_001184249.1;Note=isoform 3 is encoded by transcript variant 3;gbkey=CDS;gene=MCL1;product=induced myeloid leukemia cell differentiation protein Mcl-1 isoform 3;protein_id=NP_001184249.1
+1	BestRefSeq	CDS	8244	8491	.	-	2	ID=cds-NP_001184249.1;Parent=rna-NM_001197320.1;Dbxref=CCDS:CCDS72909.1,GeneID:4170,Genbank:NP_001184249.1,HGNC:HGNC:6943,MIM:159552;Name=NP_001184249.1;Note=isoform 3 is encoded by transcript variant 3;gbkey=CDS;gene=MCL1;product=induced myeloid leukemia cell differentiation protein Mcl-1 isoform 3;protein_id=NP_001184249.1
+1	BestRefSeq	CDS	7375	7491	.	-	0	ID=cds-NP_001184249.1;Parent=rna-NM_001197320.1;Dbxref=CCDS:CCDS72909.1,GeneID:4170,Genbank:NP_001184249.1,HGNC:HGNC:6943,MIM:159552;Name=NP_001184249.1;Note=isoform 3 is encoded by transcript variant 3;gbkey=CDS;gene=MCL1;product=induced myeloid leukemia cell differentiation protein Mcl-1 isoform 3;protein_id=NP_001184249.1
+1	BestRefSeq	mRNA	4551	9738	.	-	.	ID=rna-NM_182763.2;Parent=gene-MCL1;Dbxref=GeneID:4170,Genbank:NM_182763.2,HGNC:HGNC:6943,MIM:159552;Name=NM_182763.2;Note=The RefSeq transcript has 1 non-frameshifting indel compared to this genomic sequence;exception=annotated by transcript or proteomic data;gbkey=mRNA;gene=MCL1;inference=similar to RNA sequence%2C mRNA (same species):RefSeq:NM_182763.2;product=MCL1 apoptosis regulator%2C BCL2 family member%2C transcript variant 2;transcript_id=NM_182763.2
+1	BestRefSeq	exon	8843	9738	.	-	.	ID=exon-NM_182763.2-1;Parent=rna-NM_182763.2;Dbxref=GeneID:4170,Genbank:NM_182763.2,HGNC:HGNC:6943,MIM:159552;Note=The RefSeq transcript has 1 non-frameshifting indel compared to this genomic sequence;exception=annotated by transcript or proteomic data;gbkey=mRNA;gene=MCL1;inference=similar to RNA sequence%2C mRNA (same species):RefSeq:NM_182763.2;product=MCL1 apoptosis regulator%2C BCL2 family member%2C transcript variant 2;transcript_id=NM_182763.2
+1	BestRefSeq	exon	4551	7491	.	-	.	ID=exon-NM_182763.2-2;Parent=rna-NM_182763.2;Dbxref=GeneID:4170,Genbank:NM_182763.2,HGNC:HGNC:6943,MIM:159552;Note=The RefSeq transcript has 1 non-frameshifting indel compared to this genomic sequence;exception=annotated by transcript or proteomic data;gbkey=mRNA;gene=MCL1;inference=similar to RNA sequence%2C mRNA (same species):RefSeq:NM_182763.2;product=MCL1 apoptosis regulator%2C BCL2 family member%2C transcript variant 2;transcript_id=NM_182763.2
+1	BestRefSeq	CDS	8843	9530	.	-	0	ID=cds-NP_877495.1;Parent=rna-NM_182763.2;Dbxref=CCDS:CCDS956.1,GeneID:4170,Genbank:NP_877495.1,HGNC:HGNC:6943,MIM:159552;Name=NP_877495.1;Note=isoform 2 is encoded by transcript variant 2;gbkey=CDS;gene=MCL1;product=induced myeloid leukemia cell differentiation protein Mcl-1 isoform 2;protein_id=NP_877495.1
+1	BestRefSeq	CDS	7364	7491	.	-	2	ID=cds-NP_877495.1;Parent=rna-NM_182763.2;Dbxref=CCDS:CCDS956.1,GeneID:4170,Genbank:NP_877495.1,HGNC:HGNC:6943,MIM:159552;Name=NP_877495.1;Note=isoform 2 is encoded by transcript variant 2;gbkey=CDS;gene=MCL1;product=induced myeloid leukemia cell differentiation protein Mcl-1 isoform 2;protein_id=NP_877495.1
+1	BestRefSeq	mRNA	4558	9610	.	-	.	ID=rna-NM_021960.5;Parent=gene-MCL1;Dbxref=Ensembl:ENST00000369026.3,GeneID:4170,Genbank:NM_021960.5,HGNC:HGNC:6943,MIM:159552;Name=NM_021960.5;gbkey=mRNA;gene=MCL1;product=MCL1 apoptosis regulator%2C BCL2 family member%2C transcript variant 1;tag=MANE Select;transcript_id=NM_021960.5
+1	BestRefSeq	exon	8843	9610	.	-	.	ID=exon-NM_021960.5-1;Parent=rna-NM_021960.5;Dbxref=Ensembl:ENST00000369026.3,GeneID:4170,Genbank:NM_021960.5,HGNC:HGNC:6943,MIM:159552;gbkey=mRNA;gene=MCL1;product=MCL1 apoptosis regulator%2C BCL2 family member%2C transcript variant 1;tag=MANE Select;transcript_id=NM_021960.5
+1	BestRefSeq	exon	8244	8491	.	-	.	ID=exon-NM_021960.5-2;Parent=rna-NM_021960.5;Dbxref=Ensembl:ENST00000369026.3,GeneID:4170,Genbank:NM_021960.5,HGNC:HGNC:6943,MIM:159552;gbkey=mRNA;gene=MCL1;product=MCL1 apoptosis regulator%2C BCL2 family member%2C transcript variant 1;tag=MANE Select;transcript_id=NM_021960.5
+1	BestRefSeq	exon	4558	7491	.	-	.	ID=exon-NM_021960.5-3;Parent=rna-NM_021960.5;Dbxref=Ensembl:ENST00000369026.3,GeneID:4170,Genbank:NM_021960.5,HGNC:HGNC:6943,MIM:159552;gbkey=mRNA;gene=MCL1;product=MCL1 apoptosis regulator%2C BCL2 family member%2C transcript variant 1;tag=MANE Select;transcript_id=NM_021960.5
+1	BestRefSeq	CDS	8843	9530	.	-	0	ID=cds-NP_068779.1;Parent=rna-NM_021960.5;Dbxref=CCDS:CCDS957.1,Ensembl:ENSP00000358022.2,GeneID:4170,Genbank:NP_068779.1,HGNC:HGNC:6943,MIM:159552;Name=NP_068779.1;Note=isoform 1 is encoded by transcript variant 1;gbkey=CDS;gene=MCL1;product=induced myeloid leukemia cell differentiation protein Mcl-1 isoform 1;protein_id=NP_068779.1;tag=MANE Select
+1	BestRefSeq	CDS	8244	8491	.	-	2	ID=cds-NP_068779.1;Parent=rna-NM_021960.5;Dbxref=CCDS:CCDS957.1,Ensembl:ENSP00000358022.2,GeneID:4170,Genbank:NP_068779.1,HGNC:HGNC:6943,MIM:159552;Name=NP_068779.1;Note=isoform 1 is encoded by transcript variant 1;gbkey=CDS;gene=MCL1;product=induced myeloid leukemia cell differentiation protein Mcl-1 isoform 1;protein_id=NP_068779.1;tag=MANE Select
+1	BestRefSeq	CDS	7375	7491	.	-	0	ID=cds-NP_068779.1;Parent=rna-NM_021960.5;Dbxref=CCDS:CCDS957.1,Ensembl:ENSP00000358022.2,GeneID:4170,Genbank:NP_068779.1,HGNC:HGNC:6943,MIM:159552;Name=NP_068779.1;Note=isoform 1 is encoded by transcript variant 1;gbkey=CDS;gene=MCL1;product=induced myeloid leukemia cell differentiation protein Mcl-1 isoform 1;protein_id=NP_068779.1;tag=MANE Select
+1	RefSeq	cDNA_match	8843	9738	896	-	.	ID=689c5e10c2545992162bec25772667ff;Target=NM_182763.2 1 896 +;assembly_bases_aln=128;assembly_bases_seq=128;consensus_splices=2;exon_identity=0.998959;for_remapping=2;gap_count=1;identity=0.998959;idty=1;matches=3837;num_ident=3837;num_mismatch=0;pct_coverage=99.8959;pct_coverage_hiqual=99.8959;pct_identity_gap=99.8959;pct_identity_ungap=100;product_coverage=1;rank=1;splices=2;weighted_identity=0.997933
+1	RefSeq	cDNA_match	4551	7491	2937.24	-	.	ID=689c5e10c2545992162bec25772667ff;Target=NM_182763.2 897 3841 +;assembly_bases_aln=128;assembly_bases_seq=128;consensus_splices=2;exon_identity=0.998959;for_remapping=2;gap_count=1;identity=0.998959;idty=0.998642;matches=3837;num_ident=3837;num_mismatch=0;pct_coverage=99.8959;pct_coverage_hiqual=99.8959;pct_identity_gap=99.8959;pct_identity_ungap=100;product_coverage=1;rank=1;splices=2;weighted_identity=0.997933;Gap=M1080 I4 M1861
+1	RefSeq	cDNA_match	9423	9738	316	-	.	ID=81f7ed5a78cc48ff2aada7c6fe291b85;Target=NM_001197320.1 1 316 +;assembly_bases_aln=129;assembly_bases_seq=129;consensus_splices=6;exon_identity=0.998898;for_remapping=2;gap_count=1;identity=0.998898;idty=1;matches=3626;num_ident=3626;num_mismatch=0;pct_coverage=99.8898;pct_coverage_hiqual=99.8898;pct_identity_gap=99.8898;pct_identity_ungap=100;product_coverage=1;rank=1;splices=6;weighted_identity=0.996736
+1	RefSeq	cDNA_match	8843	8963	121	-	.	ID=81f7ed5a78cc48ff2aada7c6fe291b85;Target=NM_001197320.1 317 437 +;assembly_bases_aln=129;assembly_bases_seq=129;consensus_splices=6;exon_identity=0.998898;for_remapping=2;gap_count=1;identity=0.998898;idty=1;matches=3626;num_ident=3626;num_mismatch=0;pct_coverage=99.8898;pct_coverage_hiqual=99.8898;pct_identity_gap=99.8898;pct_identity_ungap=100;product_coverage=1;rank=1;splices=6;weighted_identity=0.996736
+1	RefSeq	cDNA_match	8244	8491	248	-	.	ID=81f7ed5a78cc48ff2aada7c6fe291b85;Target=NM_001197320.1 438 685 +;assembly_bases_aln=129;assembly_bases_seq=129;consensus_splices=6;exon_identity=0.998898;for_remapping=2;gap_count=1;identity=0.998898;idty=1;matches=3626;num_ident=3626;num_mismatch=0;pct_coverage=99.8898;pct_coverage_hiqual=99.8898;pct_identity_gap=99.8898;pct_identity_ungap=100;product_coverage=1;rank=1;splices=6;weighted_identity=0.996736
+1	RefSeq	cDNA_match	4551	7491	2937.24	-	.	ID=81f7ed5a78cc48ff2aada7c6fe291b85;Target=NM_001197320.1 686 3630 +;assembly_bases_aln=129;assembly_bases_seq=129;consensus_splices=6;exon_identity=0.998898;for_remapping=2;gap_count=1;identity=0.998898;idty=0.998642;matches=3626;num_ident=3626;num_mismatch=0;pct_coverage=99.8898;pct_coverage_hiqual=99.8898;pct_identity_gap=99.8898;pct_identity_ungap=100;product_coverage=1;rank=1;splices=6;weighted_identity=0.996736;Gap=M1080 I4 M1861
+
+#
+1	Curated Genomic	repeat_region	33936	34222	.	.	.	ID=id-GeneID:111188164-11;Dbxref=GeneID:111188164;Note=contains four repeated motifs of two subrepeats%3B consensus A %3D tgtctagctaaaggtttg B %3D taaaaaygcaccaatcagcrctctg;experiment=COORDINATES:motif similarity evidence [ECO:0000028][PMID:12489990];gbkey=repeat_region
+
+#
+1	RefSeq	gene	21386	23946	.	-	.	ID=gene-ZemaCt121;Dbxref=GeneID:845256;Name=trnK;gbkey=Gene;gene=trnK;gene_biotype=tRNA;locus_tag=ZemaCt121
+1	RefSeq	tRNA	21386	23946	.	-	.	ID=rna-ZemaCt121;Parent=gene-ZemaCt121;Dbxref=GeneID:845256;gbkey=tRNA;gene=trnK;locus_tag=ZemaCt121;product=tRNA-Lys
+1	RefSeq	exon	23910	23946	.	-	.	ID=exon-ZemaCt121-1;Parent=rna-ZemaCt121;Dbxref=GeneID:845256;gbkey=tRNA;gene=trnK;locus_tag=ZemaCt121;product=tRNA-Lys
+1	RefSeq	exon	21386	21420	.	-	.	ID=exon-ZemaCt121-2;Parent=rna-ZemaCt121;Dbxref=GeneID:845256;gbkey=tRNA;gene=trnK;locus_tag=ZemaCt121;product=tRNA-Lys
+1	RefSeq	exon	21386	21420	.	-	.	ID=id-ZemaCt121-2;Parent=gene-ZemaCt121;Dbxref=GeneID:845256;exon_number=2;gbkey=exon;gene=trnK;locus_tag=ZemaCt121;number=2
+1	RefSeq	exon	23910	23946	.	-	.	ID=id-ZemaCt121-1;Parent=gene-ZemaCt121;Dbxref=GeneID:845256;exon_number=1;gbkey=exon;gene=trnK;locus_tag=ZemaCt121;number=1
+1	RefSeq	intron	21421	23909	.	-	.	ID=id-ZemaCt121;Dbxref=GeneID:845256;exon_number=1;gbkey=intron;gene=trnK;locus_tag=ZemaCt121;number=1
+1	RefSeq	gene	34491	35604	.	-	.	ID=gene-ZemaCp004;Dbxref=GeneID:845232;Name=rps16;gbkey=Gene;gene=rps16;gene_biotype=protein_coding;locus_tag=ZemaCp004
+1	RefSeq	CDS	35565	35604	.	-	0	ID=cds-NP_043006.1;Parent=gene-ZemaCp004;Dbxref=UniProtKB/Swiss-Prot:P27723,Genbank:NP_043006.1,GeneID:845232;Name=NP_043006.1;gbkey=CDS;gene=rps16;locus_tag=ZemaCp004;product=ribosomal protein S16;protein_id=NP_043006.1;transl_table=11
+1	RefSeq	CDS	34491	34708	.	-	2	ID=cds-NP_043006.1;Parent=gene-ZemaCp004;Dbxref=UniProtKB/Swiss-Prot:P27723,Genbank:NP_043006.1,GeneID:845232;Name=NP_043006.1;gbkey=CDS;gene=rps16;locus_tag=ZemaCp004;product=ribosomal protein S16;protein_id=NP_043006.1;transl_table=11
+1	RefSeq	exon	34491	34708	.	-	.	ID=id-ZemaCp004-2;Parent=gene-ZemaCp004;Dbxref=GeneID:845232;exon_number=2;gbkey=exon;gene=rps16;locus_tag=ZemaCp004;number=2
+1	RefSeq	exon	35565	35604	.	-	.	ID=id-ZemaCp004-1;Parent=gene-ZemaCp004;Dbxref=GeneID:845232;exon_number=1;gbkey=exon;gene=rps16;locus_tag=ZemaCp004;number=1
+1	RefSeq	intron	34709	35564	.	-	.	ID=id-ZemaCp004;Dbxref=GeneID:845232;exon_number=1;gbkey=intron;gene=rps16;locus_tag=ZemaCp004;number=1
+
+#
+1	BestRefSeq	gene	14610	15060	.	-	.	ID=gene-TERC;Dbxref=GeneID:7012,HGNC:HGNC:11727,MIM:602322;Name=TERC;description=telomerase RNA component;gbkey=Gene;gene=TERC;gene_biotype=telomerase_RNA;gene_synonym=DKCA1,hTR,PFBMFT2,SCARNA19,TR,TRC3
+1	BestRefSeq	telomerase_RNA	14610	15060	.	-	.	ID=rna-NR_001566.1;Parent=gene-TERC;Dbxref=GeneID:7012,Genbank:NR_001566.1,HGNC:HGNC:11727,MIM:602322;Name=NR_001566.1;gbkey=ncRNA;gene=TERC;product=telomerase RNA component;transcript_id=NR_001566.1
+1	BestRefSeq	exon	14610	15060	.	-	.	ID=exon-NR_001566.1-1;Parent=rna-NR_001566.1;Dbxref=GeneID:7012,Genbank:NR_001566.1,HGNC:HGNC:11727,MIM:602322;gbkey=ncRNA;gene=TERC;product=telomerase RNA component;transcript_id=NR_001566.1
+
+#
+1	RefSeq	D_loop	15423	16299	.	+	.	ID=id-NC_005089.1:15423..16299;Dbxref=MGI:MGI:108422;Note=mt-Dcr%3B d-loop control region-mitochondrial;gbkey=D-loop
+
+#
+1	havana	gene	155	1788	.	+	.	ID=gene:ENSMUSG00000102348;Name=Gm10568;biotype=TEC;description=predicted gene 10568 [Source:MGI Symbol%3BAcc:MGI:3642703];gene_id=ENSMUSG00000102348;logic_name=havana_mus_musculus;version=1
+1	havana	unconfirmed_transcript	155	1788	.	+	.	ID=transcript:ENSMUST00000193244;Parent=gene:ENSMUSG00000102348;Name=Gm10568-201;biotype=TEC;tag=basic;transcript_id=ENSMUST00000193244;transcript_support_level=NA;version=1
+1	havana	exon	155	1788	.	+	.	Parent=transcript:ENSMUST00000193244;Name=ENSMUSE00001341983;constitutive=1;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSMUSE00001341983;rank=1;version=1
+
+#
+1	Curated Genomic	enhancer_blocking_element	26779	27008	.	.	.	ID=id-GeneID:111721714-2;Dbxref=GeneID:111721714;Note=230 bp MIR1 fragment used in the reporter constructs;experiment=EXISTENCE:reporter gene assay evidence [ECO:0000049][PMID:26216945];function=blocks activation of a CMV promoter by a CMV enhancer when located between the enhancer and promoter in transfected HEK293 cells;gbkey=regulatory;regulatory_class=enhancer_blocking_element
+
+#
+1	BestRefSeq	gene	32166	32304	.	+	.	ID=gene-SCARNA21B;Dbxref=GeneID:107397391,HGNC:HGNC:52237;Name=SCARNA21B;description=small Cajal body-specific RNA 21B;gbkey=Gene;gene=SCARNA21B;gene_biotype=guide_RNA
+1	BestRefSeq	guide_RNA	32166	32304	.	+	.	ID=rna-NR_135613.1;Parent=gene-SCARNA21B;Dbxref=GeneID:107397391,Genbank:NR_135613.1,HGNC:HGNC:52237;Name=NR_135613.1;gbkey=ncRNA;gene=SCARNA21B;product=small Cajal body-specific RNA 21B;transcript_id=NR_135613.1
+1	BestRefSeq	exon	32166	32304	.	+	.	ID=exon-NR_135613.1-1;Parent=rna-NR_135613.1;Dbxref=GeneID:107397391,Genbank:NR_135613.1,HGNC:HGNC:52237;gbkey=ncRNA;gene=SCARNA21B;product=small Cajal body-specific RNA 21B;transcript_id=NR_135613.1
+
+#
+1	Curated Genomic	enhancer	29212	29326	.	.	.	ID=id-GeneID:106783496;Dbxref=GeneID:106783496;experiment=EXISTENCE:reporter gene assay evidence [ECO:0000049][PMID:17135569];function=enhancer in Jurkat T cells;gbkey=regulatory;regulatory_class=enhancer
+
+#
+1	Curated Genomic	locus_control_region	39217	41338	.	.	.	ID=id-GeneID:107126361-2;Dbxref=GeneID:107126361;Note=2.1 kb HindIII fragment;experiment=EXISTENCE:transgenic organism evidence [ECO:0001131][PMID:1682894%2C PMID:8599090];function=lymphocyte-specific developmental regulation of the CD2 gene;gbkey=regulatory;regulatory_class=locus_control_region
+
+#
+1	Curated Genomic	conserved_region	25689	25929	.	.	.	ID=id-GeneID:108175348-4;Dbxref=GeneID:108175348;Note=conserved region%3B HCT with multiple NRF1 binding motifs;experiment=EXISTENCE:sequence alignment evidence [ECO:0000200][PMID:20363979];feat_class=conserved_region;gbkey=misc_feature
+
+#
+1	Curated Genomic	replication_regulatory_region	34490	34571	.	.	.	ID=id-GeneID:106867047-13;Dbxref=GeneID:106867047;Note=DUE (DNA unwinding element)%3B found to be important in DNA replication by competitive PCR assay of size-fractionated nascent strands;experiment=EXISTENCE:fractionation evidence [ECO:0000100][PMID:12589000];function=important for loading of replication factors and initation of replication;gbkey=regulatory;regulatory_class=replication_regulatory_region
+
+#
+1	Curated Genomic	DNAseI_hypersensitive_site	32551	33135	.	.	.	ID=id-GeneID:108281186-3;Dbxref=GeneID:108281186;Note=region containing the chr1.1353 DHS%3B the nucleotide coordinates are approximate for this feature;experiment=EXISTENCE:in vivo cleavage assay evidence [ECO:0001075][PMID:22955617];gbkey=regulatory;regulatory_class=DNase_I_hypersensitive_site
+
+#
+1	Curated Genomic	response_element	28410	28513	.	.	.	ID=id-GeneID:107880064-7;Dbxref=GeneID:107880064;Note=-2131 to -2028;experiment=EXISTENCE:reporter gene assay evidence [ECO:0000049][PMID:9159190];function=mediates induction by calcium;gbkey=regulatory;regulatory_class=response_element
+
+#
+1	Curated Genomic	silencer	33911	34205	.	.	.	ID=id-GeneID:112590825;Dbxref=GeneID:112590825;Note=tiled region #8288%3B K562 Repressive non-DNase unmatched - State 14:Gen5';experiment=EXISTENCE:reporter gene assay evidence [ECO:0000049][PMID:27701403];function=weakly represses a minimal TATA promoter and a strong SV40 promoter by Sharpr-MPRA in K562 cells;gbkey=regulatory;regulatory_class=silencer
+
+#
+1	Curated Genomic	direct_repeat	38696	38709	.	.	.	ID=id-GeneID:106632268-5;Dbxref=GeneID:106632268;Note=14 nt direct repeat flanking AT-rich hypervariable region (HVR);experiment=COORDINATES:sequence alignment evidence [ECO:0000200][PMID:3786150%2C PMID:2885324];gbkey=repeat_region;rpt_type=flanking
+
+#
+1	Curated Genomic	imprinting_control_region	8745	13509	.	.	.	ID=id-GeneID:105259599;Dbxref=GeneID:105259599;experiment=EXISTENCE:mutant phenotype evidence [ECO:0000015][PMID:15314640%2C PMID:20007505];function=controls imprinted expression of the H19 and IGF2 genes;gbkey=regulatory;regulatory_class=imprinting_control_region
+
+#
+1	BestRefSeq	gene	41488	41571	.	+	.	ID=gene-RNY5;Dbxref=GeneID:6090,HGNC:HGNC:10248,MIM:601824;Name=RNY5;description=RNA%2C Ro60-associated Y5;gbkey=Gene;gene=RNY5;gene_biotype=Y_RNA;gene_synonym=hY5,Y5
+1	BestRefSeq	Y_RNA	41488	41571	.	+	.	ID=rna-NR_001571.2;Parent=gene-RNY5;Dbxref=GeneID:6090,Genbank:NR_001571.2,HGNC:HGNC:10248,MIM:601824;Name=NR_001571.2;gbkey=ncRNA;gene=RNY5;product=RNA%2C Ro60-associated Y5;transcript_id=NR_001571.2
+1	BestRefSeq	exon	41488	41571	.	+	.	ID=exon-NR_001571.2-1;Parent=rna-NR_001571.2;Dbxref=GeneID:6090,Genbank:NR_001571.2,HGNC:HGNC:10248,MIM:601824;gbkey=ncRNA;gene=RNY5;product=RNA%2C Ro60-associated Y5;transcript_id=NR_001571.2
+
+#
+1	Curated Genomic	TATA_box	42156	42161	.	.	.	ID=id-GeneID:110013312-19;Dbxref=GeneID:110013312;experiment=COORDINATES:motif similarity evidence [ECO:0000028][PMID:2588000];gbkey=regulatory;regulatory_class=TATA_box
+
+#
+1	Curated Genomic	matrix_attachment_site	633	1271	.	.	.	ID=id-GeneID:106632268-3;Dbxref=GeneID:106632268;Note=3' MAR%3B Dra I/Rsa I fragment;experiment=EXISTENCE:fractionation evidence [ECO:0000100][PMID:2592370];gbkey=regulatory;regulatory_class=matrix_attachment_region
+
+#
+1	Curated Genomic	recombination_feature	46403	46404	.	.	.	ID=id-GeneID:108281192-5;Dbxref=GeneID:108281192;Note=recombination_hotspot%3B PATRR4 breakpoint sub-region%2C recombines with from PATRR22 breakpoint sub-region%2C resulting in a translocation;experiment=EXISTENCE:nucleotide sequencing assay evidence [ECO:0000219][PMID:20673865];gbkey=misc_recomb;recombination_class=recombination_hotspot
+
+#
+1	Curated Genomic	CAAT_signal	45114	45118	.	.	.	ID=id-GeneID:110806306-9;Dbxref=GeneID:110806306;experiment=COORDINATES:motif similarity evidence [ECO:0000028][PMID:11228546];gbkey=regulatory;regulatory_class=CAAT_signal
+
+#
+1	Curated Genomic	transcriptional_cis_regulatory_region	14850	15934	.	.	.	ID=id-GeneID:115801415;Dbxref=GeneID:115801415;Note=candidate enhancer chr1.97 targeted for multiplex CRISPR interference;experiment=EXISTENCE:mutant phenotype evidence [ECO:0000015][PMID:30612741];function=positively regulates NADK gene expression in K562 cells;gbkey=regulatory;regulatory_class=transcriptional_cis_regulatory_region
+
+#
+1	Curated Genomic	promoter	530	1315	.	.	.	ID=id-GeneID:108254694-2;Dbxref=GeneID:108254694;Note=BamHI/NaeI fragment spanning -403 to +373;experiment=EXISTENCE:reporter gene assay evidence [ECO:0000049][PMID:12234688];gbkey=regulatory;regulatory_class=promoter
+
+#
+1	RefSeq	centromere	26460	28587	.	+	.	ID=id-NC_000001.11:122026460..125184587;Note=Linear centromere model derived predominantly from reads generated in PMID: 17803354. This region does not represent an actual centromere sequence%2C as long-range ordering of repeats and unmapped WGS contigs is not provided by the model. For details of model production%2C see http://arxiv.org/abs/1307.0035.;gbkey=centromere
+
+#
+1	RefSeq	gene	31523	31543	.	+	.	ID=gene-CELE_Y74C9A.7;Dbxref=GeneID:13179109;Name=21ur-15479;gbkey=Gene;gene=21ur-15479;gene_biotype=piRNA;locus_tag=CELE_Y74C9A.7
+1	RefSeq	piRNA	31523	31543	.	+	.	ID=rna-NR_049897.1;Parent=gene-CELE_Y74C9A.7;Dbxref=GeneID:13179109,Genbank:NR_049897.1;Name=NR_049897.1;gbkey=ncRNA;gene=21ur-15479;locus_tag=CELE_Y74C9A.7;product=piwi-interacting RNA 21ur-15479;standard_name=Y74C9A.7;transcript_id=NR_049897.1
+1	RefSeq	exon	31523	31543	.	+	.	ID=exon-NR_049897.1-1;Parent=rna-NR_049897.1;Dbxref=GeneID:13179109,Genbank:NR_049897.1;gbkey=ncRNA;gene=21ur-15479;locus_tag=CELE_Y74C9A.7;product=piwi-interacting RNA 21ur-15479;standard_name=Y74C9A.7;transcript_id=NR_049897.1
+
+#
+1	Curated Genomic	protein_binding_site	24384	24413	.	.	.	ID=id-GeneID:107161156-9;Dbxref=GeneID:107161156;Note=USF-binding E box motif;bound_moiety=upstream transcription factor protein(s);experiment=EXISTENCE:protein binding evidence [ECO:0000024][PMID:7929376];function=required for CD2 basal transcriptional activity;gbkey=protein_bind
+
+#
+1	Curated Genomic	sequence_alteration	19405	19405	.	.	.	ID=id-GeneID:107546745-7;Dbxref=dbSNP:1570113,GeneID:107546745;Note=sequence alteration%3B rs1570113 (also known as M-57.8C/T) found near the center of the hotspot as measured by sperm typing%2C displays higher recombination frequencies associated with the 'C' allele versus the 'T' allele;experiment=COORDINATES:natural variation mutant evidence [ECO:0001103][PMID:15987698];feat_class=sequence_alteration;gbkey=misc_feature
+
+#
+1	Curated Genomic	nucleotide_motif	18180	18192	.	.	.	ID=id-GeneID:110599576-4;Dbxref=GeneID:110599576;Note=nucleotide motif%3B similarity to the predicted 13-mer PRDM9 A binding motif (LD hotspot motif)%2C CCNCCNTNNCCNC;feat_class=nucleotide_motif;gbkey=misc_feature
+
+#
+1	RefSeq	inverted_repeat	26118	26569	.	+	.	ID=id-NC_037304.1:6118..6569;Note=D-1;gbkey=repeat_region;rpt_type=inverted
+
+#
+1	sgd	transposable_element_gene	597	4187	.	-	.	ID=gene:YAR009C;Name=YAR009C;biotype=transposable_element;description=Retrotransposon TYA Gag and TYB Pol genes%3B Gag processing produces capsid proteins%2C Pol is cleaved to produce protease%2C reverse transcriptase and integrase activities%3B in YARCTy1-1 TYB is mutant and probably non-functional%3B protein product forms cytoplasmic foci upon DNA replication stress [Source:SGD%3BAcc:S000000067];gene_id=YAR009C;logic_name=sgd
+1	sgd	transposable_element	597	4187	.	-	.	ID=transcript:YAR009C;Parent=gene:YAR009C;biotype=transposable_element;transcript_id=YAR009C
+1	sgd	exon	597	4187	.	-	.	Parent=transcript:YAR009C;Name=YAR009C-E1;constitutive=1;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=YAR009C-E1;rank=1
+
+#
+1	RefSeq	telomere	1	801	.	-	.	ID=id-NC_001133.9:1..801;Dbxref=SGD:S000028862;Note=TEL01L%3B Telomeric region on the left arm of Chromosome I%3B composed of an X element core sequence%2C X element combinatorial repeats%2C and a short terminal stretch of telomeric repeats;gbkey=telomere
+
+#
+1	RefSeq	gap	32412	32481	.	+	.	ID=id14255;gbkey=gap
+
+#
+1	Curated Genomic	repeat_instability_region	48808	49027	.	.	.	ID=id-GeneID:110599576-3;Dbxref=GeneID:110599576;Note=repeat instability region%3B Alu fragment from PMID:21087171%2C which displays instability of the CEB15 repeat region;experiment=EXISTENCE:restriction fragment detection evidence [ECO:0001124][PMID:21087171%2C PMID:25485533];feat_class=repeat_instability_region;gbkey=misc_feature
+
+#
+1	Curated Genomic	non_allelic_homologous_recombination_region	43929	44762	.	.	.	ID=id-GeneID:106501712-2;Dbxref=GeneID:106501712;Note=sub-region a%2C recombines with sub-region a' within the CLCNKB recombination region;experiment=EXISTENCE:nucleotide sequencing assay evidence [ECO:0000219][PMID:9326936];gbkey=misc_recomb;recombination_class=non_allelic_homologous
+
+#
+1	RefSeq	pseudogene	299	1150	.	+	.	ID=gene-CELE_F31C3.10;Dbxref=GeneID:13183151;Name=rrn-3.56;gbkey=Gene;gene=rrn-3.56;gene_biotype=rRNA_pseudogene;locus_tag=CELE_F31C3.10;pseudo=true
+1	RefSeq	pseudogenic_rRNA	299	1150	.	+	.	ID=rna-CELE_F31C3.10;Parent=gene-CELE_F31C3.10;Dbxref=GeneID:13183151;Note=26s rRNA gene fragment pseudogene;gbkey=rRNA;gene=rrn-3.56;locus_tag=CELE_F31C3.10;pseudo=true;pseudogene=unknown;standard_name=F31C3.10
+1	RefSeq	exon	299	1150	.	+	.	ID=exon-CELE_F31C3.10-1;Parent=rna-CELE_F31C3.10;Dbxref=GeneID:13183151;Note=26s rRNA gene fragment pseudogene;gbkey=rRNA;gene=rrn-3.56;locus_tag=CELE_F31C3.10;pseudo=true;pseudogene=unknown;standard_name=F31C3.10
+
+#
+1	Curated Genomic	nucleotide_cleavage_site	38192	38193	.	.	.	ID=id-GeneID:106804547-15;Dbxref=GeneID:106804547;Note=nucleotide cleavage site%3B topoisomerase (DNA) I%3B lower strand;experiment=EXISTENCE:in vivo cleavage assay evidence [ECO:0001075][PMID:17290216];feat_class=nucleotide_cleavage_site;gbkey=misc_feature
+
+#
+1	Curated Genomic	mitotic_recombination_region	34885	34994	.	.	.	ID=id-GeneID:107126359;Dbxref=GeneID:107126359;Note=NUP98-HOXD13 recombination region recombines with the NUP98 intron 12 (HOXD13) recombination sub-region of the nucleoporin 98kDa recombination region;experiment=EXISTENCE:nucleotide sequencing assay evidence [ECO:0000219][PMID:10995009];gbkey=misc_recomb;recombination_class=mitotic
+
+#
+1	Curated Genomic	GC_rich_promoter_region	47645	47654	.	.	.	ID=id-GeneID:108961161-5;Dbxref=GeneID:108961161;Note=GC-2;experiment=EXISTENCE:site-directed mutagenesis evidence [ECO:0005528][PMID:16149048];function=important for promoter activity;gbkey=regulatory;regulatory_class=GC_signal
+
+#
+1	Curated Genomic	regulatory_region	41140	42040	.	.	.	ID=id-GeneID:106560211-3;Dbxref=GeneID:106560211;Note=micrococcal_nuclease_hypersensitive_site%3B MH VI%2C VII%2C VIII%2C IX%2C X%3B region with decreased nucleosome phasing%3B the nucleotide coordinates are approximate for this feature;experiment=EXISTENCE:in vivo cleavage assay evidence [ECO:0001075][PMID:1527004];gbkey=regulatory;regulatory_class=micrococcal_nuclease_hypersensitive_site
+
+#
+1	Curated Genomic	dispersed_repeat	24411	24427	.	.	.	ID=id-GeneID:111832670-29;Dbxref=GeneID:111832670;Note=17-1;experiment=COORDINATES:motif similarity evidence [ECO:0000028][PMID:1719374];gbkey=repeat_region;rpt_type=dispersed
+
+#
+1	BestRefSeq	gene	4491	4598	.	-	.	ID=gene-VTRNA2-1;Dbxref=GeneID:100126299,HGNC:HGNC:37054,MIM:614938;Name=VTRNA2-1;description=vault RNA 2-1;gbkey=Gene;gene=VTRNA2-1;gene_biotype=vault_RNA;gene_synonym=CBL-3,CBL3,hsa-mir-886,hvg-5,MIR886,MIRN886,nc886,pre-miR-886,svtRNA2-1a,VTRNA2
+1	BestRefSeq	vault_RNA	4491	4598	.	-	.	ID=rna-NR_030583.3;Parent=gene-VTRNA2-1;Dbxref=GeneID:100126299,Genbank:NR_030583.3,HGNC:HGNC:37054,MIM:614938;Name=NR_030583.3;gbkey=ncRNA;gene=VTRNA2-1;product=vault RNA 2-1;transcript_id=NR_030583.3
+1	BestRefSeq	exon	4491	4598	.	-	.	ID=exon-NR_030583.3-1;Parent=rna-NR_030583.3;Dbxref=GeneID:100126299,Genbank:NR_030583.3,HGNC:HGNC:37054,MIM:614938;gbkey=ncRNA;gene=VTRNA2-1;product=vault RNA 2-1;transcript_id=NR_030583.3
+
+#
+1	RefSeq	long_terminal_repeat	22230	22552	.	+	.	ID=id-NC_001133.9:22230..22552;Dbxref=SGD:S000006787;Note=Ty1 LTR;gbkey=repeat_region;rpt_type=long_terminal_repeat
+
+#
+1	Curated Genomic	tandem_repeat	8200	10253	.	.	.	ID=id-GeneID:110599576-5;Dbxref=GeneID:110599576;Note=CEB15 (D1S172) VNTR%2C 18 nucleotide repeat;gbkey=repeat_region;rpt_type=tandem;rpt_unit_seq=tcccgtgtctctgctccg
+
+#
+1	Curated Genomic	sequence_comparison	17355	17355	.	.	.	ID=id-GeneID:107548112-27;Dbxref=GeneID:107548112;Note=sequence_comparison%3B C in human genome results in decreased activity relative to T in mouse genome;experiment=COORDINATES:sequence alignment evidence [ECO:0000200][PMID:10488050];feat_class=sequence_comparison;gbkey=misc_feature
+
+#
+1	Curated Genomic	CAGE_cluster	24197	24501	.	.	.	ID=id-GeneID:108281140-3;Dbxref=GeneID:108281140;Note=CAGE cluster%3B bidirectional CAGE region;experiment=EXISTENCE:cap analysis of gene expression evidence [ECO:0000309][PMID:24670763];feat_class=CAGE_cluster;gbkey=misc_feature
+
+#
+1	RefSeq	sequence_conflict	32986	32986	.	+	.	ID=id-NC_001666.2:12986..12986;gbkey=conflict;replace=
+
+#
+1	RefSeq	pseudogene	32821	32892	.	-	.	ID=gene-CELE_T08B2.t1;Dbxref=GeneID:13180512;Name=T08B2.t1;gbkey=Gene;gene=T08B2.t1;gene_biotype=tRNA_pseudogene;locus_tag=CELE_T08B2.t1;pseudo=true
+1	RefSeq	pseudogenic_tRNA	32821	32892	.	-	.	ID=rna-CELE_T08B2.t1;Parent=gene-CELE_T08B2.t1;Dbxref=GeneID:13180512;Note=Predicted tRNA pseudogene pseudogene;gbkey=tRNA;gene=T08B2.t1;locus_tag=CELE_T08B2.t1;pseudo=true;pseudogene=unknown;standard_name=T08B2.t1
+1	RefSeq	exon	32821	32892	.	-	.	ID=exon-CELE_T08B2.t1-1;Parent=rna-CELE_T08B2.t1;Dbxref=GeneID:13180512;Note=Predicted tRNA pseudogene pseudogene;gbkey=tRNA;gene=T08B2.t1;locus_tag=CELE_T08B2.t1;pseudo=true;pseudogene=unknown;standard_name=T08B2.t1
+
+#
+1	ensembl	gene	44967	45244	.	+	.	ID=gene:ENSMUSG00000090395;Name=Ighv5-8;biotype=IG_LV_gene;description=immunoglobulin heavy variable V5-8 [Source:MGI Symbol%3BAcc:MGI:5009890];gene_id=ENSMUSG00000090395;logic_name=ensembl_ig_gene;version=1
+1	ensembl	gene_segment	44967	45244	.	+	.	ID=transcript:ENSMUST00000166255;Parent=gene:ENSMUSG00000090395;Name=Ighv5-8-201;biotype=IG_LV_gene;tag=basic;transcript_id=ENSMUST00000166255;transcript_support_level=NA;version=1
+1	ensembl	exon	44967	45244	.	+	.	Parent=transcript:ENSMUST00000166255;Name=ENSMUSE00000892648;constitutive=1;ensembl_end_phase=2;ensembl_phase=0;exon_id=ENSMUSE00000892648;rank=1;version=1
+1	ensembl	CDS	44967	45244	.	+	0	ID=CDS:ENSMUSP00000128354;Parent=transcript:ENSMUST00000166255;protein_id=ENSMUSP00000128354
+
+#
+1	Curated Genomic	insulator	401	1352	.	.	.	ID=id-GeneID:106632268-2;Dbxref=GeneID:106632268;Note=3' MAR (+43104 to +44079)%3B Xba I/BamH I fragment;experiment=EXISTENCE:reporter gene assay evidence [ECO:0000049][PMID:7799927];function=may contribute to locus-independent transgene expression in cell culture (PMID:7799927)%3B two copies in any orientation on a fly transgene can establish chromosome insulation (PMID:9528807%2C PMID:15542833);gbkey=regulatory;regulatory_class=insulator
+
+#
+1	Curated Genomic	sequence_secondary_structure	25089	25156	.	.	.	ID=id-GeneID:110806263-20;Dbxref=GeneID:110806263;Note=G-quadruplex region%3B thought to form multiple G-quadruplex structures%2C%3B indicated by circular dichromism%2C Taq polymersase stop assay%2C and DMS footprinting;experiment=EXISTENCE:nuclear magnetic resonance spectroscopy evidence [ECO:0001105][PMID:20704263];gbkey=misc_structure
+
+#
+1	sgd	transposable_element_gene	41462	46775	.	+	.	ID=gene:YDR261W-B;biotype=transposable_element;description=Retrotransposon TYA Gag and TYB Pol genes%3B transcribed/translated as one unit%3B polyprotein is processed to make a nucleocapsid-like protein (Gag)%2C reverse transcriptase (RT)%2C protease (PR)%2C and integrase (IN)%3B similar to retroviral genes [Source:SGD%3BAcc:S000007397];gene_id=YDR261W-B;logic_name=sgd
+1	sgd	transposable_element	41462	46775	.	+	.	ID=transcript:YDR261W-B;Parent=gene:YDR261W-B;biotype=transposable_element;transcript_id=YDR261W-B
+1	sgd	exon	41462	46775	.	+	.	Parent=transcript:YDR261W-B;Name=YDR261W-B-E1;constitutive=1;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=YDR261W-B-E1;rank=1
+
+#
+1	Curated Genomic	epigenetically_modified_region	43279	43375	.	.	.	ID=id-GeneID:108281189-3;Dbxref=GeneID:108281189;Note=epigenetically_modified_region%3B co-occurring H3K27ac and H3K4me1 histone modifications and no CAGE data in HeLa cells;experiment=EXISTENCE:chromatin immunoprecipitation-seq evidence [ECO:0000229][PMID:22955616];gbkey=regulatory;regulatory_class=epigenetically_modified_region
+
+#
+1	Curated Genomic	TSS	48896	48896	.	.	.	ID=id-GeneID:106014250-25;Dbxref=GeneID:106014250;Note=transcription start site%3B P0 promoter;experiment=EXISTENCE:manual assertion [ECO:0000218][PMID:9847251];feat_class=transcription_start_site;gbkey=misc_feature
+
+#
+1	Curated Genomic	meiotic_recombination_region	47380	48916	.	.	.	ID=id-GeneID:110599576-2;Dbxref=GeneID:110599576;Note=meiotic double-strand break mapped by DNA meiotic recombinase 1 chromatin immunoprecipitation followed by single-stranded DNA enrichment and sequencing in the germ cells of some male individuals with the PRDM9 A/A%2C PRDM9 A/B and PRDM9 A/C genotypes;experiment=EXISTENCE:chromatin immunoprecipitation-seq evidence [ECO:0000229][PMID:25395542];gbkey=misc_recomb;recombination_class=meiotic
+
+#
+1	Curated Genomic	chromosome_breakpoint	43221	43222	.	.	.	ID=id-GeneID:110011217-5;Dbxref=GeneID:110011217;Note=HPFH-1 deletion 3' breakpoint (minus strand with respect to the GRCh38 reference genome)%3B the deletion removes approximately 105 kb of DNA and inserts 5 nts (AAATA) at this position;experiment=EXISTENCE:nucleotide sequencing assay evidence [ECO:0000219][PMID:2478223];gbkey=misc_recomb;recombination_class=chromosome_breakpoint
+
+#
+1	Curated Genomic	microsatellite	44592	44705	.	.	.	ID=id-GeneID:110599569-3;Dbxref=GeneID:110599569;Note=VNTR;gbkey=repeat_region;rpt_type=tandem;rpt_unit_seq=at;satellite=microsatellite
+
+#
+1	havana	ncRNA_gene	49470	49597	.	-	.	ID=gene:ENSG00000270123;Name=VTRNA2-1;biotype=vaultRNA;description=vault RNA 2-1 [Source:HGNC Symbol%3BAcc:HGNC:37054];gene_id=ENSG00000270123;logic_name=havana_homo_sapiens;version=4
+1	havana	vaultRNA_primary_transcript	49470	49597	.	-	.	ID=transcript:ENST00000602301;Parent=gene:ENSG00000270123;Name=VTRNA2-1-201;biotype=vaultRNA;tag=basic;transcript_id=ENST00000602301;transcript_support_level=NA (assigned to previous version 1);version=2
+1	havana	exon	49470	49597	.	-	.	Parent=transcript:ENST00000602301;Name=ENSE00003282953;constitutive=1;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00003282953;rank=1;version=2
+
+#
+1	Curated Genomic	minisatellite	1749	2232	.	.	.	ID=id-GeneID:110594336-8;Dbxref=GeneID:110594336;Note=MS1 (D1S7) VNTR%2C 9 nucleotide repeat;gbkey=repeat_region;rpt_type=tandem;rpt_unit_seq=gatagggtg;satellite=minisatellite
+
+#
+1	Curated Genomic	replication_start_site	48179	48179	.	.	.	ID=id-GeneID:106804547-14;Dbxref=GeneID:106804547;Note=replication start site%3B identified by primer extension of one-way PCR of nascent strands;experiment=EXISTENCE:primer extension assay evidence [ECO:0001819][PMID:22983127];feat_class=replication_start_site;function=initiation site of forward/rightward leading strand synthesis;gbkey=misc_feature
+
+#
+1	Curated Genomic	stem_loop	6867	7253	.	+	.	ID=id-GeneID:106699567-10;Dbxref=GeneID:106699567;Note=supported by P1 nuclease cleavage;experiment=EXISTENCE:in vitro cleavage assay evidence [ECO:0001058][PMID:7853405];function=blocks enhancer activity;gbkey=stem_loop
+
+
+#
+#
+1	.	gene	1000	9000	.	+	.	ID=gene00001;Name=EDEN
+1	.	TF_binding_site	1000	1012	.	+	.	ID=tfbs00001;Parent=gene00001
+1	.	mRNA	1050	9000	.	+	.	ID=mRNA00001;Parent=gene00001;Name=EDEN.1
+1	.	mRNA	1050	9000	.	+	.	ID=mRNA00002;Parent=gene00001;Name=EDEN.2
+1	.	mRNA	1300	9000	.	+	.	ID=mRNA00003;Parent=gene00001;Name=EDEN.3
+1	.	exon	1300	1500	.	+	.	ID=exon00001;Parent=mRNA00003
+1	.	exon	1050	1500	.	+	.	ID=exon00002;Parent=mRNA00001,mRNA00002
+1	.	exon	3000	3902	.	+	.	ID=exon00003;Parent=mRNA00001,mRNA00003
+1	.	exon	5000	5500	.	+	.	ID=exon00004;Parent=mRNA00001,mRNA00002,mRNA00003
+1	.	exon	7000	9000	.	+	.	ID=exon00005;Parent=mRNA00001,mRNA00002,mRNA00003
+1	.	CDS	1201	1500	.	+	0	ID=cds00001;Parent=mRNA00001;Name=edenprotein.1
+1	.	CDS	3000	3902	.	+	0	ID=cds00001;Parent=mRNA00001;Name=edenprotein.1
+1	.	CDS	5000	5500	.	+	0	ID=cds00001;Parent=mRNA00001;Name=edenprotein.1
+1	.	CDS	7000	7600	.	+	0	ID=cds00001;Parent=mRNA00001;Name=edenprotein.1
+1	.	CDS	1201	1500	.	+	0	ID=cds00002;Parent=mRNA00002;Name=edenprotein.2
+1	.	CDS	5000	5500	.	+	0	ID=cds00002;Parent=mRNA00002;Name=edenprotein.2
+1	.	CDS	7000	7600	.	+	0	ID=cds00002;Parent=mRNA00002;Name=edenprotein.2
+1	.	CDS	3301	3902	.	+	0	ID=cds00003;Parent=mRNA00003;Name=edenprotein.3
+1	.	CDS	5000	5500	.	+	1	ID=cds00003;Parent=mRNA00003;Name=edenprotein.3
+1	.	CDS	7000	7600	.	+	1	ID=cds00003;Parent=mRNA00003;Name=edenprotein.3
+1	.	CDS	3391	3902	.	+	0	ID=cds00004;Parent=mRNA00003;Name=edenprotein.4
+1	.	CDS	5000	5500	.	+	1	ID=cds00004;Parent=mRNA00003;Name=edenprotein.4
+1	.	CDS	7000	7600	.	+	1	ID=cds00004;Parent=mRNA00003;Name=edenprotein.4
+
+#
+1	Curated Genomic	mitotic_recombination_region	51000	53000	.	+	.	ID=id-GeneID:107126359;Dbxref=GeneID:107126359;Note=NUP98-HOXD13 recombination region recombines with the NUP98 intron 12 (HOXD13) recombination sub-region of the nucleoporin 98kDa recombination region;experiment=EXISTENCE:nucleotide sequencing assay evidence [ECO:0000219][PMID:10995009];gbkey=misc_recomb;recombination_class=mitotic
+1	GenBank	region	1	6407	.	+	.	ID=J02448;Name=J02448;Is_circular=true;
+1	GenBank	CDS	6006	7238	.	+	0	ID=geneII;Name=II;Note=protein II;
+1	GenBank	region	1	3407	.	+	.	ID=J02449;Name=J02449;Is_circular=true;
+1	GenBank	CDS	3006	4238	.	+	0	ID=geneIII;Name=III;Note=protein III;
+
+
+#
+1	.	Match	1	23	.	.	.	ID=Match1;Target=EST23 1 21;Gap=M8 D3 M6 I1 M6
+1	.	Match	50	73	.	.	.	ID=Match2;Target=EST24 1 21;Gap=M8 D3 M6 I1 M6
+1	.	nucleotide_to_protein	100	129	.	+	.	ID=match008;Target=p101 1 10;Gap=M3 I1 M2 D1 M4
+1	.	nucleotide_to_protein	150	179	.	+	.	ID=match009;Target=p102 1 10;Gap=M3 I1 M2 D1 M4
+
+#
+1	.	cDNA_match	2050	10000	6.2e-45	+	.	ID=cDNA_match00001;Target=cDNA0123 12 2964;Gap=M451 D3499 M501 D1499 M2001
+1	.	cDNA_match	3050	11000	5.2e-45	+	.	ID=cDNA_match00002;Target=cDNA0124 12 2964;Gap=M451 D3499 M501 D1499 M2001
+1	.	cDNA_match	1050	1500	5.8e-42	+	.	ID=match00001;Target=cdna0123 12  462
+1	.	cDNA_match	5000	5500	8.1e-43	+	.	ID=match00001;Target=cdna0123 463 963
+1	.	cDNA_match	7000	9000	1.4e-40 	+	.	ID=match00001;Target=cdna0123 964 2964
+
+#
+1	.	EST_match	1200	3200	2.2e-30	+	.	ID=EST_match_match00002;Target=EST1123.5 5 506;Gap=M301 D1499 M201
+1	.	EST_match	7000	9000	7.4e-32	-	.	ID=EST_match_match00003;Target=EST1123.3 1 502;Gap=M101 D1499 M401
+1	.	gene	1150	9050	.	+	.	ID=gene_match_00001
+1	.	mRNA	1150	9050	.	+	.	ID=mRNA_match_00001;Parent=gene_match_00001
+1	.	exon	1200	9000	.	+	.	ID=exon_match_00001;Parent=mRNA_match_00001
+1	.	CDS	1200	9000	.	+	0	ID=cds_match_00001;Parent=mRNA_match_00001
+
+#
+1	.	cDNA_match	1200	9000	.	.	.	ID=cDNA00001
+1	.	match_part	1200	3200	2.2e-30	+	.	ID=match00002;Parent=cDNA00001;Target=mjm1123.5 5 506;Gap=M301 D1499 M201
+1	.	match_part	7000	9000	7.4e-32	-	.	ID=match00003;Parent=cDNA00001;Target=mjm1123.3 1 502;Gap=M101 D1499 M401
+
+#
+1	.	EST_match	1000	1500	.	+	.	ID=EST_match_match001;Target=EST_A 1 500 +
+1	.	EST_match	2000	2500	.	+	.	ID=EST_match_match002;Target=EST_B 1 500 -
+1	.	EST_match	2000	2500	.	-	.	ID=EST_match_match001_1;Target=EST_C 1 500 +
+1	.	EST_match	1000	1500	.	-	.	ID=EST_match_match001_2;Target=EST_D 1 500 -
+
+#
+1	TBLASTX	translated_nucleotide_match	4000	4500	.	+	.	ID=translated_nucleotide_match_matchA;Target=Y 500  1000 +
+1	TBLASTX	translated_nucleotide_match	5000	5500	.	-	.	ID=translated_nucleotide_match_matchB;Target=Y 1500 2000 -
+1	TBLASTX	translated_nucleotide_match	500	1000	.	+	.	ID=matchA_1;Target=Y 500  1000 -
+1	TBLASTX	translated_nucleotide_match	1500	2000	.	-	.	ID=matchB_1;Target=Y 1500 2000 +
+
+#
+1	.	gene	4500	5500	.	+	.	ID=gene01;name=resA
+1	.	mRNA	4500	5500	.	+	.	ID=tran01;Parent=gene01
+1	.	exon	4500	5200	.	+	.	Parent=tran01
+1	.	CDS	4700	5000	.	+	.	Parent=tran01
+1	.	gene	6600	7600	.	+	.	ID=gene02;name=resB
+1	.	mRNA	6600	7600	.	+	.	ID=tran02;Parent=gene02
+1	.	CDS	6600	7600	.	+	.	Parent=tran02
+
+#
+1	.	gene	1500	3800	.	+	.	ID=gene01_1;name=resA_1
+1	.	gene	1100	3800	.	+	.	ID=gene02_1;name=resB_1
+1	.	gene	1500	3100	.	+	.	ID=gene03_1;name=resX_1
+1	.	gene	1000	3900	.	+	.	ID=gene04_1;name=resZ_1
+1	.	mRNA	1500	3100	.	+	.	ID=tran01_1;Parent=gene01_1,gene02_1,gene03_1,gene04_1
+1	.	exon	1500	3100	.	+	.	ID=exon00001_1;Parent=tran01_1
+1	.	CDS	1500	1700	.	+	.	Parent=tran01_1;Derives_from=gene01_1
+1	.	CDS	2000	2500	.	+	.	Parent=tran01_1;Derives_from=gene02_1
+1	.	CDS	2600	2800	.	+	.	Parent=tran01_1;Derives_from=gene03_1
+1	.	CDS	2900	3100	.	+	.	Parent=tran01_1;Derives_from=gene04_1
+
+1	.	gene	5500	7800	.	+	.	ID=PT_gene01_1;name=PT_resA_1
+1	.	gene	5100	7800	.	+	.	ID=PT_gene02_1;name=PT_resB_1
+1	.	gene	5500	7100	.	+	.	ID=PT_gene03_1;name=PT_resX_1
+1	.	gene	5000	7900	.	+	.	ID=PT_gene04_1;name=PT_resZ_1
+1	.	mRNA	5500	7100	.	+	.	ID=PT_tran01_1;Parent=PT_gene01_1,PT_gene02_1,PT_gene03_1,PT_gene04_1
+1	.	exon	5500	7100	.	+	.	ID=PT_exon00001_1;Parent=PT_tran01_1
+1	.	CDS	5500	5700	.	+	.	Parent=PT_tran01_1;Derives_from=PT_gene01_1
+1	.	CDS	6000	6500	.	+	.	Parent=PT_tran01_1;Derives_from=PT_gene02_1
+1	.	CDS	6600	6800	.	+	.	Parent=PT_tran01_1;Derives_from=PT_gene03_1
+1	.	CDS	6900	7100	.	+	.	Parent=PT_tran01_1;Derives_from=PT_gene04_1
+
+
+#
+1	.	operon	1000	5000	.	+	.	ID=operon01;name=my_operon
+1	.	promoter	1000	1200	.	+	.	Parent=operon01
+1	.	gene	1300	2800	.	+	.	ID=gene01_2;Parent=operon01;name=resA_2
+1	.	gene	1300	3200	.	+	.	ID=gene02_2;Parent=operon01;name=resB_2
+1	.	gene	1300	3800	.	+	.	ID=gene03_2;Parent=operon01;name=resX_2
+1	.	gene	1300	4600	.	+	.	ID=gene04_2;Parent=operon01;name=resZ_2
+1	.	mRNA	1300	2800	.	+	.	ID=tran01_2;Parent=gene01_2,gene02_2,gene03_2,gene04_2
+1	.	exon	1300	2800	.	+	.	ID=exon00001;Parent=tran01_2
+1	.	CDS	1300	1500	.	+	0	Parent=tran01_2;Derives_from=gene01_2
+1	.	CDS	1700	2000	.	+	0	Parent=tran01_2;Derives_from=gene02_2
+1	.	CDS	2200	2400	.	+	0	Parent=tran01_2;Derives_from=gene03_2
+1	.	CDS	2600	2800	.	+	0	Parent=tran01_2;Derives_from=gene04_2
+
+#
+1	.	gene	6000	8000	.	+	.	ID=gene001_3;name=resA_3
+1	.	gene	6000	9000	.	+	.	ID=gene002_3;name=inteinA_3
+1	.	mRNA	6000	8000	.	+	.	ID=aa_mRNA001;Parent=gene001_3,gene002_3
+1	.	exon	6000	8000	.	+	.	Parent=aa_mRNA001
+1	.	CDS	6000	8000	.	+	0	ID=aa_cds001;Parent=aa_mRNA001;Name=pro_aa
+1	RefSeq	polypeptide	6500	8000	.	+	.	ID=poly001;Derives_from=aa_cds001
+1	RefSeq	mature_polypeptide	6600	6900	.	+	.	ID=poly002;Parent=poly001;Derives_from=gene001_3
+1	RefSeq	mature_polypeptide	7300	8000	.	+	.	ID=poly002;Parent=poly001;Derives_from=gene001_3
+1	RefSeq	intein	6900	7300	.	+	.	ID=poly003;Parent=poly001;Derives_from=gene002_3
+
+#
+1	.	gene	7000	8000	.	+	.	ID=gene0001;name=my_gene
+1	.	gene	7000	8500	.	+	.	ID=gene0002;name=leader_gene
+1	.	mRNA	7000	7400	.	+	.	ID=tran0001;Parent=gene0001,gene0002
+1	.	mRNA	7600	8000	.	+	.	ID=tran0001;Parent=gene0001,gene0002
+1	.	primary_transcript	7000	7400	.	+	.	ID=pt0001;Parent=tran0001;Derives_from=gene0001
+1	.	spliced_leader_RNA	7600	8000	.	+	.	ID=sl0001;Parent=tran0001;Derives_from=gene0002
+1	.	exon	7000	7200	.	+	.	Parent=tran0001
+1	.	CDS	7000	7200	.	+	0	ID=cds0001;Parent=tran0001
+
+1	.	gene	10000	11000	.	+	.	ID=TS_gene0001;name=TS_my_gene
+1	.	gene	10000	11500	.	+	.	ID=TS_gene0002;name=TS_leader_gene
+1	.	mRNA	10000	10400	.	+	.	ID=TS_tran0001;Parent=TS_gene0001,TS_gene0002
+1	.	mRNA	10600	11000	.	+	.	ID=TS_tran0001;Parent=TS_gene0001,TS_gene0002
+1	.	primary_transcript	10200	10400	.	+	.	ID=TS_pt0001;Parent=TS_tran0001;Derives_from=TS_gene0001
+1	.	spliced_leader_RNA	10600	11000	.	+	.	ID=TS_sl0001;Parent=TS_tran0001;Derives_from=TS_gene0002
+1	.	exon	10000	10200	.	+	.	Parent=TS_tran0001
+1	.	CDS	10000	10200	.	+	0	ID=TS_cds0001;Parent=TS_tran0001
+
+
+#
+1	.	gene	12000	13000	.	+	.	ID=PF_gene0010;name=PF_my_gene
+1	.	mRNA	12000	13000	.	+	.	ID=PF_tran0010;Parent=PF_gene0010;Ontology_term=SO:1000069
+1	.	exon	12000	13000	.	+	.	Parent=PF_tran0010
+1	.	CDS	12200	12400	.	+	0	ID=PF_cds0010;Parent=PF_tran0010
+1	.	CDS	12399	13000	.	+	0	ID=PF_cds0010;Parent=PF_tran0010
+
+#
+1	. 	insert site	7000	7000	.	+	1	ID=INT_cds00004;Note=aaa&bbb
+1	. 	insert site	9000	9000	.	+	1	ID=INT_cds00005;Note=aaa&bbb
+
+#
+1	.	gene	14000	14500	?	+	.	ID=SUN_gene0010;name=SUN_my_gene1
+1	.	gene	13000	13500	?	+	.	ID=SUN_gene0020;name=SUN_my_gene2
+
+#
+1	example	SO:0000704	2050	10000	.	+	.	_Load_id=SO_gene1;Name=SO_gene1;Note=Eden splice form 1;ID=SO_gene1
+1	example	SO:0000234	2050	10000	.	+	.	_Load_id=SO_EDEN.1;Name=SO_EDEN.1;Note=Eden splice form 1;ID=SO_1_1;Parent=SO_gene1
+1	example	SO:0000316	6000	6500	.	+	0	Parent=SO_1_1
+1	example	SO:0000316	4000	4902	.	+	0	Parent=SO_1_1
+1	example	SO:0000316	8000	8608	.	+	0	Parent=SO_1_1
+1	example	SO:0000204	2050	2200	.	+	.	Parent=SO_1_1
+1	example	SO:0000205	8609	10000	.	+	.	Parent=SO_1_1
+
+1	example	SO:0000704	27400	33000	.	+	.	_Load_id=SO_gene2;Name=SO_gene2;Note=Eden splice form 1;ID=SO_gene2
+1	exonerate	SO:0000234	27400	33000	.	+	.	_Customdescription=mRNA with both CDSs and UTRs detail view;_Load_id=SO_rna-Apple3;Name=SO_Apple3;Note=mRNA with both CDSs and UTRs;ID=SO_5;Parent=SO_gene2
+1	exonerate	SO:0000204	27400	27999	.	+	.	Parent=SO_5
+1	exonerate	SO:0000316	31000	31200	.	+	2	Parent=SO_5
+1	exonerate	SO:0000316	29000	29500	.	+	1	Parent=SO_5
+1	exonerate	SO:0000316	28000	28800	.	+	0	Parent=SO_5
+1	exonerate	SO:0000205	31201	33000	.	+	.	Parent=SO_5
+
+#
+1	est	EST_match	1050	7300	.	+	.	_Load_id=Match3;Name=agt221.5;Target=agt221.5 1 1253;ID=EST_match_1
+1	est	match_part	5000	5500	.	+	.	Name=agt221.5;Target=agt221.5 452 952;Parent=EST_match_1
+1	est	match_part	7000	7300	.	+	.	Name=agt221.5;Target=agt221.5 953 1253;Parent=EST_match_1
+1	est	match_part	1050	1500	.	+	.	Name=agt221.5;Target=agt221.5 1 451;Parent=EST_match_1
+1	est	EST_match	1050	3202	.	+	.	_Load_id=Match1;Name=agt830.5;Target=agt830.5 1 654;ID=EST_match_2
+1	est	match_part	3000	3202	.	+	.	Name=agt830.5;Target=agt830.5 452 654;Parent=EST_match_2
+1	est	match_part	1050	1500	.	+	.	Name=agt830.5;Target=agt830.5 1 451;Parent=EST_match_2
+1	est	EST_match	1150	7200	.	+	.	_Load_id=Match5;Name=agt767.5;Target=agt767.5 1 1153;ID=EST_match_3
+1	est	match_part	5000	5500	.	+	.	Name=agt767.5;Target=agt767.5 352 852;Parent=EST_match_3
+1	est	match_part	7000	7200	.	+	.	Name=agt767.5;Target=agt767.5 853 1153;Parent=EST_match_3
+1	est	match_part	1150	1500	.	+	.	Name=agt767.5;Target=agt767.5 1 351;Parent=EST_match_3
+1	est	EST_match	5410	7503	.	-	.	_Load_id=Match2;Name=agt830.3;Target=agt830.3 1 595;ID=EST_match_4
+1	est	match_part	7000	7503	.	-	.	Name=agt830.3;Target=agt830.3 1 504;Parent=EST_match_4
+1	est	match_part	5410	5500	.	-	.	Name=agt830.3;Target=agt830.3 505 595;Parent=EST_match_4
+1	est	EST_match	7500	8000	.	-	.	_Load_id=Match4;Name=agt221.3;Target=agt221.3 1 501
+1	est	EST_match	8000	9000	.	-	.	_Load_id=Match6;Name=agt767.3;Target=agt767.3 1 1001
+
+#
+1	example	polypeptide_domain	11911	15561	.	+	.	Name=m11;Note=kinase
+1	example	polypeptide_domain	13801	14007	.	-	.	Name=m05;Note=helix loop helix
+1	example	polypeptide_domain	14731	17239	.	-	.	Name=m14;Note=kinase
+1	example	polypeptide_domain	15396	16159	.	+	.	Name=m03;Note=zinc finger
+1	example	polypeptide_domain	17023	17675	.	+	.	Name=m08;Note=7-transmembrane
+1	example	polypeptide_domain	17667	17690	.	+	.	Name=m13;Note=DEAD box
+1	example	polypeptide_domain	18048	18552	.	-	.	Name=m07;Note=7-transmembrane
+1	example	polypeptide_domain	21748	25612	.	+	.	Name=m12;Note=kinase
+1	example	polypeptide_domain	28332	30033	.	-	.	Name=m02;Note=HOX
+1	example	polypeptide_domain	28342	28447	.	-	.	Name=m10;Note=DEAD box
+1	example	polypeptide_domain	30578	31748	.	+	.	Name=m06;Note=SUSHI repeat
+1	example	polypeptide_domain	33325	35791	.	+	.	Name=m04;Note=Ig-like
+1	example	polypeptide_domain	37497	40559	.	-	.	Name=m15;Note=7-transmembrane
+1	example	polypeptide_domain	46012	48851	.	+	.	Name=m09;Note=kinase
+1	example	polypeptide_domain	48253	48366	.	+	.	Name=m01;Note=WD40
+
+#
+1	example	match	5233	5302	.	-	.	Name=seg04
+1	example	match	5800	6101	.	-	.	Name=seg04
+1	example	match	6442	6854	.	-	.	Name=seg04
+1	example	match	7106	7211	.	-	.	Name=seg04
+1	example	match	7410	7737	.	-	.	Name=seg03
+1	example	match	7695	8177	.	-	.	Name=seg04
+1	example	match	8055	8080	.	-	.	Name=seg03
+1	example	match	8306	8999	.	-	.	Name=seg03
+1	example	match	8545	8783	.	-	.	Name=seg04
+1	example	match	8869	8935	.	-	.	Name=seg04
+1	example	match	9404	9825	.	-	.	Name=seg04
+1	example	match	12531	12895	.	+	.	Name=seg12
+1	example	match	13122	13449	.	+	.	Name=seg12
+1	example	match	13452	13745	.	+	.	Name=seg12
+1	example	match	13908	13965	.	+	.	Name=seg12
+1	example	match	13998	14488	.	+	.	Name=seg12
+1	example	match	14564	14899	.	+	.	Name=seg12
+1	example	match	15185	15276	.	+	.	Name=seg12
+1	example	match	15639	15736	.	+	.	Name=seg12
+1	example	match	15745	15870	.	+	.	Name=seg12
+1	example	match	18509	18985	.	+	.	Name=seg08
+1	example	match	18989	19388	.	+	.	Name=seg08
+1	example	match	19249	19559	.	+	.	Name=seg06
+1	example	match	19496	19962	.	+	.	Name=seg08
+1	example	match	19975	20260	.	+	.	Name=seg06
+1	example	match	20093	20580	.	+	.	Name=seg08
+1	example	match	20379	20491	.	+	.	Name=seg06
+1	example	match	20533	21005	.	+	.	Name=seg06
+1	example	match	20970	21052	.	+	.	Name=seg08
+1	example	match	21122	21331	.	+	.	Name=seg06
+1	example	match	21270	21277	.	+	.	Name=seg08
+1	example	match	21682	22176	.	+	.	Name=seg06
+1	example	match	21685	22168	.	+	.	Name=seg08
+1	example	match	22374	22570	.	+	.	Name=seg06
+1	example	match	22564	22869	.	+	.	Name=seg08
+1	example	match	22958	23298	.	+	.	Name=seg08
+1	example	match	23025	23427	.	+	.	Name=seg06
+1	example	match	23412	23469	.	+	.	Name=seg08
+1	example	match	23932	23932	.	+	.	Name=seg08
+1	example	match	24228	24510	.	+	.	Name=seg11
+1	example	match	24328	24787	.	+	.	Name=seg08
+1	example	match	24868	25012	.	+	.	Name=seg11
+1	example	match	25212	25426	.	+	.	Name=seg11
+1	example	match	25228	25367	.	+	.	Name=seg08
+1	example	match	25794	25874	.	+	.	Name=seg11
+1	example	match	26075	26519	.	+	.	Name=seg11
+1	example	match	26122	26126	.	+	.	Name=seg02
+1	example	match	26497	26869	.	+	.	Name=seg02
+1	example	match	26503	26799	.	-	.	Name=seg05
+1	example	match	26930	26940	.	+	.	Name=seg11
+1	example	match	26975	27063	.	+	.	Name=seg11
+1	example	match	27172	27185	.	-	.	Name=seg05
+1	example	match	27201	27325	.	+	.	Name=seg02
+1	example	match	27372	27433	.	+	.	Name=seg02
+1	example	match	27415	27799	.	+	.	Name=seg11
+1	example	match	27448	27860	.	-	.	Name=seg05
+1	example	match	27565	27565	.	+	.	Name=seg02
+1	example	match	27813	28091	.	+	.	Name=seg02
+1	example	match	27880	27943	.	+	.	Name=seg11
+1	example	match	27887	28076	.	-	.	Name=seg05
+1	example	match	28093	28201	.	+	.	Name=seg02
+1	example	match	28225	28346	.	+	.	Name=seg11
+1	example	match	28225	28316	.	-	.	Name=seg05
+1	example	match	28329	28377	.	+	.	Name=seg02
+1	example	match	28375	28570	.	+	.	Name=seg11
+1	example	match	28758	29041	.	+	.	Name=seg11
+1	example	match	28777	29058	.	-	.	Name=seg05
+1	example	match	28829	29194	.	+	.	Name=seg02
+1	example	match	29101	29302	.	+	.	Name=seg11
+1	example	match	29513	29647	.	-	.	Name=seg05
+1	example	match	29517	29702	.	+	.	Name=seg02
+1	example	match	29604	29702	.	+	.	Name=seg11
+1	example	match	29713	30061	.	+	.	Name=seg02
+1	example	match	29771	29942	.	+	.	Name=seg10
+1	example	match	29867	29885	.	+	.	Name=seg11
+1	example	match	30042	30340	.	+	.	Name=seg10
+1	example	match	30108	30216	.	-	.	Name=seg05
+1	example	match	30241	30246	.	+	.	Name=seg11
+1	example	match	30329	30774	.	+	.	Name=seg02
+1	example	match	30465	30798	.	-	.	Name=seg05
+1	example	match	30575	30738	.	+	.	Name=seg11
+1	example	match	30808	31306	.	+	.	Name=seg02
+1	example	match	30810	31307	.	+	.	Name=seg10
+1	example	match	31232	31236	.	-	.	Name=seg05
+1	example	match	31421	31817	.	-	.	Name=seg05
+1	example	match	31516	31729	.	+	.	Name=seg02
+1	example	match	31753	32154	.	+	.	Name=seg02
+1	example	match	31761	31984	.	+	.	Name=seg10
+1	example	match	32010	32057	.	-	.	Name=seg05
+1	example	match	32208	32680	.	-	.	Name=seg05
+1	example	match	32329	32359	.	+	.	Name=seg01
+1	example	match	32374	32937	.	+	.	Name=seg10
+1	example	match	32595	32696	.	+	.	Name=seg02
+1	example	match	32892	32901	.	+	.	Name=seg02
+1	example	match	33053	33325	.	-	.	Name=seg05
+1	example	match	33127	33388	.	+	.	Name=seg02
+1	example	match	33438	33868	.	-	.	Name=seg05
+1	example	match	33439	33443	.	+	.	Name=seg02
+1	example	match	33759	34209	.	+	.	Name=seg02
+1	example	match	34244	34313	.	-	.	Name=seg05
+1	example	match	34401	34466	.	+	.	Name=seg02
+1	example	match	34605	34983	.	-	.	Name=seg05
+1	example	match	35333	35507	.	-	.	Name=seg05
+1	example	match	35642	35904	.	-	.	Name=seg05
+1	example	match	36616	37057	.	-	.	Name=seg09
+1	example	match	37208	37227	.	-	.	Name=seg09
+1	example	match	39265	39361	.	-	.	Name=seg15
+1	example	match	39753	40034	.	-	.	Name=seg15
+1	example	match	40515	40954	.	-	.	Name=seg15
+1	example	match	41137	41318	.	-	.	Name=seg14
+1	example	match	41252	41365	.	-	.	Name=seg15
+1	example	match	41492	41504	.	-	.	Name=seg15
+1	example	match	41754	41948	.	-	.	Name=seg14
+1	example	match	41941	42377	.	-	.	Name=seg15
+1	example	match	42057	42474	.	-	.	Name=seg14
+1	example	match	42748	42954	.	-	.	Name=seg15
+1	example	match	42890	43270	.	-	.	Name=seg14
+1	example	match	43395	43811	.	-	.	Name=seg14
+1	example	match	43401	43897	.	-	.	Name=seg15
+1	example	match	44043	44113	.	-	.	Name=seg15
+1	example	match	44065	44556	.	-	.	Name=seg14
+1	example	match	44191	44514	.	-	.	Name=seg07
+1	example	match	44399	44888	.	-	.	Name=seg15
+1	example	match	44552	45043	.	-	.	Name=seg07
+1	example	match	44763	45030	.	-	.	Name=seg14
+1	example	match	45231	45488	.	-	.	Name=seg14
+1	example	match	45281	45375	.	-	.	Name=seg15
+1	example	match	45373	45600	.	-	.	Name=seg07
+1	example	match	45711	46041	.	-	.	Name=seg15
+1	example	match	45790	46022	.	-	.	Name=seg14
+1	example	match	45897	46315	.	-	.	Name=seg07
+1	example	match	46092	46318	.	-	.	Name=seg14
+1	example	match	46425	46564	.	-	.	Name=seg15
+1	example	match	46491	46890	.	-	.	Name=seg07
+1	example	match	46738	47087	.	-	.	Name=seg15
+1	example	match	46816	46992	.	-	.	Name=seg14
+1	example	match	47126	47297	.	-	.	Name=seg07
+1	example	match	47329	47595	.	-	.	Name=seg15
+1	example	match	47449	47829	.	-	.	Name=seg14
+1	example	match	47735	47983	.	-	.	Name=seg07
+1	example	match	47858	47979	.	-	.	Name=seg15
+
+#
+1	example	BAC	1000	20000	.	.	.	_Load_id=b101.2;Name=b101.2;Note=Fingerprinted BAC with end reads;ID=BAC_1
+1	example	clone_start	1000	1500	.	+	.	Parent=BAC_1
+1	example	clone_end	19500	20000	.	-	.	Parent=BAC_1
+
+#
+1	example	SNP	1000	1000	0.987	.	.	_Load_id=FakeSNP1;Name=FakeSNP;Note=This is a fake SNP that should appear at 1000 with length 1
+
+#
+1	example	mRNA	1050	9000	.	+	.	_Load_id=EDEN.1;Name=EDEN.1;Note=Eden splice form 1;ID=1_1
+1	example	CDS	5000	5500	.	+	0	Parent=1_1
+1	example	CDS	3000	3902	.	+	0	Parent=1_1
+1	example	CDS	7000	7608	.	+	0	Parent=1_1
+1	example	five_prime_UTR	1050	1200	.	+	.	Parent=1_1
+1	example	three_prime_UTR	7609	9000	.	+	.	Parent=1_1
+1	example	CDS	1201	1500	.	+	0	Parent=1_1
+1	example	mRNA	1050	9000	.	+	.	_Load_id=EDEN.2;Name=EDEN.2;Note=Eden splice form 2;ID=2
+1	example	three_prime_UTR	7609	9000	.	+	.	Parent=2
+1	example	CDS	7000	7608	.	+	0	Parent=2
+1	example	CDS	5000	5500	.	+	0	Parent=2
+1	example	five_prime_UTR	1050	1200	.	+	.	Parent=2
+1	example	CDS	1201	1500	.	+	0	Parent=2
+1	example	mRNA	1300	9000	.	+	.	_Load_id=EDEN.3;Name=EDEN.3;Note=Eden splice form 3;ID=3
+1	example	CDS	7000	7600	.	+	1	Parent=3
+1	example	five_prime_UTR	1300	1500	.	+	.	Parent=3
+1	example	CDS	5000	5500	.	+	1	Parent=3
+1	example	CDS	3301	3902	.	+	0	Parent=3
+1	example	five_prime_UTR	3000	3300	.	+	.	Parent=3
+1	example	three_prime_UTR	7601	9000	.	+	.	Parent=3
+1	predicted	mRNA	13000	17200	.	+	0	_Load_id=cds-Apple2;Name=Apple2;Note=mRNA with CDSs but no UTRs;ID=4
+1	predicted	CDS	15000	15500	.	+	1	Parent=4
+1	predicted	CDS	16500	17000	.	+	2	Parent=4
+1	predicted	CDS	13500	13800	.	+	0	Parent=4
+1	exonerate	mRNA	17400	23000	.	+	.	_Customdescription=mRNA with both CDSs and UTRs detail view;_Load_id=rna-Apple3;Name=Apple3;Note=mRNA with both CDSs and UTRs;ID=5
+1	exonerate	UTR	17400	17999	.	+	.	Parent=5
+1	exonerate	CDS	21000	21200	.	+	2	Parent=5
+1	exonerate	CDS	19000	19500	.	+	1	Parent=5
+1	exonerate	CDS	18000	18800	.	+	0	Parent=5
+1	exonerate	UTR	21201	23000	.	+	.	Parent=5
+
+#
+1	example	protein_coding_primary_transcript	1100	2000	.	+	.	Alias=hga;Name=Gene:hga
+1	example	polypeptide	1200	1900	.	+	.	Alias=hga;Name=Protein:HGA
+1	example	protein_coding_primary_transcript	1600	3000	.	-	.	Alias=hgb;Name=Gene:hgb
+1	example	polypeptide	1800	2900	.	-	.	Alias=hgb;Name=Protein:HGB
+
+#
+#
+#
+1	RefSeq	match	35438	35590	.	-	.	ID=IGV_9;Target="NM_001077812.1 1318 1470 +";splign=150.956;idty=0.993464
+1	RefSeq	match	37227	37483	.	-	.	ID=IGV_8;Target="NM_001077812.1 1061 1317 +";splign=257;idty=1
+1	RefSeq	match	38383	38613	.	-	.	ID=IGV_7;Target="NM_001077812.1 830 1060 +";splign=231;idty=1
+1	RefSeq	match	39465	39749	.	-	.	ID=IGV_6;Target="NM_001077812.1 545 829 +";splign=285;idty=1
+1	RefSeq	match	41188	41347	.	-	.	ID=IGV_5;Target="NM_001077812.1 385 544 +";splign=160;idty=1
+1	RefSeq	match	44254	44273	.	-	.	ID=IGV_4;Target="NM_001077812.1 242 261 +";splign=11.78;idty=0.772727
+1	RefSeq	match	44582	44650	.	-	.	ID=IGV_3;Target="NM_001077812.1 173 241 +";splign=69;idty=1
+1	RefSeq	match	46357	46463	.	-	.	ID=IGV_2;Target="NM_001077812.1 66 172 +";splign=107;idty=1
+1	RefSeq	match	47052	47116	.	-	.	ID=IGV_1;Target="NM_001077812.1 1 65 +";splign=65;idty=1
+
+#
+#
+1	GeneDB	CDS	1	5662	.	-	.	mRNA SPAC212.11a ; Alias "tlh1" ; systematic_id "SPAC212.11" ; Color "2" ; controlled_curation "term=transcriptional repression dependent on heterochromatin and involves contributions from Chp1, Taz1 and Rik1 complex subunits in independent pathways; db_xref=PMID:16407326; date=20060327 ||| term=present at telomere ends; db_xref=PMID:15591066; date=20060327 ||| term=contains dh repeats; db_xref=PMID:15591066; date=20060327 ||| term=similar to S. pombe SPBCPT2R1.08c; date=19700101 ||| term=conserved fungal family; date=20070913 ||| term=no apparent S. cerevisiae ortholog; date=20070913" ; GO "GO:0043140; ATP-dependent 3' to 5' DNA helicase activity  GO:0000722; telomere maintenance via recombination  GO:0000781; chromosome, telomeric region  GO:0005634; nucleus" ; gene "SPAC212.11 ||| tlh1" ; primary_name "tlh1" ; product "RecQ type DNA helicase" ;
+1	GeneDB	CDS	1	5662	.	-	.	mRNA SPAC212.11b ; color "2" ;
+1	GeneDB	5'-UTR	5663	7265	.	-	.	mRNA SPAC212.11c ; db_xref "EMBL:BK005597" ; gene "SPAC212.11 ||| tlh1" ;color "2"
+1	GeneDB	CDS	5726	6331	.	-	.	mRNA SPAC212.10d ; systematic_id "SPAC212.10" ; pseudo "_no_value" ; Colour "13" ; controlled_curation "term=truncated C at terminal; date=19700101" ; gene "SPAC212.10e" ; product "pseudo- malic acid transport protein" ; note "removed as part of UTR of SPAC212.11 and truncted with respect to paralogs" ;
+1	GeneDB	CDS	5726	6331	.	-	.	mRNA SPAC212.10f ; colour "13" ;
+1	GeneDB	CDS	7619	9274	.	+	.	mRNA SPAC212.09cg ; systematic_id "SPAC212.09c" ; pseudo "_no_value" ; controlled_curation "term=malic enzyme with 2 frameshifts; date=19700101" ; colour "13" ; gene "SPAC212.09c" ; product "pseudogene" ;
+
+#
+1	Mguttatus_v1_1	mRNA	1284	7345	.	+	.	mRNA mgv1a003928m;Name mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	1284	1357	.	+	0	id mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	2136	2241	.	+	1	mRNA mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	2352	2492	.	+	0	systematic_id mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	2738	2908	.	+	0	transcript_id mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	3904	4056	.	+	0	gene mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	4141	4209	.	+	0	transcriptId mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	4324	4440	.	+	0	Parent mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	4539	4613	.	+	0	proteinId mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	4728	4805	.	+	0	mRNA mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	4921	5016	.	+	0	mRNA mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	5138	5187	.	+	0	mRNA mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	5313	5367	.	+	1	mRNA mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	5618	5749	.	+	0	mRNA mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	6030	6077	.	+	0	mRNA mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	6183	6341	.	+	0	mRNA mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	CDS	6889	7029	.	+	0	mRNA mgv1a003928m;PACid 17687659
+1	Mguttatus_v1_1	3'-UTR	7030	7345	.	+	.	mRNA mgv1a003928m;PACid 17687659
+
+
+#
+#
+1	assembler-sample_mydb_pasa.sqlite	cDNA_match	505890	505946	.	-	.	ID=align_1291321;Target=asmbl_202767 5112 5168 +
+1	assembler-sample_mydb_pasa.sqlite	cDNA_match	516354	516357	.	-	.	ID=align_1291321;Target=asmbl_202767 5108 5111 +
+1	assembler-sample_mydb_pasa.sqlite	cDNA_match	536017	537251	.	-	.	ID=align_1291321;Target=asmbl_202767 3873 5107 +
+1	assembler-sample_mydb_pasa.sqlite	cDNA_match	537699	537970	.	-	.	ID=align_1291321;Target=asmbl_202767 3601 3872 +
+1	assembler-sample_mydb_pasa.sqlite	cDNA_match	539362	539429	.	-	.	ID=align_1291321;Target=asmbl_202767 3533 3600 +
+1	assembler-sample_mydb_pasa.sqlite	cDNA_match	505890	505946	.	-	.	ID=align_1291321;Target=asmbl_202767 5112 5168 +
+1	assembler-sample_mydb_pasa.sqlite	cDNA_match	516354	516357	.	-	.	ID=align_1291321;Target=asmbl_202767 5108 5111 +
+1	assembler-sample_mydb_pasa.sqlite	cDNA_match	536017	537251	.	-	.	ID=align_1291321;Target=asmbl_202767 3873 5107 +
+1	assembler-sample_mydb_pasa.sqlite	cDNA_match	537699	537970	.	-	.	ID=align_1291321;Target=asmbl_202767 3601 3872 +
+1	assembler-sample_mydb_pasa.sqlite	cDNA_match	539362	539429	.	-	.	ID=align_1291321;Target=asmbl_202767 3533 3600 +
+
+#
+#
+1	manual_curation	gene	20901	26316	.	-	1	ID=GSMUA_Achr1G00030_001;Name=GSMUA_Achr1G00030_001
+1	manual_curation	mRNA	20901	26316	.	-	1	ID=GSMUA_Achr1T00030_001;Name=GSMUA_Achr1T00030_001;Parent=GSMUA_Achr1G00030_001
+1	manual_curation	polypeptide	20901	26316	.	-	1	Dbxref=TrEMBL:Q9M873,TrEMBL:Q93V85,TrEMBL:Q8LNT1,TrEMBL:D7KZK2,TrEMBL:C5WXC6,TrEMBL:B9SX37,TrEMBL:A3C623,TrEMBL:A2Z8W2,TIGR:Os12g18960.2,TIGR:Os12g18960.1,TIGR:Os10g35140.1,TIGR:Os08g44750.1,TIGR:Os08g06640.1,TIGR:Os03g53350.1,TIGR:Os02g02310.1,TIGR:Os01g10580.1,SwissProt:Q56072,SwissProt:P74436,SwissProt:P42194,SwissProt:P31125,SwissProt:O34416,SwissProt:O32256,SwissProt:O29973,SwissProt:O29740,InterPro:IPR000620;Derives_from=GSMUA_Achr1T00030_001;ID=GSMUA_Achr1P00030_001;Name=GSMUA_Achr1P00030_001;Ontology_term=CC_gene:AF_0510,CC_gene:eamA,CC_gene:pecM,CC_gene:AF_0266,CC_gene:yvbV,CC_gene:yoaV,CC_gene:sll0355,CC_functional_completeness:complete,PRODUCT:Uncharacterized transporter sll0355,GO:0016020,CC_evidence_code:ISS,CC_status:in_progress,CC_evidence:automatic,CC_EC_number:no_EC_number;alternative_splicing=to_fill;annotator_comment=to_fill;date=Tue Dec  7 21:17:29 CET 2010;inference={gaze};note=GSMUA_Achr1T00030_001~ Uncharacterized transporter sll0355~ sll0355~ complete;original_location=complement(join(26239..26316%2C25888..26172%2C25695..25742%2C24842..24964%2C23853..24002%2C21501..21672%2C21221..21281%2C20901..21009));owner=musa
+1	manual_curation	exon	20901	21009	.	-	1	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	CDS	20901	21009	.	-	2	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	exon	21221	21281	.	-	1	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	CDS	21221	21281	.	-	1	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	exon	21501	21672	.	-	1	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	CDS	21501	21672	.	-	0	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	exon	23853	24002	.	-	1	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	CDS	23853	24002	.	-	0	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	exon	24842	24964	.	-	1	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	CDS	24842	24964	.	-	0	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	exon	25695	25742	.	-	1	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	CDS	25695	25742	.	-	0	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	exon	25888	26172	.	-	1	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	CDS	25888	26172	.	-	0	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	exon	26239	26316	.	-	1	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	CDS	26239	26316	.	-	0	Parent=GSMUA_Achr1T00030_001
+1	manual_curation	gene	26767	26847	.	+	1	ID=GSMUA_Achr1G00032_001;Name=GSMUA_Achr1G00032_001
+1	manual_curation	tRNA	26767	26847	.	+	1	ID=GSMUA_Achr1T00032_001;Name=GSMUA_Achr1T00032_001;Parent=GSMUA_Achr1G00032_001
+1	manual_curation	exon	26767	26847	.	+	1	Parent=GSMUA_Achr1T00032_001
+
+#
+#
+1	liftover	exon	7563	7938	1	-	.	coords=sim4db;fName=ENSTGUT00000013717
+1	liftover	exon	707	943	1	-	.	coords=sim4db;fName=ENSTGUT00000013717
+
+#
+#
+1	GeneDB	5'-UTR	11784	12157	.	+	.	mRNA SPAC212.08c ; db_xref "PMID:21511999" ; systematic_id "SPAC212.08c" ; gene "SPAC212.08c" ;
+1	GeneDB	CDS_parts	12158	12994	.	+	.	mRNA SPAC212.08c ; db_xref "SPD:51/51C03" ; systematic_id "SPAC212.08c" ; controlled_curation "term=phenotype, viable; qualifier=deletion; db_xref=PMID:20473289; cv=phenotype; date=20100406 ||| term=genome organization, telomeric duplication;   cv=genome_org; date=19700101 ||| term=protein sequence feature, N- terminal signal sequence; qualifier=predicted; cv=sequence_feature; date=19700101 ||| term=species distribution, identified in S. pombe only; date=20081110 ||| term=modification, GPI attachment site; cv=pt_mod; qualifier=predicted; db_xref=PMID:12845604; date=20100104 ||| term=misc functional group, cell surface glycoprotein; cv=m_f_g; date=20100104 ||| term=modification, glycosylated; cv=pt_mod; qualifier=predicted; date=20100104" ; colour "12" ; GO "GO:0009986; cell surface" ; gene "SPAC212.08c" ; product "GPI anchored protein (predicted)" ;
+1	GeneDB	CDS	12158	12994	.	+	.	mRNA SPAC212.08c ; colour "12" ;
+1	GeneDB	mRNA	11784	12994	.	+	.	mRNA SPAC212.08c ; db_xref "SPD:51/51C03" ; systematic_id "SPAC212.08c" ; controlled_curation "term=phenotype, viable; qualifier=deletion; db_xref=PMID:20473289; cv=phenotype; date=20100406 ||| term=genome organization, telomeric duplication;   cv=genome_org; date=19700101 ||| term=protein sequence feature, N- terminal signal sequence; qualifier=predicted; cv=sequence_feature; date=19700101 ||| term=species distribution, identified in S. pombe only; date=20081110 ||| term=modification, GPI attachment site; cv=pt_mod; qualifier=predicted; db_xref=PMID:12845604; date=20100104 ||| term=misc functional group, cell surface glycoprotein; cv=m_f_g; date=20100104 ||| term=modification, glycosylated; cv=pt_mod; qualifier=predicted; date=20100104" ; colour "12" ; GO "GO:0009986; cell surface" ; gene "SPAC212.08c" ; product "GPI anchored protein (predicted)" ;
+
+
+
+>cnda0123
+ttcaagtgctcagtcaatgtgattcacagtatgtcaccaaatattttggc
+agctttctcaagggatcaaaattatggatcattatggaatacctcggtgg
+aggctcagcgctcgatttaactaaaagtggaaagctggacgaaagtcata
+tcgctgtgattcttcgcgaaattttgaaaggtctcgagtatctgcatagt
+gaaagaaaaatccacagagatattaaaggagccaacgttttgttggaccg
+tcaaacagcggctgtaaaaatttgtgattatggttaaagg
+
