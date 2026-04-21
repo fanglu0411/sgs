@@ -49,7 +49,8 @@ If you found an issue, please [report it](https://github.com/fanglu0411/sgs/issu
 + Jiahe Sun (sunjiahe0502@email.swu.edu.cn)
 
 # 🌹 Citiation
-Xia, T., Sun, J., Lu, F., Luo, Y., Mao, Y., Xu, L., & Wang, Y. (2024). Empowering Integrative and Collaborative Exploration of Single-Cell and Spatial Multimodal Data with SGS. bioRxiv, (), 2024.07.19.604227. Accessed July 23, 2024. https://doi.org/10.1101/2024.07.19.604227.
+Xia, T., Sun, J., Luo, Y., Guo, H., Mao, Y., Xu, L., Lu, F., & Wang, Y. (2025). Empowering integrative and collaborative exploration of single-cell and spatial multimodal data with SGS genome browser. Cell genomics, 5(5), 100848. https://doi.org/10.1016/j.xgen.2025.100848
+
 # 👉 License
 SGS Copyright (c) 2024 Wang lab. All rights reserved.
 This software is distributed under the MIT License (MIT).
